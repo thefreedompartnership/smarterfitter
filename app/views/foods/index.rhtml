@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<title>SmarterFitter Nutritional Database</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name='description' content='Search our database for calorie, carbohydrate, fat, protein and nutrient information for a wealth of foods.  Customize the results to match the quantities of the foods you eat.'/>
+	<meta name='keywords' content='smarterfitter, nutritional, database, calorie, calories, carb, carbohydrate, atkins, diet, food, nutrition, health, protein, fat, nutrient, vitamin, weight loss, dieting, health'/>
+	<%= stylesheet_link_tag 'default' %>
+	
+	<script type="text/javascript" charset="utf-8">
+		function setup() {
+			document.getElementById('complete_nutrient_data').style.display = 'none';
+			document.getElementById('show_complete_nutrient_data').onclick = function() {
+				document.getElementById('simple_nutrient_data').style.display = 'none';
+				document.getElementById('complete_nutrient_data').style.display = 'block';
+				return false;				
+			}
+		}
+		window.onload = setup;
+	</script>
+	
+</head>
+
+<body>
+<div id="center_column">
+
+<p style="color: green"><%= flash[:notice] %></p><div id="menu_bar">
+	<ul>
+		<li>
+			<% form_tag( { :controller => 'search', :action => 'search' }, { :method => :get }, nil ) do %>
+			  <%= text_field_tag 'q', params[:q] %>
+			  <%= submit_tag 'Search' %>
+			<% end %>
+		</li>
+	</ul>
+	<h1>SmarterFitter<h1>
+</div>
+<h2><%= @food.long_description %></h2>
+
+
+<% form_tag( { :action => 'index' }, { :method => :get } ) do %>
+	Serving size
+	<%= text_field_tag 'amount', @portion.quantity, { :size => 3 } %> x 
+	<%= select_tag 'measure', 
+				   '<option value="0">100 grams</option>' + 
+				   options_for_select(@food.weights.collect { |w| ["#{w.amount} #{w.measure_description}", w.id]},
+				 		params[:measure].to_i)
+#				   options_from_collection_for_select(@food.weights, 'id', 'measure_description', params[:measure].to_i)
+	%>
+	<%= submit_tag 'Change' %>
+<% end %>
+<p>Amount per <%= @portion.quantity %> 
+<% if @portion.quantity == 1.0 %>
+		serving 
+<% else %> 
+		servings 
+<% end %> 
+of <%= @portion.weight.amount %> <%= @portion.weight.measure_description %></p>
+<table id="simple_nutrient_data" class="nutrient_table">
+	<tr style="display:none">
+		<th>Nutrient</th>
+		<th>Amount</th>
+	</tr>
+	<tr>
+		<td>Calories</td>
+		<td class="nutrient_value">
+			<%= @portion.energy || "~" %>
+		</td>
+		<td>
+			<%= @food.energy.nutrient.units %>			
+		</td>
+	</tr> 
+	<tr>  
+		<td>Protein</td>
+		<td class="nutrient_value">
+			<%= @portion.protein || "~" %>
+		</td>
+		<td>
+			<%= @food.protein.nutrient.units %>		
+		</td>
+	</tr> 
+	<tr>  
+		<td>Fat</td>
+		<td class="nutrient_value">
+			<%= @portion.fat  || "~"%>
+		</td>
+		<td>
+			<%= @food.fat.nutrient.units %>			
+		</td>
+	</tr>
+	<tr>  
+		<td>Carbohydrate</td>
+		<td class="nutrient_value">
+			<%= @portion.carbohydrate || "~" %>
+		</td>
+		<td>
+			<%= @food.carbohydrate.nutrient.units %>			
+		</td>
+	</tr> 
+	
+	</table>
+	<table id="complete_nutrient_data" class="nutrient_table">
+	<tr>
+		<td>Calories</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("208") || "~" %>
+		</td>
+		<td>
+			<%= @food.nutrient("208").nutrient.units if @food.nutrient("208") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Fat</td> 
+		<td class="nutrient_value">
+			<%= @portion.nutrient("204") || "~" %>
+		</td>
+		<td>
+			<%= @food.nutrient("204").nutrient.units if @food.nutrient("204") %>
+		</td>
+	</tr>
+	<tr>
+		<td class="sub_nutrient">Saturated</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("606") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("606").nutrient.units if @food.nutrient("606") %>
+		</td>
+	</tr>
+	<tr>
+		<td class="sub_nutrient">Monounsaturated</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("645") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("645").nutrient.units if @food.nutrient("645") %>
+		</td>
+	</tr>
+	<tr>
+		<td class="sub_nutrient">Polyunsaturated</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("646") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("646").nutrient.units if @food.nutrient("646") %>
+		</td>
+	</tr>
+	<tr>
+		<td class="sub_nutrient">Cholesterol</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("601") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("601").nutrient.units if @food.nutrient("601") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Carbohydrate</td> 
+		<td class="nutrient_value">
+			<%= @portion.nutrient("205")  || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("205").nutrient.units if @food.nutrient("205") %>
+		</td>
+	</tr>
+	<tr>
+		<td class="sub_nutrient">Fiber</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("291") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("291").nutrient.units if @food.nutrient("291") %>
+		</td>
+	</tr>
+	<tr>
+		<td class="sub_nutrient">Sugar</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("269") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("269").nutrient.units if @food.nutrient("269") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Protein</td> 
+		<td class="nutrient_value">
+			<%= @portion.nutrient("203") || "~" %>
+		</td>
+		<td>
+			<%= @food.nutrient("203").nutrient.units if @food.nutrient("203") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Sodium</td> 
+		<td class="nutrient_value">
+			<%= @portion.nutrient("307") || "~" %>
+		</td>
+		<td>
+			<%= @food.nutrient("307").nutrient.units if @food.nutrient("307") %>
+		</td>
+	</tr>
+	<tr>
+
+		<th colspan="3">Minerals</th>
+	</tr>
+	<tr>
+		<td>Calcium</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("301") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("301").nutrient.units if @food.nutrient("301") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Iron</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("303") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("303").nutrient.units if @food.nutrient("303") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Magnesium</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("304") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("304").nutrient.units if @food.nutrient("304") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Phosphorus</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("305") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("305").nutrient.units if @food.nutrient("305") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Potassium</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("306") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("306").nutrient.units if @food.nutrient("306") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Sodium</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("307") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("307").nutrient.units if @food.nutrient("307") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Zinc</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("309") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("309").nutrient.units if @food.nutrient("309") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Copper</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("312") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("312").nutrient.units if @food.nutrient("312") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Fluoride</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("313") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("313").nutrient.units if @food.nutrient("313") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Manganese</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("315") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("315").nutrient.units if @food.nutrient("315") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Selenium</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("317") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("317").nutrient.units if @food.nutrient("317") %>
+		</td>
+	</tr>
+	<tr>
+
+		<th colspan="3">Vitamins</th>
+	</tr>
+	<tr>
+		<td>Vitamin A</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("318") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("318").nutrient.units if @food.nutrient("318") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin B-6</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("415") || "~" %>
+		</td>
+		<td>
+			<%= @food.nutrient("415").nutrient.units if @food.nutrient("415") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin B-12</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("418") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("418").nutrient.units if @food.nutrient("418") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin B-12 added</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("578") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("578").nutrient.units if @food.nutrient("578") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin C</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("401") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("401").nutrient.units if @food.nutrient("401") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin D</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("324") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("324").nutrient.units if @food.nutrient("324") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin E (alpha-tocopherol)</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("323") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("323").nutrient.units if @food.nutrient("323") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin E added</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("573") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("573").nutrient.units if @food.nutrient("573") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Vitamin K</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("430") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("430").nutrient.units if @food.nutrient("430") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Thiamin</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("404") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("404").nutrient.units if @food.nutrient("404") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Riboflavin</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("405") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("405").nutrient.units if @food.nutrient("405") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Niacin</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("406") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("406").nutrient.units if @food.nutrient("406") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Folate</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("417") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("417").nutrient.units if @food.nutrient("417") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Folic acid</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("431") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("431").nutrient.units if @food.nutrient("431") %>
+		</td>
+	</tr>
+	<tr>
+
+		<th colspan="3">Other</th>
+	</tr>
+	<tr>
+		<td>Alcohol</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("221") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("221").nutrient.units if @food.nutrient("221") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Water</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("255") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("255").nutrient.units if @food.nutrient("255") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Caffeine</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("262") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("262").nutrient.units if @food.nutrient("262") %>
+		</td>
+	</tr>
+	<tr>
+		<td>Theobromine</td>
+		<td class="nutrient_value">
+			<%= @portion.nutrient("263") || "~"%>
+		</td>
+		<td>
+			<%= @food.nutrient("263").nutrient.units if @food.nutrient("263") %>
+		</td>
+	</tr>
+</table>
+<p><a id="show_complete_nutrient_data" href="#complete_nutrient_data">Show complete nutrient data</a></p>
+
+
+</div>
+</body>
+</html>

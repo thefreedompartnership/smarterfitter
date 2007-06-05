@@ -1,0 +1,7 @@
+<h1>Run Log</h1>
+<p> Everyone's Runs!</p>
+<ul id="runs" class="run_list">
+	<%= render(:partial => 'run', :collection => @runs) %>
+</ul>
+<%= link_to 'Previous page', { :page => @run_pages.current.previous } if @run_pages.current.previous %>
+<%= link_to 'Next page', { :page => @run_pages.current.next } if @run_pages.current.next %> 

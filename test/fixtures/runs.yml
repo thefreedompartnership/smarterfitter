@@ -1,0 +1,18 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first:
+  id: 1
+  user_id: 1
+  when_run: 2006-06-21
+  distance_in_meters: 1500
+  distance_unit: kilometers
+  duration_in_seconds: 1500
+  description: mental as anything
+      
+mile_users_run:
+  id: 2
+  user_id: 3
+  when_run: 2006-06-21
+  distance_in_meters: 1609
+  distance_unit: miles
+  duration_in_seconds: 1500
+  description: a one mile run

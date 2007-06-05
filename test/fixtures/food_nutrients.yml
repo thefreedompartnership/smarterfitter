@@ -1,0 +1,23 @@
+energy_in_butter:
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "208"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "5"
+  confidence_code: |
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "717.000"
+  nutrient_id: "5"
+  created_at: 2007-05-25 14:15:43
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"

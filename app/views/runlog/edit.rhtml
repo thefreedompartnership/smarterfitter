@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	//<![CDATA[
+	addLoadEvent(load);
+	addUnLoadEvent(GUnload)
+	//]]>
+</script>
+
+<h1>Editing run</h1>
+
+<%= start_form_tag :action => 'update', :id => @run %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Save' %>
+<%= end_form_tag %>
+
+<%= form_remote_tag( :html => { :id => 'defaultMapForm' },
+					 :update => { :success => 'defaultMapFlash', :failure => 'defaultMapFlash' },
+					 :url => { :action => 'pick_location_ajax' }
+					)%>
+	<%= hidden_field 'user', 'default_latitude' %>
+	<%= hidden_field 'user', 'default_longitude' %>
+	<%= hidden_field 'user', 'default_zoom' %>
+<%= end_form_tag %>
+
+<ul class="run_action_list">
+	<li><%= link_to 'Show', :action => 'show', :id => @run %></li>
+	<li><%= link_to 'Back to list', :action => 'list' %></li>
+</ul>

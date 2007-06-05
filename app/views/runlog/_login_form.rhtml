@@ -1,0 +1,8 @@
+<%= error_messages_for 'user' %>
+<%= form_tag :action => "login" %>
+	<div>
+			<label for="user_user_name" class="login_label">User name</label> <%= text_field 'user', 'user_name', {:class => 'login_input'} %><br/>
+			<label for="user_password" class="login_label">Password</label> <%= password_field 'user', 'password', {:class => 'login_input'} %><br/>
+			<div class="login_button_container"><%= submit_tag "Log in"%></div>
+	</div>
+<%= end_form_tag %>

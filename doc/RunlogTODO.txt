@@ -1,0 +1,20 @@
+. Add canned routes that you can reuse, save a route then make changes
+x Undo/redo
+. Planned runs
+x Public list pages
+> RSS feeds
+. Centre map on geographical centre of the run and zoom out to show the entire thing
+. Scale mile markers to the zoom level
+. Add a map to the show page
+. Expand to show maps on the runs in the list page
+. Fix the run distance
+. Map with 10 runs on it in different colors
+. Make it look less like arse?
+. Google calendar for planned runs / all runs?
+
+What do I need to do for the rest of the system to polish properly
+
+Major features to complete:
+
+. Public run page
+. 

@@ -14,7 +14,7 @@
 development:
   adapter: mysql
   database: smarterfitter_development
-  username: root
+  username: tim
   password:
   socket: /tmp/mysql.sock
 
@@ -24,13 +24,13 @@ development:
 test:
   adapter: mysql
   database: smarterfitter_test
-  username: root
+  username: tim
   password:
   socket: /tmp/mysql.sock
 
 production:
   adapter: mysql
   database: smarterfitter_production
-  username: root
+  username: tim
   password: 
   socket: /tmp/mysql.sock

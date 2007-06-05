@@ -19,3 +19,6 @@ config.action_view.debug_rjs                         = true
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+# manhattan:3000
+GOOGLE_MAPS_API_KEY = 'ABQIAAAACASyyKvhynRUwYA0SHcRyBRPA-3gvM-dWYmE1CmYZTpmBwMjcBQ1-OimeNZDouafW7kbCA1k410KUA'

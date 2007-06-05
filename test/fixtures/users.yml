@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+tim:
+  id: 1
+  user_name: tim
+  email_address: tim.harding@gmail.com
+  hashed_password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+  first_name: Tim
+  last_name: Harding
+  measurement_system: metric
+  time_zone: Europe/London  
+
+monica:
+  id: 2
+  user_name: monica
+  email_address: monica.shaw@gmail.com
+  hashed_password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+  first_name: Monica
+  last_name: Shaw
+  measurement_system: imperial
+  time_zone: US/Central
+
+mile_user:
+  id: 3
+  user_name: mile_user
+  email_address: mile_user@gatezero.org
+  hashed_password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+  first_name: Mile
+  last_name: User
+  measurement_system: imperial
+  time_zone: NZ
+  

@@ -1,0 +1,20 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first:
+  id: "1"
+  protein_factor: "4.27"
+  updated_at: 2007-05-25 11:35:38
+  scientific_name: ""
+  nitrogen_factor: "6.38"
+  common_name: ""
+  fat_factor: "8.79"
+  short_description: BUTTER,WITH SALT
+  cho_factor: "3.87"
+  refuse_percentage: "0"
+  food_group_id: "1"
+  ndb_number: "01001"
+  manufacturer_name: ""
+  long_description: Butter, salted
+  food_group_code: "0100"
+  survey: Y
+  created_at: 2007-05-25 11:35:38
+  refuse_description: ""

@@ -16,3 +16,6 @@ config.action_controller.perform_caching             = true
 
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
+
+# smarterfitter.com
+GOOGLE_MAPS_API_KEY = 'ABQIAAAACASyyKvhynRUwYA0SHcRyBQVkK1qbApyiGOpxUTfrgqmNeHJtxTs_uQ6ejpCAxLboQhYzdi-13HsBw'

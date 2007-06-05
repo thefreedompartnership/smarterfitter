@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>SmarterFitter: Body Mass Index (BMI) Calculator</title>
+	<link href="/stylesheets/default.css" media="screen" rel="Stylesheet" type="text/css">
+	<script type="text/javascript" src="/javascripts/bmi.js"></script>
+</head>
+<body>
+	<div id="center_column">
+	<div id="menu_bar">
+		<ul>
+			<li><a href="http://smarterfitter.com/runlog/">RunLog</a></li>
+		</ul>
+		<h1>SmarterFitter</h1>
+	</div>
+	<h2>Body Mass Index (BMI) Calculator</h2>
+	<div id="calculator">
+		<form id="calculator_form" action="" method="get" accept-charset="utf-8">
+			<ul>
+				<li id="error_message">
+					<p>Oops! Please fix the mistakes.</p>
+				</li>
+				<li id="instructions">
+					<p>Please enter height and weight below.</p>
+				</li>
+				<li>
+					<label id="height_label" for="height">Height</label> 
+					<input type="text" name="height" value="" id="height"/>
+					<div class="example_text">
+						e.g. 1.83m, 183cm, 5ft, 5ft 10in, 5' 10" or 5' 10
+					</div>
+				</li>
+				<li>
+					<label id="weight_label" for="weight">Weight</label>
+					<input type="text" name="weight" value="" id="weight"/>
+					<div class="example_text">
+						e.g. 70kg, 71.5kg, 120lbs, 120.5lbs
+					</div>
+				</li>
+				<li class="submit">
+					<input type="submit" name="calculate" value="Calculate BMI" id="calculate"/>
+				</li>
+			</ul>
+		</form>
+		<div id="result">
+			<ul>
+				<li>Body Mass Index
+				<span id="bmi">&mdash;</span></li>
+				<li>Weight Status
+				<span id="bmi_interpreted">&mdash;</span></li>
+				<li id="bmi_source">
+				These values are based on your height of <span id="height_normalized">&mdash;</span><br/> and weight of <span id="weight_normalized">&mdash;</span>.
+				</li>
+			
+			</ul>
+			
+		</div>
+	</div>
+	
+	<h2>BMI FAQs</h2>
+	<ul>
+	<li><a href="#faq00">What is BMI?</a></li>
+	<li><a href="#faq01">How is BMI calculated?</a></li>
+	<li><a href="#faq02">How reliable is BMI as a measure of body fatness?</a></li>
+	<li><a href="#faq03">Is BMI the same for adults and children?</a></li>
+	<li><a href="#faq04">Who invented BMI?</a></li>
+	<li><a href="#faq05">Where can I go for more information?</a></li>
+	<li><a href="#faq06">Can I see some references?</a></li>
+	</ul>
+	
+	<dl>
+	<dt id="faq00">What is BMI?</dt>
+	<dd>
+		<p>Body Mass Index (BMI) is an indicator of body fatness based on height and weight. <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=4030199&amp;dopt=Abstract">Research</a> shows that BMI correlates with body fat, so it can be used to determine whether your body fat level is too low, too high, or just right.</p>
+
+		<p>Remember, BMI only <em>correlates</em> with body fat, but the relationship differs by age and gender. Only direct measures of body fat, such as underwater weighing, can provide a true measure of body fat. However, direct measures are expensive and time-consuming, whereas BMI is quick and easy.</p>
+	</dd>
+	
+
+	<dt id="faq01">How is BMI calculated?</dt>
+	<dd>
+		<p>BMI is a simple function of height and weight:</p>
+
+		<p>BMI = weight (kg) / [height (m)]2</p>
+
+		<p>Your BMI determines your weight category based on standards used by
+		the Center for Disease Control and the World Health Organization.</p>
+
+		<table id="weight_status">
+			<tr><th>BMI</th>     <th>Weight Status</th></tr>
+			<tr><td>Below 18.5</td>      <td>Underweight</td></tr>
+			<tr><td>18.5 - 24.9</td>     <td>Normal</td></tr>
+			<tr><td>25.0 - 29.9</td>     <td>Overweight</td></tr>
+			<tr><td>Above 29.9</td>  <td>Obese</td></tr>
+		</table>
+	</dd>
+	<dt id="faq02">How reliable is BMI as a measure of body fatness?</dt>
+	<dd>
+		<p>Remember, BMI only <em>correlates</em> with body fat, but the relationship differs by age, gender, and body composition. For example,</p>
+
+		<ul>
+			<li>At the same BMI, older people tend to have more body fat than
+			younger adults</li>
+			<li>At the same BMI, women tend to have more body fat than men</li>
+			<li>Athletes may have high BMI due to increased muscle mass rather than
+			increased body fat (muscle weighs more than fat)</li>
+		</ul>
+	
+		<p>According to BMI, Brad Pitt, Michael Jordan and George Clooney are
+		"overweight".  BMI is a quick tool, but not necessarily an accurate
+		one, in assessing your overall health.</p>
+	</dd>
+	<dt id="faq03">Is BMI the same for adults and children?</dt>
+	<dd>
+		<p>BMI is calculated the same way for all ages, but its interpretation
+		differs for children and teens.</p>
+
+		<p>A child's weight category is determined by age and sex, as well as BMI.</p>
+
+		<p>For more information, see the CDC's <a href="http://apps.nccd.cdc.gov/dnpabmi/Calculator.aspx">BMI calculator for Children and
+		Teens</a>.</p>
+	</dd>
+
+	<dt id="faq04">Who invented BMI?</dt>
+	<dd>
+		<p>BMI was originally called Quetelet's index, after Lambert Adolphe
+		Quetelet (1796 – 1874), a Belgian statistician who discovered that,
+		for adults aged 20 and over, body mass increases as height squared
+		increases.</p>
+	</dd>
+	<dt id="faq05">Where can I go for more information?</dt>
+	<dd>
+	<ul>
+		<li><a href="http://www.cdc.gov/nccdphp/dnpa/bmi/index.htm">Body Mass Index at the CDC</a></li>
+	
+
+		<li><a href="http://www.guardian.co.uk/health/story/0,,1958685,00.html">The BMI Myth, The Guardian - Nov 28, 2006</a></li>
+	
+	</ul>
+	</dd>
+
+	<dt id="faq06">Can I see some references?</dt>
+	<dd>
+		<ul>
+			<li>Garrow JS and Webster J. Quetelet's index (W/H2) as a measure of
+		fatness. International Journal of Obesity 1985;9:147–153.</li>
+
+			<li>Prentice AM and Jebb SA. Beyond Body Mass Index. Obesity Reviews.
+		2001 August; 2(3): 141–7.</li>
+
+			<li>Gallagher D, et al. How useful is BMI for comparison of body fatness
+		across age, sex and ethnic groups? American Journal of Epidemiology
+		1996;143:228–239.</li>
+		</ul>
+	</dd>
+	</dl>
+	</div>
+</body>
+</html>

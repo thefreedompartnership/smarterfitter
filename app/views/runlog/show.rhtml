@@ -1,0 +1,49 @@
+<script type="text/javascript">
+//<![CDATA[
+	addLoadEvent(loadNoEdit);
+	addUnLoadEvent(GUnload)
+//]]>
+</script>
+
+<div class="run">
+	<% if !session[:user] || session[:user].id != @user.id %>
+		<h1>Run Log</h1>
+		<p>What's <a href="/">Run Log?</a></p>
+		<h2><%= h(@user.user_name) %>'s run</h2>
+	<% end %>
+	<p>
+		<%= hidden_field 'run', 'route_points' %>
+		<%= hidden_field 'run', 'distance_unit' %>
+		<%= hidden_field_tag 'user_default_latitude', @user.default_latitude%>
+		<%= hidden_field_tag 'user_default_longitude', @user.default_longitude%>
+		<%= hidden_field_tag 'user_default_zoom', @user.default_zoom%>
+
+		
+		<span class="run_label">When</span>
+		<span class="run_data"><%=h(format_datetime(@run.when_run))%></span>
+		<br/>
+		<span class="run_label">Distance </span>
+		<span class="run_data"><%=h(distance_and_unit(@run))%></span>
+		<br/>
+		<span class="run_label">Time </span>
+		<span class="run_data"><%=h(@run.duration)%></span>
+		<br/>
+		<span class="run_label">Route </span>
+		<span class="run_data"><%=h(@run.route)%></span>
+		<br/>
+		<span class="run_label" style="display: none">Map </span>
+		<div id="map" style="height:350px;width:500px"> </div>
+		<br/>
+		<span class="run_label">Description </span>
+		<span class="run_data"><%=h(@run.description)%></span>
+	</p>
+</div>
+<% if session[:user] && session[:user].id == @user.id %>
+<div class="run_actions">
+<ul class="run_action_list">
+	<li><%= link_to 'Back to list', :action => 'list' %></li>
+	<li><%= link_to 'Edit', :action => 'edit', :id => @run %></li>
+	<li><%= link_to 'Delete', { :action => 'destroy', :id => @run }, :confirm => 'Are you sure?' %></li>
+</ul>
+</div>
+<% end %>

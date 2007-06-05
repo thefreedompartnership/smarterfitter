@@ -1,0 +1,4 @@
+	<% form_tag( {:action => 'search'}, { :method => :get }, nil ) do %>
+	  <%= text_field_tag 'q', params[:q] %>
+	  <%= submit_tag 'Search' %>
+	<% end %>

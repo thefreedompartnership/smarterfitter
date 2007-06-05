@@ -1,0 +1,181 @@
+a:link { color:#B34700; }
+a:visited { color:#BF8660; }
+a:active { color:#00FF00; }
+a:hover { 
+	color:#000099;
+	background-color:#FFFF00;
+}
+body {
+	font-family: "trebuchet ms";
+	color: #3E3E3E;
+	margin: 0px;
+	background-image: url('../images/top_fade.png');
+	background-repeat: repeat-x;
+}
+h1 {
+	margin-top: 0px;
+	color:#33241A;
+	text-align: center;
+}
+h2 {
+		color:#806959;
+}
+h3 {
+	color:#806959;
+}
+form ul {
+	list-style: none;
+}
+form ul li {
+	padding-bottom: 1em;
+}
+label {
+	font-size: 20px;
+	color: #000000;
+	padding-right: 1em;
+}
+input {
+	font-size: 20px;
+	font-family: "trebuchet ms";
+}
+select {
+	font-size: 20px;
+	font-family: "trebuchet ms";
+}
+/*
+input[type="text"] {
+	width: 10em;
+	vertical-align: middle;
+}
+*/
+dt {
+	font-weight: bold;
+	font-size: 18px;
+}
+dd {
+	margin-bottom: 2em;
+}
+.submit {
+	padding-left: 5em;
+}
+.example_text {
+	margin-left: 6em;
+	font-style: italic;
+}
+.nutrient_table {
+	width: 305px;
+}
+.nutrient_category {
+	background-color: #B34700;
+}
+.sub_nutrient {
+	padding-left: 2em;
+}
+.nutrient_value {
+	text-align: right;
+}
+#calculator {
+	border: solid;
+}
+#menu_bar {
+  height: 65px;
+}
+#menu_bar h1 {
+	text-align: left;
+	font-size: 35px;
+	padding-top: 20px;
+}
+#menu_bar ul {
+	float: right;
+	list-style: none;
+	margin: 0px;
+	padding: 11px;
+	text-align: right;
+}
+#menu_bar li {
+	display: inline;
+}
+#menu_bar li:before { 
+	content: "| "; 
+	color: gray;
+}
+#menu_bar li:first-child:before { 
+	content: ""; 
+}
+#footer {
+	padding: 10px;
+	border-top: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	font-size: small;
+	font-weight: lighter;
+}
+#footer ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#footer li {
+	display: inline;
+}
+#footer li:before { 
+	content: " | "; 
+}
+#footer li:first-child:before { 
+	content: ""; 
+}
+#center_column {
+	width:600px;
+	border-style: solid;
+	border-width: 0px;
+	border-color: #CCCCFF;;
+	margin: 0px auto;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+#result {
+	font-size: 20px;
+}
+#result ul {
+	list-style: none;
+	color: #000000;
+}
+#bmi {
+	font-size: 25px;
+	color: #FF6600;
+	text-transform: capitalize;
+	padding-left: 1em;
+}
+#bmi_interpreted {
+	font-size: 25px;
+	color: #FF6600;
+	text-transform: capitalize;
+	padding-left: 1em;
+}
+#bmi_source {
+	color: #7E7E7E;
+	font-style: italic;
+}
+#error_message {
+	color: #FF6600;
+	font-size: 20px;
+	display: none;
+}
+#instructions {
+	font-size: 20px;
+}
+#weight_status {
+	width: 50%;
+}
+table {
+	border-collapse: collapse;	
+}
+th {
+	padding: 5px;
+	background: #BF8660;
+}
+td {
+	padding: 5px;
+	background: #E6D8CF;
+}

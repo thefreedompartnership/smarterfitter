@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+	<title>administration</title>
+	
+</head>
+
+<body>
+	<ul>
+		<li><%= link_to "Load database", :action => "load_database" %></li>
+		<li><%= link_to "Load food groups", :action => "load_food_groups" %></li>
+		<li><%= link_to "Load foods", :action => "load_foods" %></li>
+		<li><%= link_to "Load nutrients", :action => "load_nutrients" %></li>
+		<li><%= link_to "Load food nutrients", :action => "load_food_nutrients" %></li>
+	</ul>
+</body>
+</html>

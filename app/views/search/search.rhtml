@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<title>SmarterFitter Nutritional Database</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name='description' content='Search our database for calorie, carbohydrate, fat, protein and nutrient information for a wealth of foods.  Customize the results to match the quantities of the foods you eat.'/>
+	<meta name='keywords' content='smarterfitter, nutritional, database, calorie, calories, carb, carbohydrate, atkins, diet, food, nutrition, health, protein, fat, nutrient, vitamin, weight loss, dieting, health'/>
+	<%= stylesheet_link_tag 'default' %>
+</head>
+
+<body>
+	<div id="center_column">
+	<div id="menu_bar">
+		<h1>SmarterFitter</h1> 
+	</div>
+	<h2>Nutritional Database</h2>
+	
+	<%= render :partial => 'form' %>
+	
+	<% if @foods.size == 0 %>
+		<p>Your search for &quot;<%= params[:q] %>&quot; returned no results</p>
+	<% else %>
+	
+	<p>Results <%= @food_pages.current.first_item %> - <%= @food_pages.current.last_item  %> of <%= @food_pages.item_count %> for &quot;<%= params[:q] %>&quot;</p>
+	<ul>
+	<% @foods.each do |food| %>
+		<li><%= link_to food.long_description, { :controller => 'foods', :action => 'index', :id => food.id } %>
+	<% end %>
+	</ul>
+	<div id="paging" style="text-align: center;">
+		<% if @food_pages.current.previous %>
+			<%= link_to 'Previous page', { :page => @food_pages.current.previous, :q => params[:q] } %>
+		<% else %>
+			<span>Previous page</span>
+		<% end %>
+		
+		<% @food_pages.each do |page| %>
+			<%= link_to page.number, { :page => @food_pages[page.number], :q => params[:q] } if @food_pages.page_count > 0 %>	
+		<% end %>
+
+		<% if @food_pages.current.next %>
+			<%= link_to 'Next page', { :page => @food_pages.current.next, :q => params[:q] } if @food_pages.current.next %> 
+		<% else %>
+			<span>Next page</span>
+		<% end %>
+	</div>
+	<% end %>
+	</div>
+</body>
+</html>

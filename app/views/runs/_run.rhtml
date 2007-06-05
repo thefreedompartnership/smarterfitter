@@ -1,0 +1,20 @@
+<li  id="run_<%=run.id%>">
+	<div class="run">
+		<p>
+			<span class="run_label">When run: </span>
+			<span class="run_data"><%=h(run.when_run)%></span>
+			<br/>
+			<span class="run_label">Distance: </span>
+			<span class="run_data"><%=h(run.distance)%> <%= h(run.distance_unit) %></span>
+			<br/>
+			<span class="run_label">Duration: </span>
+			<span class="run_data"><%=h(run.duration)%> minutes</span>
+			<br/>
+			<span class="run_label">Route: </span>
+			<span class="run_data"><%=h(run.route)%></span>
+			<br/>
+			<span class="run_label">Description: </span>
+			<span class="run_data"><%=h(run.description)%></span>
+		</p>
+	</div>
+</li>

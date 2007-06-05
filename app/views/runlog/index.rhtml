@@ -1,0 +1,26 @@
+<h1>Run Log</h1>
+
+<div style="float: left; width: 300px;">
+	<h2>Welcome</h2>
+	<p>Hi there, I'm putting together a site that lets you map out your runs by clicking the course you've run and then save a history of all the runs you've done.</p>
+	<p>It's very much pre-release software at the moment and I would appreciate any feedback, bugs especially but feature requests too.</p>
+	<p>There should be new features and fixes every few days so check back each time you run for improvements</p>
+	<p>Check out the new <a href="http://smarterfitter.com/calculators/bmi.html">Body Mass Index Calculator</a></p>
+
+	<div>
+		<h2><a href="http://smarterfitter.com/~tim"><%= h(@runblog['title']) %></a></h2>
+		<% for item in @runblog['items'] %>
+			<h3><a href="<%= item['link'] %>"><%= item['title'] %></a></h3>
+			<p><%= item['description'] %></p>
+			<p style="font-size: smaller"><%= h(item['author']) %> / <%= h(item['publication_date']) %></p>
+		<% end %>
+	</div>	
+</div>
+
+<div style="float: left; width: 300px; margin-left: 20px;">
+	<h2>Sign Up</h2>
+	<p>If you're new please <%= link_to "sign up", :action => "signup" %> now</p>
+	<h2>Log In</h2>
+	<%= render :partial => 'login_form' %>
+</div>
+

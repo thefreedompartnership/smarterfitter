@@ -1,0 +1,21 @@
+xml.rss("version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/") do
+  xml.channel do
+    xml.title(@feed_title)
+    xml.link(@url)
+    xml.description "Run Log: Recent runs"
+    xml.language "en-us"
+    xml.ttl "40"
+
+    for run in @runs
+      xml.item do
+        xml.title(run.when_run)
+        xml.description(run.description) if run.description
+        xml.pubDate(run.when_run)
+#        xml.guid("@person.firm.account.url + @recent_items.url(item)")
+#        xml.link("@person.firm.account.url + @recent_items.url(item)")
+
+        xml.tag!("dc:creator", run.user.user_name)
+      end
+    end
+  end
+end

@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+cup_of_butter:
+  id: "1"
+  sequence: "1"
+  modified_at: 
+  weight_in_grams: "227.0"
+  measure_description: cup
+  number_of_data_points: "0"
+  amount: "1.000"
+  ndb_number: "01001"
+  standard_deviation: "0.000"
+  created_at: 2007-05-25 11:42:14
+  food_id: "1"
+two_cups_of_butter:
+  id: "2"
+  sequence: "2"
+  modified_at: 
+  weight_in_grams: "554.0"
+  measure_description: cup
+  number_of_data_points: "0"
+  amount: "2.000"
+  ndb_number: "01001"
+  standard_deviation: "0.000"
+  created_at: 2007-05-25 11:42:14
+  food_id: "1"

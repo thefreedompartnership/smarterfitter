@@ -1,0 +1,18 @@
+<script type="text/javascript">
+//<![CDATA[
+	addLoadEvent(load);
+	addUnLoadEvent(GUnload)
+//]]>
+</script>
+
+	<p>Hi, your default map is displayed. Drag and zoom the map to the view you'd want to see each time you add a new run.</p>
+
+	<div id="map" style="height:500px;width:500px"> </div>
+
+	<%= start_form_tag :action => "pick_location" %>
+		<%= hidden_field 'user', 'default_latitude' %>
+		<%= hidden_field 'user', 'default_longitude' %>
+		<%= hidden_field 'user', 'default_zoom' %>
+		<%= submit_tag "Save" %>
+	<%= end_form_tag %>
+

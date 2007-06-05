@@ -1,0 +1,46 @@
+Calories 208
+Fat 204
+606 Saturated
+645 Monounsaturated
+646 Polyunsaturated
+601 Cholesterol
+Carbohydrate 205
+291 Fiber
+269 Sugar
+Protein 203
+Sodium 307
+
+Minerals
+301 Calcium
+303 Iron
+304 Magnesium
+305 Phosphorus
+306 Potassium
+307 Sodium
+309 Zinc
+312 Copper
+313 Fluoride
+315 Manganese
+317 Selenium
+
+Vitamins
+318 Vitamin A
+415 Vitamin B-6
+418 Vitamin B-12
+578 Vitamin B-12 added
+401 Vitamin C
+324 Vitamin D
+323 Vitamin E (alpha-tocopherol)
+573 Vitamin E added
+430 Vitamin K
+404 Thiamin
+405 Riboflavin
+406 Niacin
+417 Folate
+431 Folic acid
+
+Other
+221 Alcohol
+255 Water
+262 Caffeine
+263 Theobromine

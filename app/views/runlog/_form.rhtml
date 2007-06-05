@@ -1,0 +1,37 @@
+
+<%= error_messages_for 'run' %>
+
+<!--[form:run_when_run]-->
+<%= hidden_field 'run', 'user_id', :value => session[:user].id %>
+<%= hidden_field 'run', 'route_points'%>
+
+<p><label for="run_when_run">When</label>
+<%= datetime_select 'run', 'when_run', :class => 'run_data'  %></p>
+
+<p>
+<label for="run_distance">Distance</label>
+<%= text_field 'run', 'distance', 'size' => 10, :class => 'run_data'  %>
+
+<label for="run_distance_unit" style="display:none;">Units</label> 
+<%= select 'run', 'distance_unit', [ ['km', 'kilometers'], ['mi', 'miles'] ], {}, { :onchange => 'changeMetersPerDistanceUnit(this.value); refreshMap();'} %>
+
+<label for="run_duration">Time</label>
+<%= text_field 'run', 'duration', 'size' => 10, :class => 'run_data'  %> e.g. 20 min, 1h20m30</p>
+
+<p><label for="run_route">Route title</label>
+<%= text_field 'run', 'route', :class => 'run_data' %></p>
+
+<div id="map" style="height:300px;width:500px;"></div>
+<ul class="run_action_list">
+	<li><a id="undoAnchor" href="#" onclick="undo(); return false;">Undo</a></li>
+	<li><a id="redoAnchor" href="#" onclick="redo(); return false;">Redo</a></li>
+	<li><a id="clearAnchor" href="#" onclick="clearRoute(); return false;">Clear</a></li>
+	<li><a href="#" onclick="saveDefaultMap(); return false;">Save this as default map</a></li>
+</ul>
+<div id="defaultMapFlash"></div>
+
+<p><label for="run_description">Description</label><br/>
+<%= text_area 'run', 'description', 'rows' => 3, :class => 'run_data'  %></p>
+
+
+<!--[eoform:run]-->

@@ -1,0 +1,24 @@
+<li id="run_<%=run.id%>">
+	<div class="run">
+			<span class="run_label">When</span>
+			<span class="run_data"><%=h(format_datetime(run.when_run))%></span>
+			<br/>
+			<span class="run_label">Distance</span>
+			<span class="run_data"><%=h(distance_and_unit(run))%></span>
+			<br/>
+			<span class="run_label">Duration</span>
+			<span class="run_data"><%=h(run.duration)%></span>
+			<br/>
+			<span class="run_label">Route</span>
+			<span class="run_data"><%=h(run.route)%></span>
+			<br/>
+			<span class="run_label">Description</span>
+			<span class="run_data"><%=h(run.description)%></span>
+			<ul class="run_action_list">
+				<li><%=link_to 'Show', :action => 'show', :id => run %></li>
+				<li><%= link_to 'Edit', :action => 'edit', :id => run %></li>
+				<li><%= link_to 'Delete', { :action => 'destroy', :id => run }, :confirm => 'Are you sure?' %></li>
+				<li><%=link_to 'Permalink', :action => 'show', :id => run %></li>
+			</ul>
+	</div>
+</li>

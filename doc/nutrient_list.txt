@@ -1,0 +1,140 @@
+203, Protein
+204, Total lipid (fat)
+205, Carbohydrate, by difference
+207, Ash
+208, Energy
+209, Starch
+210, Sucrose
+211, Glucose (dextrose)
+212, Fructose
+213, Lactose
+214, Maltose
+221, Alcohol, ethyl
+255, Water
+257, Adjusted Protein
+262, Caffeine
+263, Theobromine
+268, Energy
+269, Sugars, total
+287, Galactose
+291, Fiber, total dietary
+301, Calcium, Ca
+303, Iron, Fe
+304, Magnesium, Mg
+305, Phosphorus, P
+306, Potassium, K
+307, Sodium, Na
+309, Zinc, Zn
+312, Copper, Cu
+313, Fluoride, F
+315, Manganese, Mn
+317, Selenium, Se
+318, Vitamin A, IU
+319, Retinol
+320, Vitamin A, RAE
+321, Carotene, beta
+322, Carotene, alpha
+323, Vitamin E (alpha-tocopherol)
+324, Vitamin D
+334, Cryptoxanthin, beta
+337, Lycopene
+338, Lutein + zeaxanthin
+341, Tocopherol, beta
+342, Tocopherol, gamma
+343, Tocopherol, delta
+401, Vitamin C, total ascorbic acid
+404, Thiamin
+405, Riboflavin
+406, Niacin
+410, Pantothenic acid
+415, Vitamin B-6
+417, Folate, total
+418, Vitamin B-12
+421, Choline, total
+430, Vitamin K (phylloquinone)
+431, Folic acid
+432, Folate, food
+435, Folate, DFE
+454, Betaine
+501, Tryptophan
+502, Threonine
+503, Isoleucine
+504, Leucine
+505, Lysine
+506, Methionine
+507, Cystine
+508, Phenylalanine
+509, Tyrosine
+510, Valine
+511, Arginine
+512, Histidine
+513, Alanine
+514, Aspartic acid
+515, Glutamic acid
+516, Glycine
+517, Proline
+518, Serine
+521, Hydroxyproline
+573, Vitamin E, added
+578, Vitamin B-12, added
+601, Cholesterol
+605, Fatty acids, total trans
+606, Fatty acids, total saturated
+607, 4:0
+608, 6:0
+609, 8:0
+610, 10:0
+611, 12:0
+612, 14:0
+613, 16:0
+614, 18:0
+615, 20:0
+617, 18:1 undifferentiated
+618, 18:2 undifferentiated
+619, 18:3 undifferentiated
+620, 20:4 undifferentiated
+621, 22:6 n-3
+624, 22:0
+625, 14:1
+626, 16:1 undifferentiated
+627, 18:4
+628, 20:1
+629, 20:5 n-3
+630, 22:1 undifferentiated
+631, 22:5 n-3
+636, Phytosterols
+638, Stigmasterol
+639, Campesterol
+641, Beta-sitosterol
+645, Fatty acids, total monounsaturated
+646, Fatty acids, total polyunsaturated
+652, 15:0
+653, 17:0
+654, 24:0
+662, 16:1 t
+663, 18:1 t
+664, 22:1 t
+665, 18:2 t not further defined
+666, 18:2 i
+669, 18:2 t,t
+670, 18:2 CLAs
+671, 24:1 c
+672, 20:2 n-6 c,c
+673, 16:1 c
+674, 18:1 c
+675, 18:2 n-6 c,c
+676, 22:1 c
+685, 18:3 n-6 c,c,c
+687, 17:1
+689, 20:3 undifferentiated
+693, Fatty acids, total trans-monoenoic
+695, Fatty acids, total trans-polyenoic
+696, 13:0
+697, 15:1
+851, 18:3 n-3 c,c,c
+852, 20:3 n-3
+853, 20:3 n-6
+855, 20:4 n-6
+856, 18:3i
+857, 21:5
+858, 22:4

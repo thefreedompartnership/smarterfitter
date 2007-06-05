@@ -1,0 +1,77 @@
+	<script type="text/javascript">
+		//<![CDATA[
+
+		function runLoading() {	
+			$('errors').innerHTML = '';
+		}
+		
+		function getFirstChildOfNodeName(element, nodeName) {
+			var elementsChildren = element.childNodes;
+			for(i = 0; i < elementsChildren.length; i++) {
+				if(elementsChildren[i].nodeName == nodeName) {
+					return elementsChildren[i];
+				}
+			}
+		}
+		
+		function getFirstChildListItem(list) {
+			return getFirstChildOfNodeName(list, "LI");
+		}
+		function getFirstChildDiv(element) {
+			return getFirstChildOfNodeName(element, "DIV");
+		}
+
+		function createRunCompleted(request) {
+			if(request.status == 200) {
+				new Effect.Highlight(getFirstChildDiv(getFirstChildListItem($('runs'))), {duration: 2});
+				$('newEntryForm').reset();
+				$('run_route_points').value = '';
+			}
+		}
+		
+		addLoadEvent(load);
+		addUnLoadEvent(GUnload)
+		//]]>
+	</script>
+
+	<div id="top_menu">
+		<%= link_to 'Log out', :action => 'logout' %>
+	</div>
+
+	<div id="left_column">
+		<h1 class="title">Run Log</h1>
+		<p>Hello <%= session[:user].user_name %>, here are your runs!</p>
+	
+		<h2>Recent Runs</h2>
+		<ul id="runs" class="run_list">
+			<%= render(:partial => 'run', :collection => @runs) %>
+		</ul>
+		<%= link_to 'Previous page', { :page => @run_pages.current.previous } if @run_pages.current.previous %>
+		<%= link_to 'Next page', { :page => @run_pages.current.next } if @run_pages.current.next %> 
+	</div>
+	
+	<div id="new_run">
+		<h2>Add a new run</h2>
+
+		<div id="newEntry">
+			<div id="errors"></div>
+			<%= form_remote_tag( :html => { :id =>'newEntryForm' },
+								 :update => { :success => 'runs', :failure => 'errors' },
+								 :url => { :action => 'create_ajax' },
+								 :position => :top,
+								 :loading => 'runLoading()',
+								 :complete => 'createRunCompleted(request)' ) %>
+				<%= render :partial => 'form' %>
+				<%= submit_tag "Create" %>
+			<%= end_form_tag %>
+	
+			<%= form_remote_tag( :html => { :id => 'defaultMapForm' },
+								 :update => { :success => 'defaultMapFlash', :failure => 'defaultMapFlash' },
+								 :url => { :action => 'pick_location_ajax' }
+								)%>
+				<%= hidden_field 'user', 'default_latitude' %>
+				<%= hidden_field 'user', 'default_longitude' %>
+				<%= hidden_field 'user', 'default_zoom' %>
+			<%= end_form_tag %>
+		</div>
+	</div>
