@@ -9,7 +9,7 @@ class AdminController < ApplicationController
   end
   
   def load_food_groups
-    File.open("db/sr19/FD_GROUP.txt") do |file|
+    File.open("#{RAILS_ROOT}/db/sr19/FD_GROUP.txt") do |file|
       while line = file.gets
         fields = line.split("^")
         FoodGroup.create(
@@ -22,7 +22,7 @@ class AdminController < ApplicationController
 
 
   def load_foods
-    File.open("db/sr19/FOOD_DES.txt") do |file|
+    File.open("#{RAILS_ROOT}/db/sr19/FOOD_DES.txt") do |file|
       while line = file.gets
         fields = line.split("^")
         food = Food.new(
@@ -48,7 +48,7 @@ class AdminController < ApplicationController
   end     
   
   def load_weights
-    File.open("db/sr19/WEIGHT.txt") do |file|
+    File.open("#{RAILS_ROOT}/db/sr19/WEIGHT.txt") do |file|
       while line = file.gets
         fields = line.split("^")
         weight = Weight.new(
@@ -67,7 +67,7 @@ class AdminController < ApplicationController
   end
   
   def load_nutrients
-    File.open("db/sr19/NUTR_DEF.txt") do |file|
+    File.open("#{RAILS_ROOT}/db/sr19/NUTR_DEF.txt") do |file|
       while line = file.gets
         fields = line.split("^")
         Nutrient.create(
@@ -83,7 +83,7 @@ class AdminController < ApplicationController
   end     
 
   def load_food_nutrients
-    File.open("db/sr19/NUT_DATA.txt") do |file|
+    File.open("#{RAILS_ROOT}/db/sr19/NUT_DATA.txt") do |file|
       i = 0
       
       create_start = start = Time.now
