@@ -20,3 +20,4 @@ config.action_mailer.delivery_method = :test
 
 # localhost:3000
 GOOGLE_MAPS_API_KEY = 'ABQIAAAACASyyKvhynRUwYA0SHcRyBTJQa0g3IQ9GZqIMmInSLzwtGDKaBSDiR39VOHb-uKx312QGtTEyaIVIA'
+FERRET_INDEX_DIR_PREFIX = RAILS_ROOT

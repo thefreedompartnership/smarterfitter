@@ -3,8 +3,8 @@ class Food < ActiveRecord::Base
   has_many    :weights
   has_many    :food_nutrients
 
-  acts_as_ferret  :fields => { :first_word_of_short_description => { :boost => 1000 }, 
-                               :long_description => { :boost => 0 } }
+  acts_as_ferret({ :fields => { :first_word_of_short_description => { :boost => 1000 }, :long_description => { :boost => 0 } } ,
+                    :index_dir => "#{FERRET_INDEX_DIR_PREFIX}/index/#{RAILS_ENV}/food" })
                       
 
   def energy

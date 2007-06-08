@@ -19,3 +19,4 @@ config.action_controller.perform_caching             = true
 
 # smarterfitter.com
 GOOGLE_MAPS_API_KEY = 'ABQIAAAACASyyKvhynRUwYA0SHcRyBQVkK1qbApyiGOpxUTfrgqmNeHJtxTs_uQ6ejpCAxLboQhYzdi-13HsBw'
+FERRET_INDEX_DIR_PREFIX = '/www/apps/smarterfitter/shared'
