@@ -1,13 +1,20 @@
 class FoodsController < ApplicationController
   
-  def search
-      @query = "%#{params[:q]}%"
-      #@total = Food.find(:all, :conditions => ["long_description like ?", @query]).size
-      @food_pages, @foods = paginate :foods, :per_page => 15, 
-                                     :conditions => ["long_description like ?", @query], 
-                                     :order => 'long_description'      
-  end
+#  def search
+#      @query = "%#{params[:q]}%"
+#      @foods = Food.find_by_contents(@query, { :limit => :all })
+#      #@total = Food.find(:all, :conditions => ["long_description like ?", @query]).size
+#      @food_pages, @foods = paginate :foods, :per_page => 15, 
+#                                     :conditions => ["long_description like ?", @query], 
+#                                     :order => 'long_description'      
+#  end
 
+  def search 
+    @query = params[:q]
+    @total, @foods = Food.full_text_search(@query, {:limit => 15, :page => (params[:page]||1)}) 
+    @food_pages = pages_for(@total, :per_page => 15)
+  end
+  
   def show
     @food = Food.find(params[:id])
     @weight = Weight.one_hundred_grams
