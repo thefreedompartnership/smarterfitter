@@ -26,7 +26,7 @@
 	<p>Results <%= @food_pages.current.first_item %> - <%= @food_pages.current.last_item  %> of <%= @food_pages.item_count %> for &quot;<%= params[:q] %>&quot;</p>
 	<ul>
 	<% @foods.each do |food| %>
-		<li><%= link_to food.long_description, { :action => 'show', :id => food.id } %>
+		<li><%= link_to food.long_description, { :action => 'show', :id => food.id } %></li>
 	<% end %>
 	</ul>
 	<div id="paging" style="text-align: center;">

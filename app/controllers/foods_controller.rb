@@ -3,9 +3,6 @@ class FoodsController < ApplicationController
   def search 
     @query = params[:q]
     @total, @foods = Food.full_text_search(@query, {:limit => 15, :page => (params[:page]||1)}) 
-    if nil == @foods
-      @foods = []
-    end
     @food_pages = pages_for(@total, :per_page => 15)
   end
   

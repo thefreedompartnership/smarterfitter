@@ -3,7 +3,9 @@ class Food < ActiveRecord::Base
   has_many    :weights
   has_many    :food_nutrients
 
-  acts_as_ferret  :fields => [ 'long_description' ]
+  acts_as_ferret  :fields => { :first_word_of_short_description => { :boost => 1000 }, 
+                               :long_description => { :boost => 0 } }
+                      
 
   def energy
     nutrient('208')
@@ -25,12 +27,24 @@ class Food < ActiveRecord::Base
     food_nutrients.find(:all, :conditions => ['nutrient_number = :nutrient_number', {:nutrient_number => nutrient_number}])[0]
   end
   
+  def first_word_of_short_description
+    attributes["short_description"].split()[0]
+  end
+  
   def self.full_text_search(q, options = {})
-    return nil if q.nil? or q==""
+    return [ 0, [] ] if q.nil? or q==""
+
+    terms = q.split()
+    query = ""
+    terms.each do |term|
+      query += "#{term}* "
+    end
+    
     default_options = {:limit => 10, :page => 1}
     options = default_options.merge options
-    options[:offset] = options[:limit] * (options.delete(:page).to_i-1)  
-    results = Food.find_by_contents(q, options)
+    options[:offset] = options[:limit] * (options.delete(:page).to_i-1)
+    results = Food.find_by_contents(query, options)
+    
     return [results.total_hits, results]
   end
 
