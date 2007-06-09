@@ -14,8 +14,9 @@
 
 <label for="run_distance_unit" style="display:none;">Units</label> 
 <%= select 'run', 'distance_unit', [ ['km', 'kilometers'], ['mi', 'miles'] ], {}, { :onchange => 'changeMetersPerDistanceUnit(this.value); refreshMap();'} %>
+</p>
 
-<label for="run_duration">Time</label>
+<p><label for="run_duration">Time</label>
 <%= text_field 'run', 'duration', 'size' => 10, :class => 'run_data'  %> e.g. 20 min, 1h20m30</p>
 
 <p><label for="run_route">Route title</label>

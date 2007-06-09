@@ -38,18 +38,9 @@
 		<%= link_to 'Log out', :action => 'logout' %>
 	</div>
 
-	<div id="left_column">
-		<h1 class="title">Run Log</h1>
-		<p>Hello <%= session[:user].user_name %>, here are your runs!</p>
-	
-		<h2>Recent Runs</h2>
-		<ul id="runs" class="run_list">
-			<%= render(:partial => 'run', :collection => @runs) %>
-		</ul>
-		<%= link_to 'Previous page', { :page => @run_pages.current.previous } if @run_pages.current.previous %>
-		<%= link_to 'Next page', { :page => @run_pages.current.next } if @run_pages.current.next %> 
-	</div>
-	
+	<h2 class="title">Run Log</h2>
+	<p>Hello <%= session[:user].user_name %></p>
+
 	<div id="new_run">
 		<h2>Add a new run</h2>
 
@@ -75,3 +66,11 @@
 			<%= end_form_tag %>
 		</div>
 	</div>
+
+	<h2>Recent Runs</h2>
+	<ul id="runs" class="run_list">
+		<%= render(:partial => 'run', :collection => @runs) %>
+	</ul>
+	<%= link_to 'Previous page', { :page => @run_pages.current.previous } if @run_pages.current.previous %>
+	<%= link_to 'Next page', { :page => @run_pages.current.next } if @run_pages.current.next %> 
+	
