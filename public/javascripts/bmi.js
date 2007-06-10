@@ -127,26 +127,21 @@ function process() {
 		$('weight_normalized').innerHTML = weight.normalized_string;			
 		$('height_normalized').innerHTML = height.normalized_string;
 		$('bmi_interpreted').innerHTML = bmi.interpretation;
+		new Effect.Highlight($('result'), {duration: 2});
 
 	} else {
 		$('instructions').style.display = "none";
 		$('error_message').style.display = "block";
 		
 		if( isHeightError ) {
-//			$('height_label').style.backgroundColor = "#FF6600";
 			$('height').style.backgroundColor = "#FF6600";
 		}
 		if( isWeightError ) {
-//			$('weight_label').style.backgroundColor = "#FF6600";
 			$('weight').style.backgroundColor = "#FF6600";
 		}
 	}
 	
 	return false;
-}
-
-function $(object_id) {
-	return document.getElementById(object_id)
 }
 
 function setup() {

@@ -1,5 +1,7 @@
 class FoodsController < ApplicationController
   
+  layout "standard"
+  
   def search 
     @query = params[:q]
     @total, @foods = Food.full_text_search(@query, {:limit => 15, :page => (params[:page]||1)}) 
