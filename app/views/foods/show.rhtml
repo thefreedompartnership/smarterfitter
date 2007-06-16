@@ -1,15 +1,14 @@
-	
-	<script type="text/javascript" charset="utf-8">
-		function setup() {
-			document.getElementById('complete_nutrient_data').style.display = 'none';
-			document.getElementById('show_complete_nutrient_data').onclick = function() {
-				document.getElementById('simple_nutrient_data').style.display = 'none';
-				document.getElementById('complete_nutrient_data').style.display = 'block';
-				return false;				
-			}
+<script type="text/javascript" charset="utf-8">
+	function setup() {
+		document.getElementById('complete_nutrient_data').style.display = 'none';
+		document.getElementById('show_complete_nutrient_data').onclick = function() {
+			document.getElementById('simple_nutrient_data').style.display = 'none';
+			document.getElementById('complete_nutrient_data').style.display = 'block';
+			return false;				
 		}
-		window.onload = setup;
-	</script>
+	}
+	window.onload = setup;
+</script>
 	
 
 <p style="color: green"><%= flash[:notice] %></p>
@@ -17,7 +16,6 @@
 <%= render(:partial => "form") %>
 
 <h2><%= @food.long_description %></h2>
-
 
 <% form_tag( { :action => 'show' }, { :method => :get } ) do %>
 	Serving size
