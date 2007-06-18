@@ -343,3 +343,22 @@ br {
 	width: 410px;
 	text-align: right;
 }
+
+#map-help {
+	width: 200px;
+	height: 400px;
+	padding: 2em;
+	background-color: #E6D8CF;
+	position: relative;
+	left: 610px;
+	float: left;
+}
+
+#map-help h1 {
+	font-size: 20px;
+}
+
+#map-help ol {
+	font-size: 16px;
+	padding: 0px;
+}
