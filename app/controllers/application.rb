@@ -12,4 +12,12 @@ class ApplicationController < ActionController::Base
     pages
   end
   
+  def authorize
+    unless session[:user]
+      flash[:notice] = "Please log in"
+      session[:jumpto] = request.parameters
+      redirect_to(:controller => "welcome", :action => "login")
+    end
+  end
+  
 end

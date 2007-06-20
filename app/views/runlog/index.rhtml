@@ -8,7 +8,7 @@
 
 
 	<h3>Sign Up</h3>
-	<p>If you're new please <%= link_to "sign up", :action => "signup" %> now</p>
+	<p>If you're new please <%= link_to "sign up", :controller => "welcome", :action => "signup", :source => "runlog" %> now</p>
 	<h3>Log In</h3>
-	<%= render :partial => 'login_form' %>
+	<%= render :partial => 'welcome/login_form', :locals => { :goto_controller => "runlog", :goto_action => "list" } %>
 

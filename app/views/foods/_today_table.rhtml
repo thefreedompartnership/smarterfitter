@@ -1,0 +1,56 @@
+<table style="width: 600px;">
+	<tr>
+		<th>Today</th>
+		<th>Calories</th>
+		<th>Fat(g)</th>
+		<th>Protein(g)</th>
+		<th>Carbs(g)</th>
+		<th></th>
+	</tr>
+		<% if @portions.length == 0 %>
+		<td colspan="6">
+			<em>You haven't added any food today.<br/>Get started by searching for food on the right!</em>
+		</td>
+		<% else %>
+			<% @portions.each do |portion| %>
+				<tr>
+					<td>
+						<%= truncate( h(portion.quantity * portion.portion.weight.amount) + " " + 
+						              h(portion.portion.weight.measure_description) + " " +
+						              h(portion.food.long_description), 50)
+						%>
+					</td>
+					<td>
+						<%= h(portion.portion.energy) %>
+					</td>
+					<td>
+						<%= h(portion.portion.fat) %>
+					</td>
+					<td>
+						<%= h(portion.portion.protein) %>
+					</td>
+					<td>
+						<%= h(portion.portion.carbohydrate) %>
+					</td>
+					<td>
+						<%= link_to_remote("Change", :url => {:action => "edit_food", :id => portion}, :update => "portion_#{portion.id}", :loading => "Element.hide('portion_#{portion.id}');", :complete => "new Effect.SlideDown('portion_#{portion.id}');") %>
+						<%= link_to_remote("Delete", :url => {:action => "remove_food", :id => portion}, :update => "today", :confirm => "Are you sure?") %>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6">
+						<div id="portion_<%= portion.id %>"></div>
+					</td>
+				</tr>
+			<% end %>
+			<tr style="text-style: italic;">
+				<td style="text-align: right;">Total</td>
+				<td><%= @user.energy_today %></td>
+				<td><%= @user.fat_today %></td>
+				<td><%= @user.protein_today %></td>
+				<td><%= @user.carbohydrate_today %></td>
+				<td></td>
+			</tr>
+		<% end %>
+	</tr>
+</table>

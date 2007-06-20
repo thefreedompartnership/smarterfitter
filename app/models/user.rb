@@ -2,7 +2,7 @@ require "digest/sha1"
 class User < ActiveRecord::Base
   
   has_many :runs
-  
+  has_many :consumed_portions
   
   attr_accessor :password, :confirm_password
   
@@ -10,6 +10,69 @@ class User < ActiveRecord::Base
   validates_presence_of :user_name, :email_address, :first_name, :last_name, :password
   
   composed_of :tz, :class_name => 'TZInfo::Timezone', :mapping => %w(time_zone identifier)
+
+
+  def energy_today
+    energy = 0
+    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today()]).each do |portion|
+      energy += portion.portion.energy
+    end
+    return energy
+  end
+  def fat_today
+    fat = 0
+    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today()]).each do |portion|
+      fat += portion.portion.fat
+    end
+    return fat
+  end
+  def protein_today
+    protein = 0
+    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today()]).each do |portion|
+      protein += portion.portion.protein
+    end
+    return protein
+  end
+  def carbohydrate_today
+    carbohydrate = 0
+    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today() - 1]).each do |portion|
+      carbohydrate += portion.portion.carbohydrate
+    end
+    return carbohydrate
+  end
+  
+  def energy_yesterday
+    energy = 0
+    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+      energy += portion.portion.energy
+    end
+    return energy
+  end
+  def fat_yesterday
+    fat = 0
+    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+      fat += portion.portion.fat
+    end
+    return fat
+  end
+  def protein_yesterday
+    protein = 0
+    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+      protein += portion.portion.protein
+    end
+    return protein
+  end
+  def carbohydrate_yesterday
+    carbohydrate = 0
+    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+      carbohydrate += portion.portion.carbohydrate
+    end
+    return carbohydrate
+  end
+  
+
+
+
 
   def validate_on_create
     if password != confirm_password

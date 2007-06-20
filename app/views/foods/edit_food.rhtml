@@ -1,0 +1,75 @@
+<p style="color: green"><%= flash[:notice] %></p>
+
+<h2><%= @portion.food.long_description %></h2>
+
+<% form_remote_tag(:update => "portion_#{@consumed_portion.id}", :url => { :action => 'edit_food', :id => @consumed_portion.id } ) do %>
+	Serving size
+	<%= text_field_tag 'amount', @portion.quantity, { :size => 3 } %> x 
+	<%= select_tag 'measure', 
+				   '<option value="0">100 grams</option>' + 
+				   options_for_select(@food.weights.collect { |w| ["#{w.amount} #{w.measure_description}", w.id]},
+				 		params[:measure].to_i)
+#				   options_from_collection_for_select(@food.weights, 'id', 'measure_description', params[:measure].to_i)
+	%>
+	<%= submit_tag 'Change' %>
+<% end %>
+
+<p>Amount per <%= @portion.quantity %> 
+<% if @portion.quantity == 1.0 %>
+		serving 
+<% else %> 
+		servings 
+<% end %> 
+of <%= @portion.weight.amount %> <%= @portion.weight.measure_description %></p>
+<table id="simple_nutrient_data" class="nutrient_table">
+	<tr style="display:none">
+		<th>Nutrient</th>
+		<th>Amount</th>
+	</tr>
+	<tr>
+		<td>Calories</td>
+		<td class="nutrient_value">
+			<%= @portion.energy || "~" %>
+		</td>
+		<td>
+			<%= @food.energy.nutrient.units %>			
+		</td>
+	</tr> 
+	<tr>  
+		<td>Protein</td>
+		<td class="nutrient_value">
+			<%= @portion.protein || "~" %>
+		</td>
+		<td>
+			<%= @food.protein.nutrient.units %>		
+		</td>
+	</tr> 
+	<tr>  
+		<td>Fat</td>
+		<td class="nutrient_value">
+			<%= @portion.fat  || "~"%>
+		</td>
+		<td>
+			<%= @food.fat.nutrient.units %>			
+		</td>
+	</tr>
+	<tr>  
+		<td>Carbohydrate</td>
+		<td class="nutrient_value">
+			<%= @portion.carbohydrate || "~" %>
+		</td>
+		<td>
+			<%= @food.carbohydrate.nutrient.units %>			
+		</td>
+	</tr> 
+	
+</table>
+
+<% form_remote_tag(:update => "today", :url => { :action => "update_food" }) do %>
+	<%= hidden_field_tag("food_id", @portion.food.id) %>
+	<%= hidden_field_tag("weight_id", @portion.weight.id) %>
+	<%= hidden_field_tag("quantity", @portion.quantity) %>
+	<%= hidden_field_tag("consumed_portion_id", @consumed_portion.id) %>
+	<%= submit_tag("Edit Food") %>
+	<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('portion_#{@consumed_portion.id}');return false;"}) %>
+<% end %>

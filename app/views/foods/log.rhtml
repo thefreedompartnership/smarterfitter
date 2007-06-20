@@ -14,8 +14,7 @@
 	
 </head>
 
-<body>
-<div id="center_column">
+<body style="margin: 10px;">
 	<div id="menu_bar">
 		<ul>
 			<li><%= link_to("Food/Calorie Database", :controller => "foods") %></li>
@@ -25,16 +24,72 @@
 		<h1>SmarterFitter</h1>
 	</div>
 	
-	<p style="color: green"><%= flash[:notice] %></p>
+	<div id="right" style="position: absolute; left: 615px; top: 100px;">
+		<% form_remote_tag(:update => 'search_results', :url => { :action => "find_food" }, :loading => "Element.hide('search_results')", :complete => 'new Effect.SlideDown("search_results")') do %>
+			<%= text_field_tag 'q', params[:q] %>
+			<%= submit_tag 'Find Food' %>
+		<% end %>
+		<div id="search_results">
+		</div>
+	</div>
 
+	<div id="left">
+		<p style="color: green"><%= flash[:notice] %></p>
 
-	<%= yield  %>
+		<h2>Food Log</h2>
 
+		<div id="today">
+			<%= render :partial => 'today_table' %>
+		</div>
+
+		<table style="width: 600px;">
+			<tr>
+				<th>Averages</th>
+				<th>Calories</th>
+				<th>Fat(g)</th>
+				<th>Protein(g)</th>
+				<th>Carbs(g)</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>Yesterday</td>
+				<td><%= @user.energy_yesterday %></td>
+				<td><%= @user.fat_yesterday %></td>
+				<td><%= @user.protein_yesterday %></td>
+				<td><%= @user.carbohydrate_yesterday %></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Last 7 Days</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>May 12, 2007 - June 11, 2007</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>All Time</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	
 	<div id="footer">
 		<p>Copyright &copy; <%= DateTime.now.year %> Tim Harding and Monica Shaw </p>
 	</div>
 
-</div>
 
 
 <% if RAILS_ENV == 'production' %>

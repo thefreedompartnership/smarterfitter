@@ -1,20 +1,12 @@
 class RunlogController < ApplicationController
   
-  before_filter :authorize, :except => [:index, :signup, :login, :show]
+  before_filter :authorize, :except => [:index, :show]
   
-  def authorize
-    unless session[:user]
-      flash[:notice] = "Please log in"
-      session[:jumpto] = request.parameters
-      redirect_to(:controller => "runlog", :action => "login")
-    end
-  end
   
   def index
     if session[:user] then
       redirect_to(:controller => "runlog", :action => "list")
     end
-    @runblog = ParseRss.new('http://smarterfitter.com/~tim/?feed=rss2').parse()
   end
 
   def pick_location
@@ -44,45 +36,6 @@ class RunlogController < ApplicationController
       end
   end
 
-
-  def signup
-    if request.get?
-      @user = User.new
-    else
-      @user = User.new(params[:user])
-      if @user.save
-        flash[:notice] = 'Thank you for signing up'
-        session[:user] = @user
-        redirect_to :action => 'list'
-      end
-    end
-  end
-  
-  def login
-    if request.get?
-      session[:user_id] = nil
-      @user = User.new
-    else
-      @user = User.new(params[:user])
-      logged_in_user = @user.try_to_login
-      if logged_in_user
-        session[:user] = logged_in_user
-        jumpto = session[:jumpto] || { :action => 'list' }
-        session[:jumpto] = nil
-        redirect_to jumpto
-      else
-        flash[:notice] = "Invalid login user name / password"
-      end
-    end
-  end
-  
-  
-  
-  def logout
-    session[:user] = nil
-    flash[:notice] = "Thank you and come again"
-    redirect_to :action => 'index'
-  end
 
   def list
     @user = session[:user]

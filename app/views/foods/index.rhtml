@@ -1,5 +1,18 @@
-	<h2>Food Database</h2>
-	
-	<p>Calories, carbohydrates, fat, protein and more!  The database contains extensive nutrient information for a wealth of different food items. Search below and customize the results to match the foods you eat.</p>
+<h2>Food Log</h2>
 
-	<%= render :partial => 'form' %>
+<p>The best way to count calories</p>
+
+<h3>Sign Up</h3>
+<p>If you're new please <%= link_to "sign up", :controller => "welcome", :action => "signup", :source => "foods" %> now</p>
+<h3>Log In</h3>
+<%= render :partial => 'welcome/login_form', :locals => { :goto_controller => "foods", :goto_action => "log" } %>
+
+<h2>Food Calorie Counter</h2>
+
+<p>Calories, carbohydrates, fat, protein and more! Search below and track the results with our nifty <a href="#">food diary</a>.</p>
+
+Find nutrition information for&hellip;
+<%= render(:partial => "form") %>
+
+
+	
