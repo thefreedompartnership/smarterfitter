@@ -7,19 +7,19 @@
 
 <h2>Editing run</h2>
 
-<%= start_form_tag :action => 'update', :id => @run %>
+<% form_tag( :action => 'update', :id => @run ) do %>
   <%= render :partial => 'form' %>
   <%= submit_tag 'Save' %>
-<%= end_form_tag %>
+<% end %>
 
-<%= form_remote_tag( :html => { :id => 'defaultMapForm' },
+<% form_remote_tag( :html => { :id => 'defaultMapForm' },
 					 :update => { :success => 'defaultMapFlash', :failure => 'defaultMapFlash' },
 					 :url => { :action => 'pick_location_ajax' }
-					)%>
+					) do %>
 	<%= hidden_field 'user', 'default_latitude' %>
 	<%= hidden_field 'user', 'default_longitude' %>
 	<%= hidden_field 'user', 'default_zoom' %>
-<%= end_form_tag %>
+<% end %>
 
 <ul class="run_action_list">
 	<li><%= link_to 'Show', :action => 'show', :id => @run %></li>

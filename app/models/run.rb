@@ -9,8 +9,8 @@ class Run < ActiveRecord::Base
   METERS_PER_MILE = 1609.334
   METERS_PER_KILOMETER = 1000
 
-  def run_title()
-    return run.when_run ": "  + run.distance + "km in " + run.duration + " minutes"
+  def run_title
+    return run.when_run + ": "  + run.distance + "km in " + run.duration + " minutes"
   end
   
   def duration

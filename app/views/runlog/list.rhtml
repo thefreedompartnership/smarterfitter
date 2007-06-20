@@ -46,24 +46,24 @@
 
 		<div id="newEntry">
 			<div id="errors"></div>
-			<%= form_remote_tag( :html => { :id =>'newEntryForm' },
+			<% form_remote_tag( :html => { :id =>'newEntryForm' },
 								 :update => { :success => 'runs', :failure => 'errors' },
 								 :url => { :action => 'create_ajax' },
 								 :position => :top,
 								 :loading => 'runLoading()',
-								 :complete => 'createRunCompleted(request)' ) %>
+								 :complete => 'createRunCompleted(request)' ) do %>
 				<%= render :partial => 'form' %>
 				<%= submit_tag "Create" %>
-			<%= end_form_tag %>
+			<% end %>
 	
-			<%= form_remote_tag( :html => { :id => 'defaultMapForm' },
+			<% form_remote_tag( :html => { :id => 'defaultMapForm' },
 								 :update => { :success => 'defaultMapFlash', :failure => 'defaultMapFlash' },
 								 :url => { :action => 'pick_location_ajax' }
-								)%>
+								) do %>
 				<%= hidden_field 'user', 'default_latitude' %>
 				<%= hidden_field 'user', 'default_longitude' %>
 				<%= hidden_field 'user', 'default_zoom' %>
-			<%= end_form_tag %>
+			<% end %>
 		</div>
 	</div>
 

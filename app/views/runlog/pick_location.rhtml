@@ -9,10 +9,10 @@
 
 	<div id="map" style="height:500px;width:500px"> </div>
 
-	<%= start_form_tag :action => "pick_location" %>
+	<% form_tag( :action => "pick_location" ) %>
 		<%= hidden_field 'user', 'default_latitude' %>
 		<%= hidden_field 'user', 'default_longitude' %>
 		<%= hidden_field 'user', 'default_zoom' %>
 		<%= submit_tag "Save" %>
-	<%= end_form_tag %>
+	<% end %>
 

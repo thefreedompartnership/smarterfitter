@@ -1,6 +1,6 @@
 <h2>Sign up for SmarterFitter</h2>
 <%= error_messages_for 'user' %>
-<%= form_tag :action => "signup" %>
+<% form_tag( :action => "signup" ) do%>
 	<label class="signup_label" for="user_user_name">User name</label> <%= text_field 'user', 'user_name', {:class => 'signup_input'} %><br/>
 	<label class="signup_label" for="user_first_name">First name</label> <%= text_field 'user', 'first_name', {:class => 'signup_input'} %><br/>
 	<label class="signup_label" for="user_last_name">Last name</label> <%= text_field 'user', 'last_name', {:class => 'signup_input'} %><br/>
@@ -12,4 +12,4 @@
 	<div class="signup_button_container">
 		<%= submit_tag "Sign up" %>
 	</div>
-<%= end_form_tag %>
+<% end %>
