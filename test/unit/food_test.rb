@@ -1,10 +1,16 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class FoodTest < Test::Unit::TestCase
-  fixtures :foods
 
-  # Replace this with your real tests.
-  def test_truth
-    assert true
+  fixtures :foods
+  
+  def setup
+    @food = Food.find(:first)
   end
+  
+  def test_can_use_self
+    assert_kind_of Food, @food
+    assert_equal foods(:butter).long_description, @food.wibble
+  end
+
 end

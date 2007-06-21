@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class PortionTest < Test::Unit::TestCase
+  
   fixtures :foods
   fixtures :weights
   fixtures :food_nutrients
@@ -23,4 +24,6 @@ class PortionTest < Test::Unit::TestCase
     portion = Portion.new(butter, butter.weights[1])    
     assert_equal 2, portion.quantity
   end
+  
+  
 end

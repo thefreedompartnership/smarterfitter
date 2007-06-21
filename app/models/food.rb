@@ -47,5 +47,9 @@ class Food < ActiveRecord::Base
     
     return [results.total_hits, results]
   end
+  
+  def wibble
+    self.long_description
+  end
 
 end
