@@ -1,0 +1,19 @@
+	<td>
+		<% form_remote_tag :url => {:action => :edit_portion, :id => @portion}, 
+							:update => "today_portion_#{@portion.id}" do %>
+			<%= text_field :portion, :quantity %>
+			<%= select :portion, :weight_id, @portion.food.weights_as_measure_id_array %>
+			<%= hidden_field :portion, :food_id %>
+			<%= h(@portion.food.long_description) %>
+			<p>
+				<%= submit_tag "Update serving" %>
+				<%= submit_to_remote "foo", "Save Changes", 
+					:url =>  {:action => :update_portion, :id => @portion}, :update => "today" %>
+			</p>
+		<% end %>
+	</td>
+	<td><%= h(@portion.energy) %></td>
+	<td><%= h(@portion.fat) %></td>
+	<td><%= h(@portion.protein) %></td>
+	<td><%= h(@portion.carbohydrate) %></td>
+	<td></td>

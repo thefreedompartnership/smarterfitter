@@ -32,13 +32,14 @@ class WelcomeController < ApplicationController
       logged_in_user = @user.try_to_login
       if logged_in_user
         session[:user] = logged_in_user
-        if(params[:goto_controller] != "" && params[:goto_action] != "")
+        if(!nil_or_empty(params[:goto_controller]) && !nil_or_empty(params[:goto_action]))
           logger.info("found params[:gc] = '#{params[:goto_controller]}' and params[:ga] = '#{params[:goto_action]}'")
           jumpto = {:controller => params[:goto_controller], :action => params[:goto_action]}
         else
           jumpto = session[:jumpto] || { :action => 'thankyou' }
           logger.info("setting jumpto = '#{jumpto}'")
         end
+        
         session[:jumpto] = nil
         redirect_to jumpto
       else
@@ -56,5 +57,12 @@ class WelcomeController < ApplicationController
     flash[:notice] = "Thank you and come again"
     redirect_to :action => 'index'
   end
+  
+  private
+  
+  def nil_or_empty(s)
+    return s.nil? || "" == s
+  end
+    
   
 end

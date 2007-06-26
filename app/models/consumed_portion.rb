@@ -3,10 +3,42 @@ class ConsumedPortion < ActiveRecord::Base
   belongs_to :weight
   belongs_to :user
 
-  def portion
-    w = self.weight
-    w = Weight.one_hundred_grams if w.nil?
-    @portion = Portion.new(self.food, w, attributes["quantity"]) if @portion.nil?
-    return @portion
+  def description
+    "#{ConsumedPortion.format_number(portion.quantity)} #{portion.weight.measure_description} #{portion.food.long_description}" 
   end
+  
+  def fat
+    self.portion.fat
+  end
+
+  def energy
+    self.portion.energy
+  end
+
+  def carbohydrate
+    self.portion.carbohydrate
+  end
+
+  def protein
+    self.portion.protein
+  end
+
+  def portion
+    if attributes["quantity"].nil?
+      portion = Portion.new(self.food, self.weight)
+    else
+      portion = Portion.new(self.food, self.weight, self.quantity)
+    end
+    return portion
+  end
+  
+  private
+  def self.format_number(f)
+    if f % 1 != 0
+      return f.to_s
+    else
+      return sprintf("%d", f)
+    end
+  end
+  
 end

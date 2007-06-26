@@ -1,4 +1,16 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one_hundred_grams_of_butter: 
+  sequence: "0"
+  modified_at: 
+  weight_in_grams: "100.0"
+  measure_description: grams
+  id: "20359"
+  number_of_data_points: 
+  amount: "100.000"
+  ndb_number: 01001
+  standard_deviation: 
+  created_at: 2007-06-25 12:09:00
+  food_id: "1"
 cup_of_butter:
   id: "1"
   sequence: "1"
@@ -7,7 +19,7 @@ cup_of_butter:
   measure_description: cup
   number_of_data_points: "0"
   amount: "1.000"
-  ndb_number: "01001"
+  ndb_number: 01001
   standard_deviation: "0.000"
   created_at: 2007-05-25 11:42:14
   food_id: "1"
@@ -19,7 +31,67 @@ two_cups_of_butter:
   measure_description: cup
   number_of_data_points: "0"
   amount: "2.000"
-  ndb_number: "01001"
+  ndb_number: 01001
   standard_deviation: "0.000"
   created_at: 2007-05-25 11:42:14
   food_id: "1"
+two_third_cups_of_butter:
+  id: "200000"
+  sequence: "3"
+  modified_at: 
+  weight_in_grams: "554.0"
+  measure_description: cup
+  number_of_data_points: "0"
+  amount: "0.667"
+  ndb_number: 01001
+  standard_deviation: "0.000"
+  created_at: 2007-05-25 11:42:14
+  food_id: "1"
+one_nlea_serving_of_banana: 
+  sequence: "8"
+  modified_at: 
+  weight_in_grams: "126.0"
+  measure_description: NLEA serving
+  id: "3991"
+  number_of_data_points: "0"
+  amount: "1.000"
+  ndb_number: 09040
+  standard_deviation: "0.000"
+  created_at: 2007-06-03 23:02:35
+  food_id: "2106"
+one_tablespoon_of_baby_food: 
+  sequence: "1"
+  modified_at: 
+  weight_in_grams: "15.0"
+  measure_description: tbsp
+  id: "1018"
+  number_of_data_points: "0"
+  amount: "1.000"
+  ndb_number: 03156
+  standard_deviation: "0.000"
+  created_at: 2007-06-03 23:01:43
+  food_id: "340"
+one_hundred_grams_of_banana: 
+  sequence: "0"
+  modified_at: 
+  weight_in_grams: "100.0"
+  measure_description: grams
+  id: "20360"
+  number_of_data_points: 
+  amount: "100.000"
+  ndb_number: 09040
+  standard_deviation: 
+  created_at: 2007-06-25 12:09:00
+  food_id: "2106"
+one_hundred_grams_of_babyfood: 
+  sequence: "0"
+  modified_at: 
+  weight_in_grams: "100.0"
+  measure_description: grams
+  id: "20361"
+  number_of_data_points: 
+  amount: "100.000"
+  ndb_number: 03156
+  standard_deviation: 
+  created_at: 2007-06-25 12:09:00
+  food_id: "340"

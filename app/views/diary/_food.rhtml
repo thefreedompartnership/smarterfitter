@@ -1,0 +1,9 @@
+<li>
+	<%= link_to_remote food.long_description, 
+			:update => "food_#{food.id}",
+			:loading => "var divs = document.getElementsByTagName('div'); for(var i = 0; i < divs.length; i++) {if(divs[i].id.match(/food_/)){ Element.hide(divs[i].id); }}",
+			:complete => "new Effect.SlideDown('food_#{food.id}');",
+			:url => { :action => "show_portion", :id => food.id }
+	%>
+	<div id="<%= "food_#{food.id}" %>"></div>
+</li>

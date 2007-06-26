@@ -1,0 +1,15 @@
+<%- if @foods.size != 0 -%>
+	<p>
+		Results <%= @food_pages.current.first_item %> - <%= @food_pages.current.last_item  %> of 
+		<%= @food_pages.item_count %> for &quot;<%= params[:q] %>&quot;
+	</p>
+
+	<ul>
+		<%= render :partial => "food", :collection => @foods %>
+	</ul>
+
+	<%= render :partial => 'search_navigation', :object => @food_pages %>
+
+<%- else -%>
+	<p>Your search for &quot;<%= params[:q] %>&quot; returned no results</p>
+<% end %>

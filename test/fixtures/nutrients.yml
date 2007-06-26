@@ -1,5 +1,1539 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-one:
-  id: 1
-two:
-  id: 2
+attributes: 
+  nutrient_number: "203"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: PROCNT
+  units: g
+  id: "1"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Protein
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "204"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FAT
+  units: g
+  id: "2"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Total lipid (fat)
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "205"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CHOCDF
+  units: g
+  id: "3"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Carbohydrate, by difference
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "207"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ASH
+  units: g
+  id: "4"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Ash
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "208"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ENERC_KCAL
+  units: kcal
+  id: "5"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Energy
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "209"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: STARCH
+  units: g
+  id: "6"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Starch
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "210"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: SUCS
+  units: g
+  id: "7"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Sucrose
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "211"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: GLUS
+  units: g
+  id: "8"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Glucose (dextrose)
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "212"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FRUS
+  units: g
+  id: "9"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Fructose
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "213"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: LACS
+  units: g
+  id: "10"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Lactose
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "214"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: MALS
+  units: g
+  id: "11"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Maltose
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "221"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ALC
+  units: g
+  id: "12"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Alcohol, ethyl
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "255"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: WATER
+  units: g
+  id: "13"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Water
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "257"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: g
+  id: "14"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Adjusted Protein
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "262"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CAFFN
+  units: mg
+  id: "15"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Caffeine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "263"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: THEBRN
+  units: mg
+  id: "16"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Theobromine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "268"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ENERC_KJ
+  units: kj
+  id: "17"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Energy
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "269"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: SUGAR
+  units: g
+  id: "18"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Sugars, total
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "287"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: GALS
+  units: g
+  id: "19"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Galactose
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "291"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FIBTG
+  units: g
+  id: "20"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Fiber, total dietary
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "301"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CA
+  units: mg
+  id: "21"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Calcium, Ca
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "303"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FE
+  units: mg
+  id: "22"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Iron, Fe
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "304"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: MG
+  units: mg
+  id: "23"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Magnesium, Mg
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "305"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: P
+  units: mg
+  id: "24"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Phosphorus, P
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "306"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: K
+  units: mg
+  id: "25"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Potassium, K
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "307"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: NA
+  units: mg
+  id: "26"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Sodium, Na
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "309"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ZN
+  units: mg
+  id: "27"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Zinc, Zn
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "312"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CU
+  units: mg
+  id: "28"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Copper, Cu
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "313"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FLD
+  units: mcg
+  id: "29"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Fluoride, F
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "315"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: MN
+  units: mg
+  id: "30"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Manganese, Mn
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "317"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: SE
+  units: mcg
+  id: "31"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Selenium, Se
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "318"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITA_IU
+  units: IU
+  id: "32"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Vitamin A, IU
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "319"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: RETOL
+  units: mcg
+  id: "33"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Retinol
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "320"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITA_RAE
+  units: mcg_RAE
+  id: "34"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Vitamin A, RAE
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "321"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CARTB
+  units: mcg
+  id: "35"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Carotene, beta
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "322"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CARTA
+  units: mcg
+  id: "36"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Carotene, alpha
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "323"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: TOCPHA
+  units: mg
+  id: "37"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Vitamin E (alpha-tocopherol)
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "324"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITD-
+  units: IU
+  id: "38"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Vitamin D
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "334"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CRYPX
+  units: mcg
+  id: "39"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Cryptoxanthin, beta
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "337"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: LYCPN
+  units: mcg
+  id: "40"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Lycopene
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "338"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: LUT+ZEA
+  units: mcg
+  id: "41"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Lutein + zeaxanthin
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "341"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: TOCPHB
+  units: mg
+  id: "42"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Tocopherol, beta
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "342"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: TOCPHG
+  units: mg
+  id: "43"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Tocopherol, gamma
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "343"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: TOCPHD
+  units: mg
+  id: "44"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Tocopherol, delta
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "401"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITC
+  units: mg
+  id: "45"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Vitamin C, total ascorbic acid
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "404"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: THIA
+  units: mg
+  id: "46"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Thiamin
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "405"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: RIBF
+  units: mg
+  id: "47"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Riboflavin
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "406"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: NIA
+  units: mg
+  id: "48"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Niacin
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "410"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: PANTAC
+  units: mg
+  id: "49"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Pantothenic acid
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "415"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITB6A
+  units: mg
+  id: "50"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Vitamin B-6
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "417"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FOL
+  units: mcg
+  id: "51"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Folate, total
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "418"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITB12
+  units: mcg
+  id: "52"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Vitamin B-12
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "421"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CHOLN
+  units: mg
+  id: "53"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Choline, total
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "430"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VITK
+  units: mcg
+  id: "54"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Vitamin K (phylloquinone)
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "431"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FOLAC
+  units: mcg
+  id: "55"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Folic acid
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "432"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FOLFD
+  units: mcg
+  id: "56"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Folate, food
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "435"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FOLDFE
+  units: mcg_DFE
+  id: "57"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Folate, DFE
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "454"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: BETN
+  units: mg
+  id: "58"
+  decimal_places_rounded_to: "1"
+  nutrient_description: Betaine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "501"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: TRP_G
+  units: g
+  id: "59"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Tryptophan
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "502"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: THR_G
+  units: g
+  id: "60"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Threonine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "503"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ILE_G
+  units: g
+  id: "61"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Isoleucine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "504"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: LEU_G
+  units: g
+  id: "62"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Leucine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "505"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: LYS_G
+  units: g
+  id: "63"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Lysine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "506"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: MET_G
+  units: g
+  id: "64"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Methionine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "507"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CYS_G
+  units: g
+  id: "65"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Cystine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "508"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: PHE_G
+  units: g
+  id: "66"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Phenylalanine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "509"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: TYR_G
+  units: g
+  id: "67"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Tyrosine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "510"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: VAL_G
+  units: g
+  id: "68"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Valine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "511"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ARG_G
+  units: g
+  id: "69"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Arginine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "512"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: HISTN_G
+  units: g
+  id: "70"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Histidine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "513"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ALA_G
+  units: g
+  id: "71"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Alanine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "514"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ASP_G
+  units: g
+  id: "72"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Aspartic acid
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "515"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: GLU_G
+  units: g
+  id: "73"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Glutamic acid
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "516"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: GLY_G
+  units: g
+  id: "74"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Glycine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "517"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: PRO_G
+  units: g
+  id: "75"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Proline
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "518"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: SER_G
+  units: g
+  id: "76"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Serine
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "521"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: HYP
+  units: g
+  id: "77"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Hydroxyproline
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "573"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: mg
+  id: "78"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Vitamin E, added
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "578"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: mcg
+  id: "79"
+  decimal_places_rounded_to: "2"
+  nutrient_description: Vitamin B-12, added
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "601"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CHOLE
+  units: mg
+  id: "80"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Cholesterol
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "605"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FATRN
+  units: g
+  id: "81"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Fatty acids, total trans
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "606"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FASAT
+  units: g
+  id: "82"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Fatty acids, total saturated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "607"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F4D0
+  units: g
+  id: "83"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "4:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "608"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F6D0
+  units: g
+  id: "84"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "6:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "609"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F8D0
+  units: g
+  id: "85"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "8:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "610"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F10D0
+  units: g
+  id: "86"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "10:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "611"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F12D0
+  units: g
+  id: "87"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "12:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "612"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F14D0
+  units: g
+  id: "88"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "14:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "613"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F16D0
+  units: g
+  id: "89"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "16:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "614"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D0
+  units: g
+  id: "90"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "18:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "615"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D0
+  units: g
+  id: "91"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "20:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "617"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D1
+  units: g
+  id: "92"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:1 undifferentiated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "618"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D2
+  units: g
+  id: "93"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:2 undifferentiated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "619"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D3
+  units: g
+  id: "94"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:3 undifferentiated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "620"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D4
+  units: g
+  id: "95"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:4 undifferentiated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "621"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F22D6
+  units: g
+  id: "96"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 22:6 n-3
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "624"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F22D0
+  units: g
+  id: "97"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "22:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "625"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F14D1
+  units: g
+  id: "98"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "14:1"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "626"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F16D1
+  units: g
+  id: "99"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 16:1 undifferentiated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "627"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D4
+  units: g
+  id: "100"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "18:4"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "628"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D1
+  units: g
+  id: "101"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "20:1"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "629"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D5
+  units: g
+  id: "102"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:5 n-3
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "630"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F22D1
+  units: g
+  id: "103"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 22:1 undifferentiated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "631"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F22D5
+  units: g
+  id: "104"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 22:5 n-3
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "636"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: PHYSTR
+  units: mg
+  id: "105"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Phytosterols
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "638"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: STID7
+  units: mg
+  id: "106"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Stigmasterol
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "639"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: CAMD5
+  units: mg
+  id: "107"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Campesterol
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "641"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: SITSTR
+  units: mg
+  id: "108"
+  decimal_places_rounded_to: "0"
+  nutrient_description: Beta-sitosterol
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "645"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FAMS
+  units: g
+  id: "109"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Fatty acids, total monounsaturated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "646"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FAPU
+  units: g
+  id: "110"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Fatty acids, total polyunsaturated
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "652"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F15D0
+  units: g
+  id: "111"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "15:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "653"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F17D0
+  units: g
+  id: "112"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "17:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "654"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F24D0
+  units: g
+  id: "113"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "24:0"
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "662"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F16D1T
+  units: g
+  id: "114"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 16:1 t
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "663"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D1T
+  units: g
+  id: "115"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:1 t
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "664"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: g
+  id: "116"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 22:1 t
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "665"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: g
+  id: "117"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:2 t not further defined
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "666"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: g
+  id: "118"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:2 i
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "669"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D2TT
+  units: g
+  id: "119"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:2 t,t
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "670"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D2CLA
+  units: g
+  id: "120"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:2 CLAs
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "671"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F24D1C
+  units: g
+  id: "121"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 24:1 c
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "672"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D2CN6
+  units: g
+  id: "122"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:2 n-6 c,c
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "673"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F16D1C
+  units: g
+  id: "123"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 16:1 c
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "674"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D1C
+  units: g
+  id: "124"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:1 c
+  created_at: 2007-06-03 23:06:40
+
+attributes: 
+  nutrient_number: "675"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D2CN6
+  units: g
+  id: "125"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:2 n-6 c,c
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "676"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: g
+  id: "126"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 22:1 c
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "685"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D3CN6
+  units: g
+  id: "127"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:3 n-6 c,c,c
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "687"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F17D1
+  units: g
+  id: "128"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "17:1"
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "689"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D3
+  units: g
+  id: "129"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:3 undifferentiated
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "693"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FATRNM
+  units: g
+  id: "130"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Fatty acids, total trans-monoenoic
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "695"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: FATRNP
+  units: g
+  id: "131"
+  decimal_places_rounded_to: "3"
+  nutrient_description: Fatty acids, total trans-polyenoic
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "696"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F13D0
+  units: g
+  id: "132"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "13:0"
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "697"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F15D1
+  units: g
+  id: "133"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "15:1"
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "851"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F18D3CN3
+  units: g
+  id: "134"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:3 n-3 c,c,c
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "852"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D3N3
+  units: g
+  id: "135"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:3 n-3
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "853"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D3N6
+  units: g
+  id: "136"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:3 n-6
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "855"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F20D4N6
+  units: g
+  id: "137"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 20:4 n-6
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "856"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: ""
+  units: g
+  id: "138"
+  decimal_places_rounded_to: "3"
+  nutrient_description: 18:3i
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "857"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F21D5
+  units: g
+  id: "139"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "21:5"
+  created_at: 2007-06-03 23:06:41
+
+attributes: 
+  nutrient_number: "858"
+  modified_at: 
+  sort_order: "0"
+  infoods_tagname: F22D4
+  units: g
+  id: "140"
+  decimal_places_rounded_to: "3"
+  nutrient_description: "22:4"
+  created_at: 2007-06-03 23:06:41

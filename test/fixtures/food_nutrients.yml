@@ -1,4 +1,109 @@
-energy_in_butter:
+<% n = 0 %>
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "203"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "1"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "16"
+  ndb_number: "01001"
+  nutrient_value: "0.850"
+  nutrient_id: "1"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.074"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "204"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "2"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "580"
+  ndb_number: "01001"
+  nutrient_value: "81.110"
+  nutrient_id: "2"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.065"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "205"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "3"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.060"
+  nutrient_id: "3"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "207"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "4"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "35"
+  ndb_number: "01001"
+  nutrient_value: "2.110"
+  nutrient_id: "4"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.054"
+
+energy_in_butter: 
   maximum_value: "0.000"
   minimum_value: "0.000"
   nutrient_number: "208"
@@ -10,6 +115,8 @@ energy_in_butter:
   reference_ndb_number: ""
   id: "5"
   confidence_code: |
+
+
   statistical_comments: ""
   degrees_of_freedom: "0"
   source_code: "4"
@@ -17,7 +124,6925 @@ energy_in_butter:
   ndb_number: "01001"
   nutrient_value: "717.000"
   nutrient_id: "5"
-  created_at: 2007-05-25 14:15:43
+  created_at: 2007-06-03 23:06:41
   food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "221"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "6"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "12"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "255"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "7"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "522"
+  ndb_number: "01001"
+  nutrient_value: "15.870"
+  nutrient_id: "13"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.061"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "262"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "8"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "15"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "263"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "9"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "16"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "268"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "10"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "2999.000"
+  nutrient_id: "17"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "269"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "11"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.060"
+  nutrient_id: "18"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NR
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "291"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "12"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "20"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "30.000"
+  minimum_value: "19.000"
+  nutrient_number: "301"
+  modified_at: 
+  lower_error_bound: "22.021"
+  upper_error_bound: "26.496"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "13"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "4"
+  source_code: "1"
+  number_of_data_points: "17"
+  ndb_number: "01001"
+  nutrient_value: "24.000"
+  nutrient_id: "21"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.789"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.150"
+  minimum_value: "0.000"
+  nutrient_number: "303"
+  modified_at: 
+  lower_error_bound: "-0.008"
+  upper_error_bound: "0.046"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "14"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "7"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "0.020"
+  nutrient_id: "22"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.011"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "2.000"
+  minimum_value: "1.000"
+  nutrient_number: "304"
+  modified_at: 
+  lower_error_bound: "1.586"
+  upper_error_bound: "1.863"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "15"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "4"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "2.000"
+  nutrient_id: "23"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.047"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "27.000"
+  minimum_value: "19.000"
+  nutrient_number: "305"
+  modified_at: 
+  lower_error_bound: "22.488"
+  upper_error_bound: "24.653"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "16"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "7"
+  source_code: "1"
+  number_of_data_points: "17"
+  ndb_number: "01001"
+  nutrient_value: "24.000"
+  nutrient_id: "24"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.463"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "28.000"
+  minimum_value: "17.000"
+  nutrient_number: "306"
+  modified_at: 
+  lower_error_bound: "20.879"
+  upper_error_bound: "26.566"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "17"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "24.000"
+  nutrient_id: "25"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.622"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "685.000"
+  minimum_value: "491.000"
+  nutrient_number: "307"
+  modified_at: 
+  lower_error_bound: "545.013"
+  upper_error_bound: "605.987"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "18"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "5"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "576.000"
+  nutrient_id: "26"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "12.006"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.260"
+  minimum_value: "0.050"
+  nutrient_number: "309"
+  modified_at: 
+  lower_error_bound: "0.057"
+  upper_error_bound: "0.116"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "19"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "5"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "0.090"
+  nutrient_id: "27"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.011"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "312"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "20"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "28"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "3.800"
+  minimum_value: "1.500"
+  nutrient_number: "313"
+  modified_at: 
+  lower_error_bound: "-0.134"
+  upper_error_bound: "5.667"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "21"
+  confidence_code: |
+    C
+
+  statistical_comments: "4"
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "19"
+  ndb_number: "01001"
+  nutrient_value: "2.800"
+  nutrient_id: "29"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.674"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "315"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "7"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "22"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "30"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "317"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "23"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "37"
+  ndb_number: "01001"
+  nutrient_value: "1.000"
+  nutrient_id: "31"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.820"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "318"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "24"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "2499.000"
+  nutrient_id: "32"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "319"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "671.000"
+  nutrient_id: "33"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "320"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "26"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "684.000"
+  nutrient_id: "34"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "321"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "27"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "158.000"
+  nutrient_id: "35"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "322"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "28"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "36"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "323"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "29"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "01001"
+  nutrient_value: "2.320"
+  nutrient_id: "37"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "324"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "30"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "56.000"
+  nutrient_id: "38"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: T
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "334"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "31"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "39"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "337"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "32"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "40"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "338"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "33"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "41"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "341"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "34"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "42"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "342"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "35"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "43"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "343"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "36"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "44"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "401"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "37"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "45"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "404"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "38"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.005"
+  nutrient_id: "46"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.001"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "405"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "39"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "9"
+  ndb_number: "01001"
+  nutrient_value: "0.034"
+  nutrient_id: "47"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.004"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "406"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "40"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "0.042"
+  nutrient_id: "48"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "410"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "41"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.110"
+  nutrient_id: "49"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "415"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "42"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "01001"
+  nutrient_value: "0.003"
+  nutrient_id: "50"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "417"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "43"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "3.000"
+  nutrient_id: "51"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.220"
+  minimum_value: "0.130"
+  nutrient_number: "418"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "44"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "4"
+  ndb_number: "01001"
+  nutrient_value: "0.170"
+  nutrient_id: "52"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "430"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "45"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "01001"
+  nutrient_value: "7.000"
+  nutrient_id: "54"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "431"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "46"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "55"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "432"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "47"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "01001"
+  nutrient_value: "3.000"
+  nutrient_id: "56"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "435"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "48"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "3.000"
+  nutrient_id: "57"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "501"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "49"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.012"
+  nutrient_id: "59"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "502"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "50"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.038"
+  nutrient_id: "60"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "503"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "51"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.051"
+  nutrient_id: "61"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "504"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "52"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.083"
+  nutrient_id: "62"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "505"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "53"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.067"
+  nutrient_id: "63"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "506"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "54"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.021"
+  nutrient_id: "64"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "507"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "55"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.008"
+  nutrient_id: "65"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "508"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "56"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.041"
+  nutrient_id: "66"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "509"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "57"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.041"
+  nutrient_id: "67"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "510"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "58"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.057"
+  nutrient_id: "68"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "511"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "59"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.031"
+  nutrient_id: "69"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "512"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "60"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.023"
+  nutrient_id: "70"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "513"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "61"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.029"
+  nutrient_id: "71"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "514"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "62"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.064"
+  nutrient_id: "72"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "515"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "63"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.178"
+  nutrient_id: "73"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "516"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "64"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.018"
+  nutrient_id: "74"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "517"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "65"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.082"
+  nutrient_id: "75"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "518"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "66"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.046"
+  nutrient_id: "76"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "573"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "67"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "78"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "578"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "68"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "79"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "217.000"
+  minimum_value: "213.000"
+  nutrient_number: "601"
+  modified_at: 
+  lower_error_bound: "209.864"
+  upper_error_bound: "220.717"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "69"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "215.000"
+  nutrient_id: "80"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "1.261"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "606"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "70"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "51.368"
+  nutrient_id: "82"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "3.466"
+  minimum_value: "3.104"
+  nutrient_number: "607"
+  modified_at: 
+  lower_error_bound: "2.710"
+  upper_error_bound: "3.741"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "71"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "3.226"
+  nutrient_id: "83"
+  created_at: 2007-06-03 23:06:41
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.120"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "2.080"
+  minimum_value: "1.953"
+  nutrient_number: "608"
+  modified_at: 
+  lower_error_bound: "1.845"
+  upper_error_bound: "2.170"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "72"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "2.007"
+  nutrient_id: "84"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.038"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "1.215"
+  minimum_value: "1.161"
+  nutrient_number: "609"
+  modified_at: 
+  lower_error_bound: "1.122"
+  upper_error_bound: "1.257"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "73"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "1.190"
+  nutrient_id: "85"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.016"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "2.595"
+  minimum_value: "2.491"
+  nutrient_number: "610"
+  modified_at: 
+  lower_error_bound: "2.385"
+  upper_error_bound: "2.672"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "74"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "2.529"
+  nutrient_id: "86"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.033"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "2.667"
+  minimum_value: "2.508"
+  nutrient_number: "611"
+  modified_at: 
+  lower_error_bound: "2.389"
+  upper_error_bound: "2.784"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "75"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "2.587"
+  nutrient_id: "87"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.046"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "7.475"
+  minimum_value: "7.409"
+  nutrient_number: "612"
+  modified_at: 
+  lower_error_bound: "7.352"
+  upper_error_bound: "7.521"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "76"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "7.436"
+  nutrient_id: "88"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.020"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "22.197"
+  minimum_value: "21.272"
+  nutrient_number: "613"
+  modified_at: 
+  lower_error_bound: "20.537"
+  upper_error_bound: "22.857"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "77"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "21.697"
+  nutrient_id: "89"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.270"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "10.137"
+  minimum_value: "9.814"
+  nutrient_number: "614"
+  modified_at: 
+  lower_error_bound: "9.586"
+  upper_error_bound: "10.412"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "78"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "9.999"
+  nutrient_id: "90"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.096"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.142"
+  minimum_value: "0.135"
+  nutrient_number: "615"
+  modified_at: 
+  lower_error_bound: "0.129"
+  upper_error_bound: "0.146"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "79"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.138"
+  nutrient_id: "91"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.002"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "617"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "80"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "19.961"
+  nutrient_id: "92"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "618"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "81"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "2.728"
+  nutrient_id: "93"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: AS
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "619"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "82"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.315"
+  nutrient_id: "94"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: AS
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "620"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "83"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "95"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "621"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "84"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "96"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "626"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "85"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "0.961"
+  nutrient_id: "99"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "627"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "86"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "100"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.114"
+  minimum_value: "0.084"
+  nutrient_number: "628"
+  modified_at: 
+  lower_error_bound: "0.063"
+  upper_error_bound: "0.137"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "87"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.100"
+  nutrient_id: "101"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.009"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "629"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "88"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "102"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "630"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "89"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "103"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "631"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "90"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "104"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "638"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "91"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "106"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "639"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "92"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.000"
+  nutrient_id: "107"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "4.000"
+  minimum_value: "4.000"
+  nutrient_number: "641"
+  modified_at: 
+  lower_error_bound: "3.566"
+  upper_error_bound: "4.580"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "93"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "4.000"
+  nutrient_id: "108"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.118"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "645"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "94"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "21.021"
+  nutrient_id: "109"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "646"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "95"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "01001"
+  nutrient_value: "3.043"
+  nutrient_id: "110"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.580"
+  minimum_value: "0.530"
+  nutrient_number: "653"
+  modified_at: 
+  lower_error_bound: "0.494"
+  upper_error_bound: "0.625"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "96"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.560"
+  nutrient_id: "112"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.015"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "3.128"
+  minimum_value: "2.763"
+  nutrient_number: "663"
+  modified_at: 
+  lower_error_bound: "2.501"
+  upper_error_bound: "3.463"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "97"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "2.982"
+  nutrient_id: "115"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.112"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.359"
+  minimum_value: "0.201"
+  nutrient_number: "666"
+  modified_at: 
+  lower_error_bound: "0.089"
+  upper_error_bound: "0.503"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "98"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.296"
+  nutrient_id: "118"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.048"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.299"
+  minimum_value: "0.241"
+  nutrient_number: "670"
+  modified_at: 
+  lower_error_bound: "0.194"
+  upper_error_bound: "0.340"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "99"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.267"
+  nutrient_id: "120"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.017"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.972"
+  minimum_value: "0.946"
+  nutrient_number: "673"
+  modified_at: 
+  lower_error_bound: "0.928"
+  upper_error_bound: "0.993"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "100"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.961"
+  nutrient_id: "123"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.008"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "17.523"
+  minimum_value: "16.206"
+  nutrient_number: "674"
+  modified_at: 
+  lower_error_bound: "15.271"
+  upper_error_bound: "18.686"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "101"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "16.978"
+  nutrient_id: "124"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.397"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "2.208"
+  minimum_value: "2.126"
+  nutrient_number: "675"
+  modified_at: 
+  lower_error_bound: "2.064"
+  upper_error_bound: "2.268"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "102"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "2.166"
+  nutrient_id: "125"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.024"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.330"
+  minimum_value: "0.289"
+  nutrient_number: "851"
+  modified_at: 
+  lower_error_bound: "0.259"
+  upper_error_bound: "0.371"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "103"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "3"
+  ndb_number: "01001"
+  nutrient_value: "0.315"
+  nutrient_id: "134"
+  created_at: 2007-06-03 23:06:42
+  food_id: "1"
+  derivation_code: A
+  standard_error: "0.013"
+
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "203"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25557"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "17"
+  ndb_number: "03156"
+  nutrient_value: "0.200"
+  nutrient_id: "1"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "204"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25558"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "17"
+  ndb_number: "03156"
+  nutrient_value: "0.100"
+  nutrient_id: "2"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "205"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25559"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "18.400"
+  nutrient_id: "3"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "207"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25560"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "18"
+  ndb_number: "03156"
+  nutrient_value: "0.200"
+  nutrient_id: "4"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "208"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25561"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "68.000"
+  nutrient_id: "5"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "221"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25562"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "12"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "255"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25563"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "14"
+  ndb_number: "03156"
+  nutrient_value: "81.100"
+  nutrient_id: "13"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "262"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25564"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "15"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "263"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25565"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "16"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "268"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25566"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "285.000"
+  nutrient_id: "17"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "269"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25567"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "8.410"
+  nutrient_id: "18"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "291"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25568"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "1.600"
+  nutrient_id: "20"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "301"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25569"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: "03156"
+  nutrient_value: "7.000"
+  nutrient_id: "21"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "1.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "303"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25570"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: "03156"
+  nutrient_value: "0.130"
+  nutrient_id: "22"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.010"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "304"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25571"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "03156"
+  nutrient_value: "6.000"
+  nutrient_id: "23"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "305"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25572"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "03156"
+  nutrient_value: "5.000"
+  nutrient_id: "24"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "306"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25573"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "15"
+  ndb_number: "03156"
+  nutrient_value: "78.000"
+  nutrient_id: "25"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "307"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25574"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "21"
+  ndb_number: "03156"
+  nutrient_value: "8.000"
+  nutrient_id: "26"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "1.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "309"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25575"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "03156"
+  nutrient_value: "0.030"
+  nutrient_id: "27"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "312"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25576"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: "03156"
+  nutrient_value: "0.040"
+  nutrient_id: "28"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "29.400"
+  minimum_value: "1.800"
+  nutrient_number: "313"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "1"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25577"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "2"
+  ndb_number: "03156"
+  nutrient_value: "16.000"
+  nutrient_id: "29"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "317"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25578"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.600"
+  nutrient_id: "31"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: BFZN
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "318"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25579"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "7"
+  ndb_number: "03156"
+  nutrient_value: "40.000"
+  nutrient_id: "32"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "319"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25580"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "33"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: BNA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "320"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25581"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "2.000"
+  nutrient_id: "34"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "321"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25582"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "23.000"
+  nutrient_id: "35"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: BNA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "322"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25583"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "1.000"
+  nutrient_id: "36"
+  created_at: 2007-06-03 23:11:35
+  food_id: "340"
+  derivation_code: BNA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "323"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25584"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.020"
+  nutrient_id: "37"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "334"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25585"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "39"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: BNA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "337"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25586"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "40"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "338"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25587"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "2.000"
+  nutrient_id: "41"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "401"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25588"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "14"
+  ndb_number: "03156"
+  nutrient_value: "21.200"
+  nutrient_id: "45"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "1.400"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "404"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25589"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "14"
+  ndb_number: "03156"
+  nutrient_value: "0.015"
+  nutrient_id: "46"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "405"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25590"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "15"
+  ndb_number: "03156"
+  nutrient_value: "0.019"
+  nutrient_id: "47"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "406"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25591"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "14"
+  ndb_number: "03156"
+  nutrient_value: "0.182"
+  nutrient_id: "48"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.018"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "410"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25592"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.148"
+  nutrient_id: "49"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "415"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25593"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "6"
+  ndb_number: "03156"
+  nutrient_value: "0.092"
+  nutrient_id: "50"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.006"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "417"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25594"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "9"
+  ndb_number: "03156"
+  nutrient_value: "6.000"
+  nutrient_id: "51"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.700"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "418"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25595"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "52"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "430"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25596"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.600"
+  nutrient_id: "54"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: FLA
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "431"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25597"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "55"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "432"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25598"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "9"
+  ndb_number: "03156"
+  nutrient_value: "6.000"
+  nutrient_id: "56"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.700"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "435"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25599"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "6.000"
+  nutrient_id: "57"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "573"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25600"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "78"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "578"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25601"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "79"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "601"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25602"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "80"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "606"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25603"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.036"
+  nutrient_id: "82"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "607"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25604"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "83"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "608"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25605"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "84"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "609"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25606"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "85"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "610"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25607"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "86"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "611"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25608"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "87"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "612"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25609"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.001"
+  nutrient_id: "88"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "613"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25610"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.024"
+  nutrient_id: "89"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "614"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25611"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.001"
+  nutrient_id: "90"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "617"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25612"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.006"
+  nutrient_id: "92"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "618"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25613"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.012"
+  nutrient_id: "93"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "619"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25614"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.008"
+  nutrient_id: "94"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "620"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25615"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "95"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "621"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25616"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "96"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "626"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25617"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.002"
+  nutrient_id: "99"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "627"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25618"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "100"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "628"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25619"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "101"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "629"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25620"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "102"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "630"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25621"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "103"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "631"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25622"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.000"
+  nutrient_id: "104"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "645"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25623"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.009"
+  nutrient_id: "109"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "646"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "25624"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: "03156"
+  nutrient_value: "0.020"
+  nutrient_id: "110"
+  created_at: 2007-06-03 23:11:36
+  food_id: "340"
+  derivation_code: ""
+  standard_error: "0.000"
+
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "1.310"
+  minimum_value: "0.750"
+  nutrient_number: "203"
+  modified_at: 
+  lower_error_bound: "0.810"
+  upper_error_bound: "1.379"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140767"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "1.090"
+  nutrient_id: "1"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.022"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.700"
+  minimum_value: "0.070"
+  nutrient_number: "204"
+  modified_at: 
+  lower_error_bound: "-0.470"
+  upper_error_bound: "1.127"
+  number_of_studies: "5"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140768"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "19"
+  ndb_number: 09040
+  nutrient_value: "0.330"
+  nutrient_id: "2"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.067"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "205"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140769"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "22.840"
+  nutrient_id: "3"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "1.000"
+  minimum_value: "0.430"
+  nutrient_number: "207"
+  modified_at: 
+  lower_error_bound: "0.445"
+  upper_error_bound: "1.197"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140770"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "0.820"
+  nutrient_id: "4"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.030"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "208"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140771"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "89.000"
+  nutrient_id: "5"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "9.390"
+  minimum_value: "3.000"
+  nutrient_number: "209"
+  modified_at: 
+  lower_error_bound: "3.892"
+  upper_error_bound: "6.873"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140772"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "5"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "5.380"
+  nutrient_id: "6"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.564"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "4.120"
+  minimum_value: "0.450"
+  nutrient_number: "210"
+  modified_at: 
+  lower_error_bound: "1.053"
+  upper_error_bound: "3.729"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140773"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "6"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "2.390"
+  nutrient_id: "7"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.546"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "8.130"
+  minimum_value: "1.790"
+  nutrient_number: "211"
+  modified_at: 
+  lower_error_bound: "2.697"
+  upper_error_bound: "7.263"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140774"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "4"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "4.980"
+  nutrient_id: "8"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.806"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "7.520"
+  minimum_value: "2.340"
+  nutrient_number: "212"
+  modified_at: 
+  lower_error_bound: "3.046"
+  upper_error_bound: "6.649"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140775"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "4"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "4.850"
+  nutrient_id: "9"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.658"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "213"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140776"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "10"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.110"
+  minimum_value: "0.000"
+  nutrient_number: "214"
+  modified_at: 
+  lower_error_bound: "-0.030"
+  upper_error_bound: "0.058"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140777"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "3"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "0.010"
+  nutrient_id: "11"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.014"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "221"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140778"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "12"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "78.200"
+  minimum_value: "71.300"
+  nutrient_number: "255"
+  modified_at: 
+  lower_error_bound: "73.808"
+  upper_error_bound: "76.021"
+  number_of_studies: "6"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140779"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "20"
+  ndb_number: 09040
+  nutrient_value: "74.910"
+  nutrient_id: "13"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.286"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "262"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140780"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "15"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "263"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140781"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "16"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "268"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140782"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "371.000"
+  nutrient_id: "17"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "16.210"
+  minimum_value: "7.510"
+  nutrient_number: "269"
+  modified_at: 
+  lower_error_bound: "9.101"
+  upper_error_bound: "15.364"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140783"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "3"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "12.230"
+  nutrient_id: "18"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "1.034"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "287"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140784"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "19"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "3.700"
+  minimum_value: "1.700"
+  nutrient_number: "291"
+  modified_at: 
+  lower_error_bound: "1.639"
+  upper_error_bound: "3.472"
+  number_of_studies: "5"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140785"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "13"
+  ndb_number: 09040
+  nutrient_value: "2.600"
+  nutrient_id: "20"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.129"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "7.000"
+  minimum_value: "4.000"
+  nutrient_number: "301"
+  modified_at: 
+  lower_error_bound: "5.014"
+  upper_error_bound: "5.241"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140786"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "6"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "5.000"
+  nutrient_id: "21"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.047"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.410"
+  minimum_value: "0.190"
+  nutrient_number: "303"
+  modified_at: 
+  lower_error_bound: "0.252"
+  upper_error_bound: "0.259"
+  number_of_studies: "13"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140787"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "10"
+  source_code: "1"
+  number_of_data_points: "42"
+  ndb_number: 09040
+  nutrient_value: "0.260"
+  nutrient_id: "22"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.001"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "38.000"
+  minimum_value: "18.000"
+  nutrient_number: "304"
+  modified_at: 
+  lower_error_bound: "22.862"
+  upper_error_bound: "31.276"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140788"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "27.000"
+  nutrient_id: "23"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.475"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "29.000"
+  minimum_value: "15.000"
+  nutrient_number: "305"
+  modified_at: 
+  lower_error_bound: "21.231"
+  upper_error_bound: "21.984"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140789"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "11"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "22.000"
+  nutrient_id: "24"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.171"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "426.000"
+  minimum_value: "308.000"
+  nutrient_number: "306"
+  modified_at: 
+  lower_error_bound: "353.560"
+  upper_error_bound: "362.603"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140790"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "7"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "358.000"
+  nutrient_id: "25"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "1.911"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "5.000"
+  minimum_value: "0.000"
+  nutrient_number: "307"
+  modified_at: 
+  lower_error_bound: "-4.030"
+  upper_error_bound: "5.972"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140791"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "1.000"
+  nutrient_id: "26"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.395"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.240"
+  minimum_value: "0.110"
+  nutrient_number: "309"
+  modified_at: 
+  lower_error_bound: "0.148"
+  upper_error_bound: "0.153"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140792"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "10"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "0.150"
+  nutrient_id: "27"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.001"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.186"
+  minimum_value: "0.025"
+  nutrient_number: "312"
+  modified_at: 
+  lower_error_bound: "-0.052"
+  upper_error_bound: "0.209"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140793"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "0.078"
+  nutrient_id: "28"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.011"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "313"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140794"
+  confidence_code: |
+    C
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: 09040
+  nutrient_value: "2.200"
+  nutrient_id: "29"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.829"
+  minimum_value: "0.116"
+  nutrient_number: "315"
+  modified_at: 
+  lower_error_bound: "0.254"
+  upper_error_bound: "0.285"
+  number_of_studies: "14"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140795"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "10"
+  source_code: "1"
+  number_of_data_points: "45"
+  ndb_number: 09040
+  nutrient_value: "0.270"
+  nutrient_id: "30"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.007"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "5.400"
+  minimum_value: "0.000"
+  nutrient_number: "317"
+  modified_at: 
+  lower_error_bound: "0.339"
+  upper_error_bound: "1.658"
+  number_of_studies: "11"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140796"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "8"
+  source_code: "1"
+  number_of_data_points: "31"
+  ndb_number: 09040
+  nutrient_value: "1.000"
+  nutrient_id: "31"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.289"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "318"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140797"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "64.000"
+  nutrient_id: "32"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: AS
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "319"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140798"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "33"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "320"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140799"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "3.000"
+  nutrient_id: "34"
+  created_at: 2007-06-03 23:33:08
+  food_id: "2106"
+  derivation_code: AS
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "58.000"
+  minimum_value: "14.000"
+  nutrient_number: "321"
+  modified_at: 
+  lower_error_bound: "-1.497"
+  upper_error_bound: "53.563"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140800"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "10"
+  ndb_number: 09040
+  nutrient_value: "26.000"
+  nutrient_id: "35"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "2.167"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "75.000"
+  minimum_value: "10.000"
+  nutrient_number: "322"
+  modified_at: 
+  lower_error_bound: "-31.446"
+  upper_error_bound: "81.321"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140801"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "25.000"
+  nutrient_id: "36"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "4.438"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.370"
+  minimum_value: "0.030"
+  nutrient_number: "323"
+  modified_at: 
+  lower_error_bound: "-0.545"
+  upper_error_bound: "0.747"
+  number_of_studies: "4"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140802"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "15"
+  ndb_number: 09040
+  nutrient_value: "0.100"
+  nutrient_id: "37"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.054"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "334"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140803"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "6"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "39"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "337"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140804"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2, 3
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "6"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "40"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "27.000"
+  minimum_value: "13.000"
+  nutrient_number: "338"
+  modified_at: 
+  lower_error_bound: "9.257"
+  upper_error_bound: "34.077"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140805"
+  confidence_code: |
+
+
+  statistical_comments: 2, 3
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "6"
+  ndb_number: 09040
+  nutrient_value: "22.000"
+  nutrient_id: "41"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "2.520"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "341"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "4"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140806"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "15"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "42"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.070"
+  minimum_value: "0.000"
+  nutrient_number: "342"
+  modified_at: 
+  lower_error_bound: "-0.171"
+  upper_error_bound: "0.211"
+  number_of_studies: "4"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140807"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "15"
+  ndb_number: 09040
+  nutrient_value: "0.020"
+  nutrient_id: "43"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.015"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.040"
+  minimum_value: "0.000"
+  nutrient_number: "343"
+  modified_at: 
+  lower_error_bound: "-0.117"
+  upper_error_bound: "0.137"
+  number_of_studies: "4"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140808"
+  confidence_code: |
+
+
+  statistical_comments: 1, 2
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "15"
+  ndb_number: 09040
+  nutrient_value: "0.010"
+  nutrient_id: "44"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.010"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "9.500"
+  minimum_value: "8.000"
+  nutrient_number: "401"
+  modified_at: 
+  lower_error_bound: "6.864"
+  upper_error_bound: "10.601"
+  number_of_studies: "2"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140809"
+  confidence_code: |
+
+
+  statistical_comments: "4"
+  degrees_of_freedom: "2"
+  source_code: "1"
+  number_of_data_points: "8"
+  ndb_number: 09040
+  nutrient_value: "8.700"
+  nutrient_id: "45"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.434"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.051"
+  minimum_value: "0.010"
+  nutrient_number: "404"
+  modified_at: 
+  lower_error_bound: "-0.040"
+  upper_error_bound: "0.101"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140810"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "0.031"
+  nutrient_id: "46"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.006"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.115"
+  minimum_value: "0.050"
+  nutrient_number: "405"
+  modified_at: 
+  lower_error_bound: "-0.027"
+  upper_error_bound: "0.173"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140811"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "0.073"
+  nutrient_id: "47"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.008"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.749"
+  minimum_value: "0.544"
+  nutrient_number: "406"
+  modified_at: 
+  lower_error_bound: "0.639"
+  upper_error_bound: "0.692"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140812"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "0.665"
+  nutrient_id: "48"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.002"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.553"
+  minimum_value: "0.270"
+  nutrient_number: "410"
+  modified_at: 
+  lower_error_bound: "0.209"
+  upper_error_bound: "0.460"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140813"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "0.334"
+  nutrient_id: "49"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.010"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.420"
+  minimum_value: "0.302"
+  nutrient_number: "415"
+  modified_at: 
+  lower_error_bound: "0.242"
+  upper_error_bound: "0.493"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140814"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "12"
+  ndb_number: 09040
+  nutrient_value: "0.367"
+  nutrient_id: "50"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.010"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "27.000"
+  minimum_value: "8.000"
+  nutrient_number: "417"
+  modified_at: 
+  lower_error_bound: "14.299"
+  upper_error_bound: "26.289"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140815"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "11"
+  ndb_number: 09040
+  nutrient_value: "20.000"
+  nutrient_id: "51"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.472"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "418"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140816"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "52"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "421"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140817"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "9.800"
+  nutrient_id: "53"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: AS
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.900"
+  minimum_value: "0.200"
+  nutrient_number: "430"
+  modified_at: 
+  lower_error_bound: "-0.427"
+  upper_error_bound: "1.479"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140818"
+  confidence_code: |
+
+
+  statistical_comments: "2"
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "6"
+  ndb_number: 09040
+  nutrient_value: "0.500"
+  nutrient_id: "54"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.075"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "431"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140819"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "55"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "27.000"
+  minimum_value: "8.000"
+  nutrient_number: "432"
+  modified_at: 
+  lower_error_bound: "14.299"
+  upper_error_bound: "26.289"
+  number_of_studies: "3"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140820"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "1"
+  source_code: "1"
+  number_of_data_points: "11"
+  ndb_number: 09040
+  nutrient_value: "20.000"
+  nutrient_id: "56"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.472"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "435"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140821"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "20.000"
+  nutrient_id: "57"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "454"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140822"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "1"
+  ndb_number: 09040
+  nutrient_value: "0.100"
+  nutrient_id: "58"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "501"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140823"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.009"
+  nutrient_id: "59"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "502"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140824"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.028"
+  nutrient_id: "60"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "503"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140825"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.028"
+  nutrient_id: "61"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "504"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140826"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.068"
+  nutrient_id: "62"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "505"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140827"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.050"
+  nutrient_id: "63"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "506"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140828"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.008"
+  nutrient_id: "64"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "507"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140829"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.009"
+  nutrient_id: "65"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "508"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140830"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.049"
+  nutrient_id: "66"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "509"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140831"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.009"
+  nutrient_id: "67"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "510"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140832"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.047"
+  nutrient_id: "68"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "511"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140833"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.049"
+  nutrient_id: "69"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "512"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140834"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.077"
+  nutrient_id: "70"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "513"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140835"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.040"
+  nutrient_id: "71"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "514"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140836"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.124"
+  nutrient_id: "72"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "515"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140837"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.152"
+  nutrient_id: "73"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "516"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140838"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.038"
+  nutrient_id: "74"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "517"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140839"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.028"
+  nutrient_id: "75"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "518"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140840"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.040"
+  nutrient_id: "76"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: A
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "573"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140841"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "78"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "578"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140842"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "79"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "601"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140843"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "7"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "80"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: Z
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "606"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140844"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.112"
+  nutrient_id: "82"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "607"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140845"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "83"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "608"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140846"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "84"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "609"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140847"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "85"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "610"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140848"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "4"
+  ndb_number: 09040
+  nutrient_value: "0.001"
+  nutrient_id: "86"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "611"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140849"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "4"
+  ndb_number: 09040
+  nutrient_value: "0.002"
+  nutrient_id: "87"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "612"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140850"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "4"
+  ndb_number: 09040
+  nutrient_value: "0.002"
+  nutrient_id: "88"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "613"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140851"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "5"
+  ndb_number: 09040
+  nutrient_value: "0.102"
+  nutrient_id: "89"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "614"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140852"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "5"
+  ndb_number: 09040
+  nutrient_value: "0.005"
+  nutrient_id: "90"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "617"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140853"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "5"
+  ndb_number: 09040
+  nutrient_value: "0.022"
+  nutrient_id: "92"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "618"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140854"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "5"
+  ndb_number: 09040
+  nutrient_value: "0.046"
+  nutrient_id: "93"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "619"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140855"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "5"
+  ndb_number: 09040
+  nutrient_value: "0.027"
+  nutrient_id: "94"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "620"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140856"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "95"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "621"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140857"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "96"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "626"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140858"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "5"
+  ndb_number: 09040
+  nutrient_value: "0.010"
+  nutrient_id: "99"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "627"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140859"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "100"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "628"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140860"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "101"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "629"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140861"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "102"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "630"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140862"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "103"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "631"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140863"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.000"
+  nutrient_id: "104"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "636"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140864"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "1"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "16.000"
+  nutrient_id: "105"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: ""
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "645"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140865"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.032"
+  nutrient_id: "109"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
+  derivation_code: NC
+  standard_error: "0.000"
+
+<%= "food_nutrient_#{n += 1}:" %> 
+  maximum_value: "0.000"
+  minimum_value: "0.000"
+  nutrient_number: "646"
+  modified_at: 
+  lower_error_bound: "0.000"
+  upper_error_bound: "0.000"
+  number_of_studies: "0"
+  is_added_nutrient: ""
+  reference_ndb_number: ""
+  id: "140866"
+  confidence_code: |
+
+
+  statistical_comments: ""
+  degrees_of_freedom: "0"
+  source_code: "4"
+  number_of_data_points: "0"
+  ndb_number: 09040
+  nutrient_value: "0.073"
+  nutrient_id: "110"
+  created_at: 2007-06-03 23:33:09
+  food_id: "2106"
   derivation_code: NC
   standard_error: "0.000"

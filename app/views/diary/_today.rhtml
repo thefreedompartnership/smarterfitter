@@ -1,0 +1,20 @@
+<table>
+	<tr>
+		<th>Today</th>
+		<th>Calories</th>
+		<th>Fat(g)</th>
+		<th>Protein(g)</th>
+		<th>Carbs(g)</th>
+		<th></th>
+	</tr>
+	<%- if @user.portions_for_today? -%>
+		<%= render :partial => "portion", :collection => @user.portions_for_today %>
+	<%- else -%>
+		<tr>
+			<td colspan="6">
+				<em>You haven't added any food today. Get started by searching for food on the right!</em>
+			</td>
+		</tr>
+	<%- end -%>
+
+</table>

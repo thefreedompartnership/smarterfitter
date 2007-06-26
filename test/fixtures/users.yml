@@ -3,7 +3,7 @@ tim:
   id: 1
   user_name: tim
   email_address: tim.harding@gmail.com
-  hashed_password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+  hashed_password: <%= Digest::SHA1.hexdigest('password') %>
   first_name: Tim
   last_name: Harding
   measurement_system: metric
@@ -13,7 +13,7 @@ monica:
   id: 2
   user_name: monica
   email_address: monica.shaw@gmail.com
-  hashed_password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+  hashed_password: <%= Digest::SHA1.hexdigest('password') %>
   first_name: Monica
   last_name: Shaw
   measurement_system: imperial
@@ -23,9 +23,18 @@ mile_user:
   id: 3
   user_name: mile_user
   email_address: mile_user@gatezero.org
-  hashed_password: 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8
+  hashed_password: <%= Digest::SHA1.hexdigest('password') %>
   first_name: Mile
   last_name: User
   measurement_system: imperial
   time_zone: NZ
   
+alice:
+  id: 4
+  user_name: alice
+  email_address: alice@gatezero.org
+  hashed_password: <%= Digest::SHA1.hexdigest('password') %>
+  first_name: Alice
+  last_name: Andrews
+  measurement_system: imperial
+  time_zone: NZ

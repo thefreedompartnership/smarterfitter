@@ -11,31 +11,38 @@ class User < ActiveRecord::Base
   
   composed_of :tz, :class_name => 'TZInfo::Timezone', :mapping => %w(time_zone identifier)
 
+  def portions_for_today?
+    consumed_portions.count(:all, :conditions => @@for_today) != 0
+  end
+
+  def portions_for_today
+    consumed_portions.find(:all, :conditions => @@for_today)
+  end
 
   def energy_today
     energy = 0
-    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
       energy += portion.portion.energy
     end
     return energy
   end
   def fat_today
     fat = 0
-    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
       fat += portion.portion.fat
     end
     return fat
   end
   def protein_today
     protein = 0
-    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
       protein += portion.portion.protein
     end
     return protein
   end
   def carbohydrate_today
     carbohydrate = 0
-    consumed_portions.find(:all, :conditions => ['created_at > ?', Date.today() - 1]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
       carbohydrate += portion.portion.carbohydrate
     end
     return carbohydrate
@@ -43,28 +50,28 @@ class User < ActiveRecord::Base
   
   def energy_yesterday
     energy = 0
-    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
       energy += portion.portion.energy
     end
     return energy
   end
   def fat_yesterday
     fat = 0
-    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
       fat += portion.portion.fat
     end
     return fat
   end
   def protein_yesterday
     protein = 0
-    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
       protein += portion.portion.protein
     end
     return protein
   end
   def carbohydrate_yesterday
     carbohydrate = 0
-    consumed_portions.find(:all, :conditions => ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
       carbohydrate += portion.portion.carbohydrate
     end
     return carbohydrate
@@ -106,5 +113,8 @@ class User < ActiveRecord::Base
   def self.hash_password(password)
     Digest::SHA1.hexdigest(password)
   end
+  
+  @@for_today = ['created_at > ?', Date.today()]
+  @@for_yesterday = ['created_at >= ? and created_at < ?', Date.today() - 1, Date.today()]
   
 end

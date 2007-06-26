@@ -1,0 +1,14 @@
+<tr id="<%= "today_portion_#{portion.id}" %>">
+	<td><%= h(portion.description) %></td>
+	<td><%= h(portion.energy) %></td>
+	<td><%= h(portion.fat) %></td>
+	<td><%= h(portion.protein) %></td>
+	<td><%= h(portion.carbohydrate) %></td>
+	<td>
+		<%= link_to_remote("Delete", :url => {:action => :delete_portion, :id => portion.id}, 
+										:update => "today") %>
+		/
+		<%= link_to_remote("Edit", :url => {:action => :edit_portion, :id => portion.id}, 
+									:update => "today_portion_#{portion.id}") %>
+	</td>
+</tr>		

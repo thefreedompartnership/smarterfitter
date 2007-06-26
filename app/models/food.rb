@@ -1,12 +1,11 @@
 class Food < ActiveRecord::Base
   belongs_to  :food_group
-  has_many    :weights
+  has_many    :weights, :order => "sequence"
   has_many    :food_nutrients
 
   acts_as_ferret({ :fields => { :first_word_of_short_description => { :boost => 1000 }, :long_description => { :boost => 0 } } ,
                     :index_dir => "#{FERRET_INDEX_DIR_PREFIX}/index/#{RAILS_ENV}/food" })
-                      
-
+  
   def energy
     nutrient('208')
   end
@@ -27,6 +26,12 @@ class Food < ActiveRecord::Base
     food_nutrients.find(:all, :conditions => ['nutrient_number = :nutrient_number', {:nutrient_number => nutrient_number}])[0]
   end
   
+  def weights_as_measure_id_array
+    r = []
+    weights.each { |w| r.push([w.measure_description, w.id]) }
+    return r
+  end
+
   def first_word_of_short_description
     attributes["short_description"].split()[0]
   end
