@@ -22,15 +22,19 @@ class Portion
   def energy
     (@food.energy.nutrient_value * @multiplier).round(3)
   end
+  
   def fat
     (@food.fat.nutrient_value * @multiplier).round(3)
   end
+  
   def carbohydrate
     (@food.carbohydrate.nutrient_value * @multiplier).round(3)
   end
+  
   def protein
     (@food.protein.nutrient_value * @multiplier).round(3)
   end
+
   def nutrient(nutrient_number)
     n = @food.nutrient(nutrient_number)
     if(n)

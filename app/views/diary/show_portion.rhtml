@@ -1,9 +1,11 @@
 <div>
 	<% form_remote_tag :url => {:action => :show_portion, :id => @food}, :update => "food_#{@food.id}", :html => { :id => "portion_form_#{@food.id}" } do %>
 		<p>Serving size:</p>
-		<p><%= text_field :portion, :quantity, {:size => 6} %>
-		<%= select :portion, :weight_id, @food.weights_as_measure_id_array %>
-		<%= submit_tag "Update serving size" %></p>
+		<p>
+			<%= text_field :portion, :quantity, {:size => 6} %>
+			<%= select :portion, :weight_id, @food.weights_as_measure_id_array %>
+			<%= submit_tag "Update serving size" %>
+		</p>
 		<table>
 			<tr>
 				<th>Calories</th>
@@ -12,10 +14,10 @@
 				<th>Carbs(g)</th>
 			</tr>
 			<tr>
-				<td><%= h(@portion.energy) %></td>
-				<td><%= h(@portion.fat) %></td>
-				<td><%= h(@portion.protein) %></td>
-				<td><%= h(@portion.carbohydrate) %></td>
+				<td class="numeric"><%= h(@portion.energy) %></td>
+				<td class="numeric"><%= h(@portion.fat) %></td>
+				<td class="numeric"><%= h(@portion.protein) %></td>
+				<td class="numeric"><%= h(@portion.carbohydrate) %></td>
 				<td></td>
 			</tr>
 		</table>
@@ -23,6 +25,8 @@
 		<%= hidden_field_tag :name => "choice", :value => "", :id => "choice_#{@food.id}"  %>
 		<p>
 			<%= submit_to_remote "foo", "Add to diary", :url =>  {:action => :add_portion, :id => @food}, :update => "today", :complete => "new Effect.SlideUp('food_#{@food.id}')" %>
+			<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('food_#{@food.id}');return false;"}) %>
+			
 		</p>
 	<% end %>
 </div>

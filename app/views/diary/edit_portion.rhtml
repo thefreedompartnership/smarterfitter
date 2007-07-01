@@ -1,19 +1,34 @@
-	<td>
+	<td colspan="6">
 		<% form_remote_tag :url => {:action => :edit_portion, :id => @portion}, 
 							:update => "today_portion_#{@portion.id}" do %>
-			<%= text_field :portion, :quantity %>
-			<%= select :portion, :weight_id, @portion.food.weights_as_measure_id_array %>
-			<%= hidden_field :portion, :food_id %>
 			<%= h(@portion.food.long_description) %>
+			<p>Serving size:</p>
 			<p>
+				<%= text_field :portion, :quantity, {:size => 6} %>
+				<%= select :portion, :weight_id, @portion.food.weights_as_measure_id_array %>
 				<%= submit_tag "Update serving" %>
-				<%= submit_to_remote "foo", "Save Changes", 
+				<%= hidden_field :portion, :food_id %>
+			</p>
+			<table>
+				<tr>
+					<th>Calories</th>
+					<th>Fat(g)</th>
+					<th>Protein(g)</th>
+					<th>Carbs(g)</th>
+				</tr>
+				<tr>
+					<td class="numeric"><%= h(@portion.energy) %></td>
+					<td class="numeric"><%= h(@portion.fat) %></td>
+					<td class="numeric"><%= h(@portion.protein) %></td>
+					<td class="numeric"><%= h(@portion.carbohydrate) %></td>
+					<td></td>
+				</tr>
+			</table>
+			<p>
+				<%= submit_to_remote "save_changes", "Save Changes", 
 					:url =>  {:action => :update_portion, :id => @portion}, :update => "today" %>
+				<%= submit_to_remote "cancel_changes", "Cancel", 
+					:url =>  {:action => :cancel_update_portion, :id => @portion}, :update => "today" %>
 			</p>
 		<% end %>
 	</td>
-	<td><%= h(@portion.energy) %></td>
-	<td><%= h(@portion.fat) %></td>
-	<td><%= h(@portion.protein) %></td>
-	<td><%= h(@portion.carbohydrate) %></td>
-	<td></td>

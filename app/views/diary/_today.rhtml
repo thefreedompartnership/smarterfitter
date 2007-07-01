@@ -1,4 +1,4 @@
-<table>
+<table class="summary_table">
 	<tr>
 		<th>Today</th>
 		<th>Calories</th>
@@ -9,6 +9,14 @@
 	</tr>
 	<%- if @user.portions_for_today? -%>
 		<%= render :partial => "portion", :collection => @user.portions_for_today %>
+		<tr id="totals_today">
+			<td>Totals</td>
+			<td class="numeric"><%= h(@user.energy_today) %></td>
+			<td class="numeric"><%= h(@user.fat_today) %></td>
+			<td class="numeric"><%= h(@user.protein_today) %></td>
+			<td class="numeric"><%= h(@user.carbohydrate_today) %></td>
+			<td></td>
+		</tr>
 	<%- else -%>
 		<tr>
 			<td colspan="6">

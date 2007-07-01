@@ -46,6 +46,11 @@ class DiaryController < ApplicationController
     render(:partial => "today")
   end
   
+  def cancel_update_portion
+    @user = session[:user]
+    render(:partial => "today")
+  end
+  
   def delete_portion
     @user = session[:user]
     @user.consumed_portions.find(params[:id]).destroy

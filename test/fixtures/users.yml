@@ -38,3 +38,13 @@ alice:
   last_name: Andrews
   measurement_system: imperial
   time_zone: NZ
+
+bob:
+  id: 5
+  user_name: bob
+  email_address: bob@gatezero.org
+  hashed_password: <%= Digest::SHA1.hexdigest('password') %>
+  first_name: Bob
+  last_name: Burnet
+  measurement_system: imperial
+  time_zone: NZ

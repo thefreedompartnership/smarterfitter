@@ -23,6 +23,10 @@ class ConsumedPortion < ActiveRecord::Base
     self.portion.protein
   end
 
+  def nutrient(nutrient_number)
+    self.portion.nutrient(nutrient_number)
+  end
+
   def portion
     if attributes["quantity"].nil?
       portion = Portion.new(self.food, self.weight)

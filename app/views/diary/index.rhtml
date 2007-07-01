@@ -10,18 +10,178 @@
 	<%= javascript_include_tag "prototype" %>
 	<%= javascript_include_tag "effects" %>
 	
+	<style type="text/css">
+	
+		body {
+			font-family: "trebuchet ms";
+			color: #3E3E3E;
+			margin: 0px;
+			background-image: url('../images/top_fade.png');
+			background-repeat: repeat-x;
+		}
+		h1 {
+			margin-top: 0px;
+			color:#33241A;
+			text-align: center;
+		}
+		h2 {
+				color:#806959;
+		}
+		h3 {
+			color:#806959;
+		}
+
+		#menu_bar {
+		  height: 65px;
+		}
+
+		#menu_bar h1 {
+			text-align: left;
+			font-size: 35px;
+			padding-top: 20px;
+		}
+
+		#menu_bar ul {
+			float: right;
+			list-style: none;
+			margin: 0px;
+			padding: 11px;
+			text-align: right;
+		}
+
+		#menu_bar li {
+			display: inline;
+		}
+
+		#menu_bar li:before { 
+			content: "| "; 
+			color: gray;
+		}
+
+		#menu_bar li:first-child:before { 
+			content: ""; 
+		}
+	
+		#layout_context {
+			position: relative;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		
+		#centering_box {
+			position: absolute;
+			width: 1000px;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		
+		.column {
+			background-color: white;
+			float: left;
+		}
+
+		#left_column {
+			clear: left;
+		}
+		
+		#right_column {
+			width: 400px;
+		}
+		
+		table {
+			border-collapse: collapse;
+		}
+		td {
+			padding: 7px;
+		}
+		.summary_table {
+			width: 600px;
+		}
+		#totals_today {
+			font-weight: bold;
+		}
+		#totals_today td {
+			border-top: solid 1px;
+			border-bottom: solid 1px;
+		}
+		.numeric {
+			text-align: right;
+		}
+		.actions {
+			text-align: center;
+			font-size: 10px;
+		}
+		
+	</style>
+
 </head>
 
 <body>
-	<div id="today">
-		<%= render :partial => 'today' %>
-	</div>
-
-	<% form_remote_tag :update => "search_results", :url => {:action => "search"} do %>
-		<label for="q">Search</label> <%= text_field_tag "q" %>
-		<%= submit_tag "Search" %>
-	<% end %>
-	<div id="search_results">
+	<div id="layout_context">
+		<div id="centering_box">
+			<div id="menu_bar">
+				<ul>
+					<li><%= link_to("Food/Calorie Database", :controller => "foods") %></li>
+					<li><%= link_to("RunLog", :controller => "runlog") %></li>
+					<li><%= link_to("BMI Calculator", :controller => "calculators", :action => "bmi") %></li>
+				</ul>
+				<h1>SmarterFitter</h1>
+			</div>
+			<div id="left_column", class="column">
+				<h2>Food Diary</h2>
+				<div id="today">
+					<%= render :partial => 'today' %>
+				</div>
+				<table id="averages" class="summary_table">
+					<tr>
+						<th>Averages</th>
+						<th>Calories</th>
+						<th>Fat(g)</th>
+						<th>Protein(g)</th>
+						<th>Carbs(g)</th>
+					</tr>
+					<tr>
+						<td>Yesterday</td>
+						<td class="numeric"><%= @user.energy_yesterday %></td>
+						<td class="numeric"><%= @user.fat_yesterday %></td>
+						<td class="numeric"><%= @user.protein_yesterday %></td>
+						<td class="numeric"><%= @user.carbohydrate_yesterday %></td>
+					</tr>		
+					<tr>
+						<td>Last 7 Days</td>
+						<td class="numeric"><%= @user.average_energy_last_seven_days %></td>
+						<td class="numeric"><%= @user.average_fat_last_seven_days %></td>
+						<td class="numeric"><%= @user.average_protein_last_seven_days %></td>
+						<td class="numeric"><%= @user.average_carbohydrate_last_seven_days %></td>
+					</tr>		
+					<tr>
+						<td>Last 30 Days</td>
+						<td class="numeric"><%= @user.average_energy_last_thirty_days %></td>
+						<td class="numeric"><%= @user.average_fat_last_thirty_days %></td>
+						<td class="numeric"><%= @user.average_protein_last_thirty_days %></td>
+						<td class="numeric"><%= @user.average_carbohydrate_last_thirty_days %></td>
+					</tr>		
+					<tr>
+						<td>All time</td>
+						<td class="numeric"><%= @user.average_energy %></td>
+						<td class="numeric"><%= @user.average_fat %></td>
+						<td class="numeric"><%= @user.average_protein %></td>
+						<td class="numeric"><%= @user.average_carbohydrate %></td>
+					</tr>		
+				</table>
+			</div>
+			<div id="right_column" class="column">
+				<% form_remote_tag :update => "search_results", :url => {:action => "search"} do %>
+					<label for="q">Search</label> <%= text_field_tag "q" %>
+					<%= submit_tag "Search" %>
+				<% end %>
+				<div id="search_results">
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
