@@ -51,6 +51,11 @@ set :svn, "/opt/local/bin/svn"       # defaults to searching the PATH
 # narrow the set of servers to a subset of a role by specifying options, which
 # must match the options given for the servers to select (like :primary => true)
 
+desc "Symlinks the blog into place"
+task :link_in_blog, :roles => :app do
+  run "(cd #{release_path}/public && ln -s /www/apps/blog_smarterfitter/blog)"
+end
+
 
 desc "Restart the web server"
 task :restart, :roles => :app do
