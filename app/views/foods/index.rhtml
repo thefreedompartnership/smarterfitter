@@ -1,15 +1,6 @@
-<h2>Food Log</h2>
-
-<p>The best way to count calories</p>
-
-<h3>Sign Up</h3>
-<p>If you're new please <%= link_to "sign up", :controller => "welcome", :action => "signup", :source => "foods" %> now</p>
-<h3>Log In</h3>
-<%= render :partial => 'welcome/login_form', :locals => { :goto_controller => "foods", :goto_action => "log" } %>
-
 <h2>Food Calorie Counter</h2>
 
-<p>Calories, carbohydrates, fat, protein and more! Search below and track the results with our nifty <a href="#">food diary</a>.</p>
+<p>Calories, carbohydrates, fat, protein and more!</p>
 
 Find nutrition information for&hellip;
 <%= render(:partial => "form") %>

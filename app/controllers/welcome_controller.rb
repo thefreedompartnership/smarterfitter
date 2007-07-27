@@ -13,7 +13,7 @@ class WelcomeController < ApplicationController
         source = session[:source]
         session[:source] = nil
         if("foods" == source)
-          redirect_to :controller => 'foods', :action => 'log'
+          redirect_to :controller => 'diary', :action => 'index'
         elsif("runlog" == source)
           redirect_to :controller => 'runlog', :action => 'list'
         else

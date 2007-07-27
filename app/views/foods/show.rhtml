@@ -19,22 +19,11 @@
 
 <% form_tag( { :action => 'show' }, { :method => :get } ) do %>
 	Serving size
-	<%= text_field_tag 'amount', @portion.quantity, { :size => 3 } %> x 
-	<%= select_tag 'measure', 
-				   '<option value="0">100 grams</option>' + 
-				   options_for_select(@food.weights.collect { |w| ["#{w.amount} #{w.measure_description}", w.id]},
-				 		params[:measure].to_i)
-#				   options_from_collection_for_select(@food.weights, 'id', 'measure_description', params[:measure].to_i)
-	%>
+	<%= text_field_tag 'amount', @portion.quantity, { :size => 5 } %> x
+	<%= select 'weight', :id, @food.weights_as_measure_id_array %>
 	<%= submit_tag 'Change' %>
 <% end %>
-<p>Amount per <%= @portion.quantity %> 
-<% if @portion.quantity == 1.0 %>
-		serving 
-<% else %> 
-		servings 
-<% end %> 
-of <%= @portion.weight.amount %> <%= @portion.weight.measure_description %></p>
+<p>Amount per <%= @portion.quantity %> <%= @portion.weight.measure_description %></p>
 <table id="simple_nutrient_data" class="nutrient_table">
 	<tr style="display:none">
 		<th>Nutrient</th>

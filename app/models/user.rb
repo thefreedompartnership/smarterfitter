@@ -133,7 +133,7 @@ class User < ActiveRecord::Base
       total_nutrient = BigDecimal.new("0")
       portions.each {|portion| total_nutrient += portion.nutrient(nutrient_number)}
       number_of_days_recorded = consumed_portions.count("distinct(date(created_at))", :conditions => period)
-      return total_nutrient / number_of_days_recorded
+      return (total_nutrient / number_of_days_recorded).round
     else
       return BigDecimal.new("0")
     end
