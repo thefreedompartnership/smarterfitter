@@ -1,8 +1,8 @@
 <li>
 	<%= link_to_remote food.long_description, 
 			:update => "food_#{food.id}",
-			:before => "var divs = document.getElementsByTagName('div'); for(var i = 0; i < divs.length; i++) {if(divs[i].id.match(/food_/) && Element.hasClassName(divs[i], 'current')){ divs[i].removeClassName('current');new Effect.SlideUp(divs[i].id); }}",
-			:complete => "$('food_#{food.id}').addClassName('current'); new Effect.SlideDown('food_#{food.id}');",
+			:before => "var divs = document.getElementsByTagName('div'); for(var i = 0; i < divs.length; i++) {if(divs[i].id.match(/food_/) && Element.hasClassName(divs[i], 'current')){ divs[i].removeClassName('current'); divs[i].parentNode.removeClassName('food_being_edited'); new Effect.SlideUp(divs[i].id); }}",
+			:complete => "$('food_#{food.id}').addClassName('current'); $('food_#{food.id}').parentNode.addClassName('food_being_edited'); new Effect.SlideDown('food_#{food.id}');",
 			:url => { :action => "show_portion", :id => food.id }
 	%>
 	<div id="<%= "food_#{food.id}" %>"></div>
