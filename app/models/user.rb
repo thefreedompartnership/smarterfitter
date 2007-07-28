@@ -20,15 +20,27 @@ class User < ActiveRecord::Base
   end
 
   def percent_calories_from_protein
-    ((protein_today * 4) / energy_today) * 100
+    if energy_today != 0
+      return ((protein_today * 4) / energy_today) * 100
+    else
+      return BigDecimal.new("0")
+    end
   end
 
   def percent_calories_from_fat
-    ((fat_today * 9) / energy_today) * 100
+    if energy_today != 0
+      return ((fat_today * 9) / energy_today) * 100
+    else
+      return BigDecimal.new("0")
+    end
   end
 
   def percent_calories_from_carbohydrate
-    ((carbohydrate_today * 4) / energy_today) * 100
+    if energy_today != 0
+      return ((carbohydrate_today * 4) / energy_today) * 100
+    else
+      return BigDecimal.new("0")
+    end
   end
 
   def energy_today
