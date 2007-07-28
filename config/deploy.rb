@@ -52,7 +52,7 @@ set :svn, "/opt/local/bin/svn"       # defaults to searching the PATH
 # must match the options given for the servers to select (like :primary => true)
 
 desc "Symlinks the blog into place"
-task :link_in_blog, :roles => :app do
+task :after_deploy, :roles => :app do
   run "(cd #{release_path}/public && ln -s /www/apps/blog_smarterfitter/blog)"
 end
 
