@@ -1,3 +1,28 @@
+<table id="summary">
+	<tr>
+		<td>
+			<p class="label">Calories</p>
+			<p class="data"><strong><%= h(number_with_precision(@user.energy_today, 0)) %></strong> <span class="unit">kcal</span></p>
+		</td>
+		<td>
+			<p class="label">Fat</p>
+			<p class="data"><strong><%= h(number_with_precision(@user.fat_today, 0)) %></strong> <span class="unit">grams</span></p>
+			<p class="context_percentage"><%= h(number_to_percentage(@user.percent_calories_from_fat, :precision => 1)) %> calories from fat</p>
+		</td>
+		<td>
+			<p class="label">Protein</p>
+			<p class="data"><strong><%= h(number_with_precision(@user.protein_today, 0)) %></strong> <span class="unit">grams</span></p>
+			<p class="context_percentage"><%= h(number_to_percentage(@user.percent_calories_from_protein, :precision => 1)) %> calories from protein</p>
+		</td>
+		<td>
+			<p class="label">Carbs</p>
+			<p class="data"><strong><%= h(number_with_precision(@user.carbohydrate_today, 0)) %></strong> <span class="unit">grams</span></p>
+			<p class="context_percentage"><%= h(number_to_percentage(@user.percent_calories_from_carbohydrate, :precision => 1)) %> calories from carbohydrate</p>
+		</td>
+	</tr>
+</table>				
+
+
 <table class="summary_table">
 	<tr>
 		<th>Today</th>
@@ -9,14 +34,6 @@
 	</tr>
 	<%- if @user.portions_for_today? -%>
 		<%= render :partial => "portion", :collection => @user.portions_for_today %>
-		<tr id="totals_today">
-			<td>Totals</td>
-			<td class="numeric"><%= h(@user.energy_today) %></td>
-			<td class="numeric"><%= h(@user.fat_today) %></td>
-			<td class="numeric"><%= h(@user.protein_today) %></td>
-			<td class="numeric"><%= h(@user.carbohydrate_today) %></td>
-			<td></td>
-		</tr>
 	<%- else -%>
 		<tr>
 			<td colspan="6">

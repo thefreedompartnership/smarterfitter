@@ -17,9 +17,15 @@ class UserTest < Test::Unit::TestCase
     assert_equal 35, users(:bob).consumed_portions.count
     assert_equal BigDecimal.new("1.93"), users(:bob).protein_today
     assert_equal BigDecimal.new("1.93"), users(:bob).protein_yesterday
-    assert_equal BigDecimal.new("1.93"), users(:bob).average_protein_last_seven_days
-    assert_equal BigDecimal.new("1.93"), users(:bob).average_protein_last_thirty_days
-    assert_equal BigDecimal.new("1627.59"), users(:bob).average_energy_last_thirty_days
-    assert_equal BigDecimal.new("1.93"), users(:bob).average_protein
+    assert_equal BigDecimal.new("2"), users(:bob).average_protein_last_seven_days
+    assert_equal BigDecimal.new("2"), users(:bob).average_protein_last_thirty_days
+    assert_equal BigDecimal.new("1628"), users(:bob).average_energy_last_thirty_days
+    assert_equal BigDecimal.new("2"), users(:bob).average_protein
+  end
+  
+  def test_nutrient_percentages_of_calories
+    assert_equal ((users(:bob).protein_today * 4) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_protein
+    assert_equal ((users(:bob).fat_today * 9) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_fat
+    assert_equal ((users(:bob).carbohydrate_today * 4) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_carbohydrate
   end
 end

@@ -22,10 +22,9 @@ class DiaryControllerTest < Test::Unit::TestCase
     assert_not_nil assigns("user")
     #so we want to check up on the three portions for today
     assert_equal 3, session[:user].portions_for_today.size
-#TODO: work out why assert_select and assert_tag aren't working properly
-#    session[:user].portions_for_today.each() do |portion|
-#      assert_tag :tag => "td", :content => portion.description
-#    end
+    session[:user].portions_for_today.each() do |portion|
+      assert_tag :tag => "td", :content => portion.description
+    end
     
     #also want to check that there are a certain number of calories for yesterday
     #might want to check that tim has eaten some things over 5 of the past 7 days
@@ -38,15 +37,14 @@ class DiaryControllerTest < Test::Unit::TestCase
     log_in(users(:monica))
     assert_not_nil assigns("user")
     assert_equal 0, session[:user].portions_for_today.size
-    #assert_select "em", :text => "You haven't added any food today. Get started by searching for food on the right!"
-    #assert_select "title"
+    assert_select "em", :text => "You haven't added any food today. Get started by searching for food on the right!"
   end
   
   def test_user_with_some_food_but_none_today_see_message
     log_in(users(:alice))
     assert_not_nil assigns("user")
     assert_equal 0, session[:user].portions_for_today.size
-    #assert_tag :tag => "em", :content => "You haven't added any food today. Get started by searching for food on the right!"
+    assert_tag :tag => "em", :content => "You haven't added any food today. Get started by searching for food on the right!"
   end
 
   def test_add_portion

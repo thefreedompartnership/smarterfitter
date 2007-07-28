@@ -12,108 +12,178 @@
 	
 	<style type="text/css">
 	
-		body {
-			font-family: "trebuchet ms";
-			color: #3E3E3E;
-			margin: 0px;
-			background-image: url('../images/top_fade.png');
-			background-repeat: repeat-x;
-		}
-		h1 {
-			margin-top: 0px;
-			color:#33241A;
-			text-align: center;
-		}
-		h2 {
-				color:#806959;
-		}
-		h3 {
+	body {
+		font-family: "trebuchet ms";
+		color: #3E3E3E;
+		margin: 0px;
+		background-color: #eee;
+	}
+	h1 {
+		margin-top: 0px;
+		color:#33241A;
+		text-align: center;
+	}
+	h2 {
 			color:#806959;
-		}
+	}
+	h3 {
+		color:#806959;
+	}
 
-		#menu_bar {
-		  height: 65px;
-		}
+	#menu_bar {
+	  height: 65px;
+	}
 
-		#menu_bar h1 {
-			text-align: left;
-			font-size: 35px;
-			padding-top: 20px;
-		}
+	#menu_bar h1 {
+		text-align: left;
+		font-size: 35px;
+		padding-top: 20px;
+	}
 
-		#menu_bar ul {
-			float: right;
-			list-style: none;
-			margin: 0px;
-			padding: 11px;
-			text-align: right;
-		}
+	#menu_bar ul {
+		float: right;
+		list-style: none;
+		margin: 0px;
+		padding: 11px;
+		text-align: right;
+	}
 
-		#menu_bar li {
-			display: inline;
-		}
+	#menu_bar li {
+		display: inline;
+	}
 
-		#menu_bar li:before { 
-			content: "| "; 
-			color: gray;
-		}
+	#menu_bar li:before { 
+		content: "| "; 
+		color: gray;
+	}
 
-		#menu_bar li:first-child:before { 
-			content: ""; 
-		}
+	#menu_bar li:first-child:before { 
+		content: ""; 
+	}
+
 	
-		#layout_context {
-			position: relative;
-			margin-left: 25px;
-			margin-right: 25px;
-		}
-		
-		#centering_box {
-			position: absolute;
-			width: 1000px;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			margin: auto;
-		}
-		
-		.column {
-			background-color: white;
-			float: left;
-		}
 
-		#left_column {
-			clear: left;
-		}
+	#layout_context {
+		position: relative;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	
+	#centering_box {
+		position: absolute;
+		width: 1000px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	
+	.column {
+		background-color: white;
+		float: left;
+	}
+
+	#left_column {
+		clear: left;
+		background-color: #fff;
+		padding: 20px;
+		width: 540px;
+	}
+	
+	#right_column {
+		margin-left: 20px;
+		width: 380px;
+		background-color: #eee;
+		font-size: small;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 7px;
+		border-right: 1px solid #ddd;
+	}
+	th {
+		border: 1px solid #ddd;
+		background-color: #ccc;
+	}
+	th.first {
+		text-align: left;
+	}
+	
+	.summary_table {
+		width: 100%;
+	}
+	.even_table_row {
+		background-color: #eee;
+	}
+	#totals_today {
+		font-weight: bold;
+	}
+	#totals_today td {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		background: #d9ffd9;
+	}
+	.numeric {
+		text-align: right;
+	}
+	.actions {
+		text-align: center;
+		font-size: 10px;
+	}
+	.food_being_edited {
+		background-color: #FFFFE0;
+		border: 2px solid #FFD700;
+		padding: 5px;
+	}
+	
+	table#summary {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	
+	table#summary tr td {
+		border: 1px solid black;
+		width: 25%;
+		vertical-align: top;
+	}
+	
+	table#summary tr td p.label {
+		font-size: small;
+		margin: 0px;
+		padding: 0px;
 		
-		#right_column {
-			width: 400px;
-		}
-		
-		table {
-			border-collapse: collapse;
-		}
-		td {
-			padding: 7px;
-		}
-		.summary_table {
-			width: 600px;
-		}
-		#totals_today {
-			font-weight: bold;
-		}
-		#totals_today td {
-			border-top: solid 1px;
-			border-bottom: solid 1px;
-		}
-		.numeric {
-			text-align: right;
-		}
-		.actions {
-			text-align: center;
-			font-size: 10px;
-		}
+	}
+	table#summary tr td p.data {
+		font-size: x-large;
+		margin: 0px;
+		padding: 0px;
+		line-height: 140%;
+	}
+	table#summary tr td p.data span.unit{
+		font-size: small;
+	}
+	table#summary tr td p.context_percentage{
+		font-size: x-small;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#right_column ul {
+		padding: 0px;
+	}
+	
+	#right_column ul li {
+		list-style-type: none;
+	}
+	
+	.sub_h1 {
+		font-size: 0.8em;
+		color:#806959;
+	}
 		
 	</style>
 
@@ -128,10 +198,10 @@
 					<li><%= link_to("RunLog", :controller => "runlog") %></li>
 					<li><%= link_to("BMI Calculator", :controller => "calculators", :action => "bmi") %></li>
 				</ul>
-				<h1>SmarterFitter</h1>
+				<h1>SmarterFitter <span class="sub_h1">Food Diary</span></h1>
 			</div>
-			<div id="left_column", class="column">
-				<h2>Food Diary</h2>
+			<div id="left_column" class="column">
+				<h3>Today</h3>
 				<div id="today">
 					<%= render :partial => 'today' %>
 				</div>

@@ -19,6 +19,18 @@ class User < ActiveRecord::Base
     consumed_portions.find(:all, :conditions => @@for_today)
   end
 
+  def percent_calories_from_protein
+    ((protein_today * 4) / energy_today) * 100
+  end
+
+  def percent_calories_from_fat
+    ((fat_today * 9) / energy_today) * 100
+  end
+
+  def percent_calories_from_carbohydrate
+    ((carbohydrate_today * 4) / energy_today) * 100
+  end
+
   def energy_today
     energy = 0
     consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
