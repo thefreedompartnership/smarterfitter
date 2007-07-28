@@ -1,4 +1,6 @@
 	<td colspan="6">
+		<div class="food_being_edited">
+		
 		<% form_remote_tag :url => {:action => :edit_portion, :id => @portion}, 
 							:update => "today_portion_#{@portion.id}" do %>
 			<%= h(@portion.food.long_description) %>
@@ -21,7 +23,6 @@
 					<td class="numeric"><%= h(@portion.fat) %></td>
 					<td class="numeric"><%= h(@portion.protein) %></td>
 					<td class="numeric"><%= h(@portion.carbohydrate) %></td>
-					<td></td>
 				</tr>
 			</table>
 			<p>
@@ -31,4 +32,5 @@
 					:url =>  {:action => :cancel_update_portion, :id => @portion}, :update => "today" %>
 			</p>
 		<% end %>
+		</div>
 	</td>

@@ -116,7 +116,10 @@
 	.summary_table {
 		width: 100%;
 	}
-	.even_table_row {
+	.list_line_odd {
+		background-color: #fff;
+	}
+	.list_line_even {
 		background-color: #eee;
 	}
 	#totals_today {
@@ -205,6 +208,7 @@
 				<div id="today">
 					<%= render :partial => 'today' %>
 				</div>
+				<h3>Previously</h3>
 				<table id="averages" class="summary_table">
 					<tr>
 						<th>Averages</th>

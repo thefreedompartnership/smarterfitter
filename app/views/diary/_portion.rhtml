@@ -1,4 +1,4 @@
-<tr id="<%= "today_portion_#{portion.id}" %>">
+<tr id="<%= "today_portion_#{portion.id}" %>" class="<%= cycle('list_line_odd', 'list_line_even') %>">
 	<td><%= h(portion.description) %></td>
 	<td class="numeric"><%= h(portion.energy) %></td>
 	<td class="numeric"><%= h(portion.fat) %></td>
