@@ -8,6 +8,7 @@
 					"		divs[i].removeClassName('current'); " +
 					"		divs[i].parentNode.removeClassName('food_being_edited'); " +
 					"		new Effect.SlideUp(divs[i].id); " +
+					"       if(divs[i].id == 'food_#{food.id}') {return false;}" +
 					"	}" +
 					"}",
 			:complete => "$('food_#{food.id}').style.display = 'none'; $('food_#{food.id}').addClassName('current'); $('food_#{food.id}').parentNode.addClassName('food_being_edited'); new Effect.SlideDown('food_#{food.id}');",
