@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
   end
 
   def portions_for_today
-    consumed_portions.find(:all, :conditions => @@for_today)
+    consumed_portions.find(:all, :conditions => @@for_today, :order => "created_at DESC")
   end
 
   def percent_calories_from_protein
