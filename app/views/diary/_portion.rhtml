@@ -1,9 +1,9 @@
 <tr id="<%= "today_portion_#{portion.id}" %>" class="<%= cycle('list_line_odd', 'list_line_even') %>">
 	<td><%= h(portion.description) %></td>
-	<td class="numeric"><%= h(portion.energy) %></td>
-	<td class="numeric"><%= h(portion.fat) %></td>
-	<td class="numeric"><%= h(portion.protein) %></td>
-	<td class="numeric"><%= h(portion.carbohydrate) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.energy, 0)) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.fat, 3)) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.protein, 3)) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.carbohydrate, 3)) %></td>
 	<td class="actions">
 		<%= link_to_remote("Edit", :url => {:action => :edit_portion, :id => portion.id}, 
 									:update => "today_portion_#{portion.id}") %>

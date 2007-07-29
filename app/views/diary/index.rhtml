@@ -214,37 +214,37 @@
 					<tr>
 						<th>Averages</th>
 						<th>Calories</th>
-						<th>Fat(g)</th>
-						<th>Protein(g)</th>
-						<th>Carbs(g)</th>
+						<th>Fat</th>
+						<th>Protein</th>
+						<th>Carbs</th>
 					</tr>
 					<tr>
 						<td>Yesterday</td>
-						<td class="numeric"><%= @user.energy_yesterday %></td>
-						<td class="numeric"><%= @user.fat_yesterday %></td>
-						<td class="numeric"><%= @user.protein_yesterday %></td>
-						<td class="numeric"><%= @user.carbohydrate_yesterday %></td>
+						<td class="numeric"><%= number_with_precision(@user.energy_yesterday, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.fat_yesterday, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.protein_yesterday, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.carbohydrate_yesterday, 0) %></td>
 					</tr>		
 					<tr>
 						<td>Last 7 Days</td>
-						<td class="numeric"><%= @user.average_energy_last_seven_days %></td>
-						<td class="numeric"><%= @user.average_fat_last_seven_days %></td>
-						<td class="numeric"><%= @user.average_protein_last_seven_days %></td>
-						<td class="numeric"><%= @user.average_carbohydrate_last_seven_days %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_energy_last_seven_days, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_fat_last_seven_days, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_protein_last_seven_days, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_carbohydrate_last_seven_days, 0) %></td>
 					</tr>		
 					<tr>
 						<td>Last 30 Days</td>
-						<td class="numeric"><%= @user.average_energy_last_thirty_days %></td>
-						<td class="numeric"><%= @user.average_fat_last_thirty_days %></td>
-						<td class="numeric"><%= @user.average_protein_last_thirty_days %></td>
-						<td class="numeric"><%= @user.average_carbohydrate_last_thirty_days %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_energy_last_thirty_days, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_fat_last_thirty_days, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_protein_last_thirty_days, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_carbohydrate_last_thirty_days, 0) %></td>
 					</tr>		
 					<tr>
 						<td>All time</td>
-						<td class="numeric"><%= @user.average_energy %></td>
-						<td class="numeric"><%= @user.average_fat %></td>
-						<td class="numeric"><%= @user.average_protein %></td>
-						<td class="numeric"><%= @user.average_carbohydrate %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_energy, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_fat, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_protein, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.average_carbohydrate, 0) %></td>
 					</tr>		
 				</table>
 			</div>
