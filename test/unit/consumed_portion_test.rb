@@ -34,6 +34,7 @@ class ConsumedPortionTest < Test::Unit::TestCase
   def test_saturated_fat_calculaton
     assert_in_delta 51.368, consumed_portions(:one_hundred_grams_of_butter).saturated_fat, 0.01
     assert_in_delta 174.908, consumed_portions(:one_and_a_half_cups_of_butter).saturated_fat, 0.0001
+    assert_equal 0, consumed_portions(:charlies_chard).saturated_fat
   end
 
   

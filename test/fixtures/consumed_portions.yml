@@ -63,6 +63,23 @@ alices_second_past_portion:
   user_id: "4"
   food_id: "1"
   created_at: 2007-06-18 17:11:47
+charlies_butter:
+  weight_id: "20359"
+  modified_at: 
+  quantity: "100.000"
+  id: "9"
+  user_id: "6"
+  food_id: "1"
+  created_at: <%= DateTime.now().strftime("%Y-%m-%d %H:%M:%S") %>
+charlies_chard:
+  weight_id: "23583"
+  modified_at: 
+  quantity: "100.000"
+  id: "10"
+  user_id: "6"
+  food_id: "3225"
+  created_at: <%= DateTime.now().strftime("%Y-%m-%d %H:%M:%S") %>
+
 <% (0..34).each do |i| %>
 bobs_<%= i %>_past_portion: 
   weight_id: "1"

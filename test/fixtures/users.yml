@@ -48,3 +48,13 @@ bob:
   last_name: Burnet
   measurement_system: imperial
   time_zone: NZ
+
+charlie:
+  id: 6
+  user_name: charlie
+  email_address: charlie@gatezero.org
+  hashed_password: <%= Digest::SHA1.hexdigest('password') %>
+  first_name: Charlie
+  last_name: Cutthroat
+  measurement_system: imperial
+  time_zone: NZ
