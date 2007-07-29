@@ -8,6 +8,7 @@
 			<p class="label">Fat</p>
 			<p class="data"><strong><%= h(number_with_precision(@user.fat_today, 0)) %></strong> <span class="unit">grams</span></p>
 			<p class="context_percentage"><%= h(number_to_percentage(@user.percent_calories_from_fat, :precision => 1)) %> calories from fat</p>
+			<p class="context_percentage"><%= h(number_to_percentage(@user.percent_calories_from_saturated_fat, :precision => 1)) %> from saturated fat</p>
 		</td>
 		<td>
 			<p class="label">Protein</p>

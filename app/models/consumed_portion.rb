@@ -22,6 +22,10 @@ class ConsumedPortion < ActiveRecord::Base
   def protein
     self.portion.protein
   end
+  
+  def saturated_fat
+    self.portion.nutrient(606)
+  end
 
   def nutrient(nutrient_number)
     self.portion.nutrient(nutrient_number)

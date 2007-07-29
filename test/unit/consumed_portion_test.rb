@@ -31,6 +31,11 @@ class ConsumedPortionTest < Test::Unit::TestCase
     assert_in_delta 717.0, consumed_portions(:one_hundred_grams_of_butter).energy, 0.01
     assert_in_delta 2441.385, consumed_portions(:one_and_a_half_cups_of_butter).energy, 0.0001
   end
+  def test_saturated_fat_calculaton
+    assert_in_delta 51.368, consumed_portions(:one_hundred_grams_of_butter).saturated_fat, 0.01
+    assert_in_delta 174.908, consumed_portions(:one_and_a_half_cups_of_butter).saturated_fat, 0.0001
+  end
+
   
   def test_food_and_weight_only_constructor
     food = foods("butter")

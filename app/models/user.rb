@@ -35,6 +35,14 @@ class User < ActiveRecord::Base
     end
   end
 
+  def percent_calories_from_saturated_fat
+    if energy_today != 0
+      return ((saturated_fat_today * 9) / energy_today) * 100
+    else
+      return BigDecimal.new("0")
+    end
+  end
+
   def percent_calories_from_carbohydrate
     if energy_today != 0
       return ((carbohydrate_today * 4) / energy_today) * 100
@@ -57,6 +65,15 @@ class User < ActiveRecord::Base
     end
     return fat
   end
+  
+  def saturated_fat_today
+    fat = 0
+    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
+      fat += portion.saturated_fat
+    end
+    return fat
+  end
+  
   def protein_today
     protein = 0
     consumed_portions.find(:all, :conditions => @@for_today).each do |portion|

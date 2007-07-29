@@ -26,11 +26,16 @@ class UserTest < Test::Unit::TestCase
   def test_nutrient_percentages_of_calories
     assert_equal ((users(:bob).protein_today * 4) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_protein
     assert_equal ((users(:bob).fat_today * 9) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_fat
+    assert_equal ((users(:bob).saturated_fat_today * 9) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_saturated_fat
     assert_equal ((users(:bob).carbohydrate_today * 4) / users(:bob).energy_today) * 100, users(:bob).percent_calories_from_carbohydrate
   end
   def test_nutrient_percentages_of_calories_when_no_food_does_not_divide_by_zero
     assert_equal 0, users(:monica).percent_calories_from_protein
     assert_equal 0, users(:monica).percent_calories_from_fat
     assert_equal 0, users(:monica).percent_calories_from_carbohydrate
+  end
+  
+  def test_saturated_fat_today
+    assert_equal 116.605, users(:bob).saturated_fat_today
   end
 end
