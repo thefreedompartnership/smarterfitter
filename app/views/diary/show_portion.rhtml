@@ -22,8 +22,8 @@
 		<%= hidden_field :portion, :food_id %>
 		<%= hidden_field_tag :name => "choice", :value => "", :id => "choice_#{@food.id}"  %>
 		<p>
-			<%= submit_to_remote "foo", "Add to diary", :url =>  {:action => :add_portion, :id => @food}, :update => "today", :complete => "new Effect.SlideUp('food_#{@food.id}')" %>
-			<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('food_#{@food.id}');return false;"}) %>
+			<%= submit_to_remote "foo", "Add to diary", :url =>  {:action => :add_portion, :id => @food}, :update => "today", :complete => "new Effect.SlideUp('food_#{@food.id}'); $('food_#{@food.id}').parentNode.removeClassName('food_being_edited'); $('food_#{@food.id}').removeClassName('current'); " %>
+			<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('food_#{@food.id}'); $('food_#{@food.id}').parentNode.removeClassName('food_being_edited'); $('food_#{@food.id}').removeClassName('current'); return false;"}) %>
 			
 		</p>
 	<% end %>
