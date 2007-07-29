@@ -11,7 +11,12 @@
 					"       if(divs[i].id == 'food_#{food.id}') {return false;}" +
 					"	}" +
 					"}",
-			:complete => "$('food_#{food.id}').style.display = 'none'; $('food_#{food.id}').addClassName('current'); $('food_#{food.id}').parentNode.addClassName('food_being_edited'); new Effect.SlideDown('food_#{food.id}');",
+			:complete => "" +
+					"$('food_#{food.id}').style.display = 'none'; " +
+					"$('food_#{food.id}').addClassName('current'); " +
+					"$('food_#{food.id}').parentNode.addClassName('food_being_edited'); " + 
+					"new Effect.SlideDown('food_#{food.id}');" +
+					"setTimeout('$(\\'portion_form_#{food.id}\\').focusFirstElement()', 1200);",
 			:url => { :action => "show_portion", :id => food.id }
 	%>
 	<div id="<%= "food_#{food.id}" %>"></div>
