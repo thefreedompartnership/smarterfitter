@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/foods/show.rhtml</string>
+	<string>public/.htaccess</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -61,7 +61,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<key>app/controllers/welcome_controller.rb</key>
 		<dict>
@@ -82,9 +82,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>41</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>31</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -121,6 +121,20 @@
 				<integer>23</integer>
 			</dict>
 		</dict>
+		<key>app/models/food_nutrient.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>app/models/nutrient.rb</key>
 		<dict>
 			<key>caret</key>
@@ -154,14 +168,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>37</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>81</integer>
+				<integer>212</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>12</integer>
+			<integer>183</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>212</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>213</integer>
+			</dict>
 		</dict>
 		<key>app/models/weight.rb</key>
 		<dict>
@@ -182,9 +212,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>210</integer>
+				<integer>75</integer>
 				<key>line</key>
-				<integer>3</integer>
+				<integer>18</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -196,9 +226,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>66</integer>
 				<key>line</key>
-				<integer>6</integer>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/views/diary/_search_navigation.rhtml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>18</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -210,9 +254,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>22</integer>
+				<integer>46</integer>
 				<key>line</key>
-				<integer>11</integer>
+				<integer>36</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -233,20 +277,6 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/views/diary/index.rhtml</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>16</integer>
-				<key>line</key>
-				<integer>97</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>11</integer>
-		</dict>
 		<key>app/views/diary/search.rhtml</key>
 		<dict>
 			<key>caret</key>
@@ -266,9 +296,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>36</integer>
+				<integer>144</integer>
 				<key>line</key>
-				<integer>5</integer>
+				<integer>0</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -279,16 +309,16 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>120</integer>
 				<key>line</key>
-				<integer>5</integer>
+				<integer>0</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>144</integer>
 				<key>line</key>
-				<integer>6</integer>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>app/views/foods/_form.rhtml</key>
@@ -410,23 +440,39 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>29</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>55</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>31</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>55</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>56</integer>
+			</dict>
 		</dict>
 		<key>app/views/layouts/standard.rhtml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>23</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -439,15 +485,43 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>18</integer>
+				<integer>23</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>24</integer>
 			</dict>
+		</dict>
+		<key>app/views/runlog/index.rhtml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>8</integer>
+				<key>line</key>
+				<integer>11</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/views/welcome/index.rhtml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>34</integer>
+				<key>line</key>
+				<integer>10</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>app/views/welcome/signup.rhtml</key>
 		<dict>
@@ -462,6 +536,34 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>app/views/welcome/thankyou.rhtml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>71</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>config/deploy.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>117</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>77</integer>
 		</dict>
 		<key>db/migrate/001_create_foods.rb</key>
 		<dict>
@@ -521,6 +623,34 @@
 				<integer>6</integer>
 			</dict>
 		</dict>
+		<key>db/migrate/005_create_food_nutrients.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>db/migrate/006_add_index_to_nutrients_and_foods.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>db/migrate/010_widen_weights_amount_field.rb</key>
 		<dict>
 			<key>caret</key>
@@ -579,6 +709,36 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>public/.htaccess</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>33</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>33</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>34</integer>
+			</dict>
+		</dict>
 		<key>public/stylesheets/default.css</key>
 		<dict>
 			<key>caret</key>
@@ -630,27 +790,27 @@
 				<key>column</key>
 				<integer>11</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>73</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>38</integer>
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>73</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>11</integer>
+				<integer>14</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>73</integer>
 			</dict>
 		</dict>
 		<key>test/fixtures/food_nutrients.yml</key>
@@ -658,70 +818,102 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>13</integer>
 				<key>line</key>
-				<integer>4449</integer>
+				<integer>8421</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>4426</integer>
+			<integer>8370</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>8421</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>8421</integer>
+			</dict>
 		</dict>
 		<key>test/fixtures/foods.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>24</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>15</integer>
+				<integer>66</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>7</integer>
+			<integer>24</integer>
 		</dict>
 		<key>test/fixtures/nutrients.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>15</integer>
+				<integer>10</integer>
 				<key>line</key>
-				<integer>24</integer>
+				<integer>897</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>865</integer>
 		</dict>
 		<key>test/fixtures/users.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>7</integer>
 				<key>line</key>
-				<integer>47</integer>
+				<integer>52</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>10</integer>
+			<integer>6</integer>
 		</dict>
 		<key>test/fixtures/weights.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>14</integer>
+				<integer>8</integer>
 				<key>line</key>
-				<integer>39</integer>
+				<integer>102</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>19</integer>
+			<integer>54</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>102</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>102</integer>
+			</dict>
 		</dict>
 		<key>test/functional/diary_controller_test.rb</key>
 		<dict>
@@ -736,20 +928,6 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>32</integer>
-		</dict>
-		<key>test/unit/consumed_portion_test.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>26</integer>
-				<key>line</key>
-				<integer>11</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>8</integer>
 		</dict>
 		<key>test/unit/food_group_test.rb</key>
 		<dict>
@@ -819,7 +997,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>17</integer>
+			<integer>9</integer>
 		</dict>
 		<key>test/unit/run_test.rb</key>
 		<dict>
@@ -833,16 +1011,16 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>38</integer>
+			<integer>23</integer>
 		</dict>
 		<key>test/unit/user_test.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>84</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>19</integer>
+				<integer>41</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -869,6 +1047,7 @@
 		<string>app/controllers/diary_controller.rb</string>
 		<string>app/views/diary/_today.rhtml</string>
 		<string>app/views/diary/_portion.rhtml</string>
+		<string>app/views/diary/_search_navigation.rhtml</string>
 		<string>app/views/diary/show_portion.rhtml</string>
 		<string>app/views/foods/show_summary.rhtml</string>
 		<string>app/views/diary/edit_portion.rhtml</string>
@@ -880,16 +1059,17 @@
 		<string>app/controllers/welcome_controller.rb</string>
 		<string>app/views/foods/_form.rhtml</string>
 		<string>app/views/diary/search.rhtml</string>
-		<string>app/views/diary/index.rhtml</string>
 		<string>app/views/foods/_today_table.rhtml</string>
 		<string>app/views/foods/log.rhtml</string>
 		<string>app/views/layouts/standard.rhtml</string>
 		<string>public/stylesheets/default.css</string>
 		<string>test/fixtures/users.yml</string>
 		<string>app/models/user.rb</string>
+		<string>app/views/runlog/index.rhtml</string>
 		<string>app/models/nutrient.rb</string>
 		<string>app/controllers/runlog_controller.rb</string>
-		<string>test/unit/consumed_portion_test.rb</string>
+		<string>config/deploy.rb</string>
+		<string>public/.htaccess</string>
 		<string>test/fixtures/consumed_portions.yml</string>
 		<string>test/fixtures/food_nutrients.yml</string>
 		<string>test/fixtures/nutrients.yml</string>
@@ -912,6 +1092,12 @@
 		<string>app/controllers/foods_controller.rb</string>
 		<string>test/unit/weight_test.rb</string>
 		<string>test/unit/user_test.rb</string>
+		<string>app/views/welcome/index.rhtml</string>
+		<string>app/views/layouts/runlog.rhtml</string>
+		<string>app/views/welcome/thankyou.rhtml</string>
+		<string>db/migrate/006_add_index_to_nutrients_and_foods.rb</string>
+		<string>db/migrate/005_create_food_nutrients.rb</string>
+		<string>app/models/food_nutrient.rb</string>
 		<string>test/unit/run_test.rb</string>
 		<string>test/unit/food_group_test.rb</string>
 		<string>test/unit/food_nutrient_test.rb</string>
@@ -919,6 +1105,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{541, 1}, {899, 774}}</string>
+	<string>{{381, 8}, {899, 774}}</string>
 </dict>
 </plist>

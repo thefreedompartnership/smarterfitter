@@ -39,7 +39,6 @@ class UserTest < Test::Unit::TestCase
     assert_equal 116.605, users(:bob).saturated_fat_today
   end
   def test_saturated_fat_today_when_some_food_has_no_saturated_fat
-    users(:charlie).consumed_portions[1].food.food_nutrients.each {|n| puts "#{n.nutrient_id}"}
     assert_equal ((users(:charlie).saturated_fat_today * 9) / users(:charlie).energy_today) * 100, users(:charlie).percent_calories_from_saturated_fat
   end
 end

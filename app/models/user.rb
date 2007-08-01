@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
   end
 
   def portions_for_today
-    consumed_portions.find(:all, :conditions => @@for_today, :order => "created_at DESC")
+    consumed_portions.find(:all, :conditions => @@for_today, :order => "consumed_portions.created_at DESC", :include => [:weight, :food])
   end
 
   def percent_calories_from_protein
@@ -53,14 +53,14 @@ class User < ActiveRecord::Base
 
   def energy_today
     energy = 0
-    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
       energy += portion.portion.energy
     end
     return energy
   end
   def fat_today
     fat = 0
-    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
       fat += portion.portion.fat
     end
     return fat
@@ -68,7 +68,7 @@ class User < ActiveRecord::Base
   
   def saturated_fat_today
     fat = 0
-    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
       fat += portion.saturated_fat
     end
     return fat
@@ -76,14 +76,14 @@ class User < ActiveRecord::Base
   
   def protein_today
     protein = 0
-    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
       protein += portion.portion.protein
     end
     return protein
   end
   def carbohydrate_today
     carbohydrate = 0
-    consumed_portions.find(:all, :conditions => @@for_today).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
       carbohydrate += portion.portion.carbohydrate
     end
     return carbohydrate
@@ -91,14 +91,14 @@ class User < ActiveRecord::Base
   
   def energy_yesterday
     energy = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
       energy += portion.portion.energy
     end
     return energy
   end
   def fat_yesterday
     fat = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
       fat += portion.portion.fat
     end
     return fat
@@ -113,7 +113,7 @@ class User < ActiveRecord::Base
   end
   def carbohydrate_yesterday
     carbohydrate = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday).each do |portion|
+    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
       carbohydrate += portion.portion.carbohydrate
     end
     return carbohydrate
@@ -169,7 +169,7 @@ class User < ActiveRecord::Base
   
 
   def average_nutrient(nutrient_number, period=@@for_past)
-    portions = consumed_portions.find(:all, :conditions => @@for_past, :include => [:weight, :food], :conditions => period)
+    portions = consumed_portions.find(:all, :conditions => period, :include => [:weight, :food])
     if portions.size > 0
       total_nutrient = BigDecimal.new("0")
       portions.each {|portion| total_nutrient += portion.nutrient(nutrient_number)}
