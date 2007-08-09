@@ -46,15 +46,24 @@ class User < ActiveRecord::Base
     percent_calories_for(Nutrient::SATURATED_FAT, 9, date)
   end
   
-  def nutrient_total_for(nutrient_number, date)
-    total = 0
-    consumed_portions.find(:all, 
-      :conditions => ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', date, date + 1], 
-      :include => [:weight, :food]
-      ).each do |portion|
-        total += portion.portion.nutrient(nutrient_number)
+  def nutrient_total_for(nutrient_number, start_date, end_date=start_date+1)
+    query = <<-QUERY
+      SELECT SUM(fn.nutrient_value * ((p.quantity / w.amount)  
+      	* (w.weight_in_grams / 100))) AS total 
+      FROM consumed_portions p, weights w, food_nutrients fn 
+      WHERE w.id = p.weight_id 
+        AND fn.food_id = p.food_id 
+        AND fn.nutrient_number = \"#{nutrient_number}\" 
+        AND user_id = #{self.id}
+        AND p.consumed_at >= \"#{start_date}\" 
+        AND p.consumed_at < \"#{end_date}\";
+    QUERY
+    total = User.connection.select_value(query)
+    if total.nil?
+      return BigDecimal.new("0")
+    else
+      return BigDecimal.new(total)
     end
-    return total
   end
   
   def energy_for(date)
@@ -75,60 +84,61 @@ class User < ActiveRecord::Base
 
   
   def average_energy_last_seven_days
-    average_nutrient(Nutrient::ENERGY, @@for_past_7_days)
+    average_nutrient(Nutrient::ENERGY, Date.today - 8, Date.today - 1)
   end
 
   def average_protein_last_seven_days
-    average_nutrient(Nutrient::PROTEIN, @@for_past_7_days)
+    average_nutrient(Nutrient::PROTEIN, Date.today - 8, Date.today - 1)
   end
 
   def average_carbohydrate_last_seven_days
-    average_nutrient(Nutrient::CARBOHYDRATE, @@for_past_7_days)
+    average_nutrient(Nutrient::CARBOHYDRATE, Date.today - 8, Date.today - 1)
   end
 
   def average_fat_last_seven_days
-    average_nutrient(Nutrient::FAT, @@for_past_7_days)
+    average_nutrient(Nutrient::FAT, Date.today - 8, Date.today - 1)
   end
 
   def average_energy_last_thirty_days
-    average_nutrient(Nutrient::ENERGY, @@for_past_30_days)
+    average_nutrient(Nutrient::ENERGY, Date.today - 31, Date.today - 1)
   end
 
   def average_protein_last_thirty_days
-    average_nutrient(Nutrient::PROTEIN, @@for_past_30_days)
+    average_nutrient(Nutrient::PROTEIN, Date.today - 31, Date.today - 1)
   end
 
   def average_fat_last_thirty_days
-    average_nutrient(Nutrient::FAT, @@for_past_30_days)
+    average_nutrient(Nutrient::FAT, Date.today - 31, Date.today - 1)
   end
 
   def average_carbohydrate_last_thirty_days
-    average_nutrient(Nutrient::CARBOHYDRATE, @@for_past_30_days)
+    average_nutrient(Nutrient::CARBOHYDRATE, Date.today - 31, Date.today - 1)
   end
 
+
   def average_energy
-    average_nutrient(Nutrient::ENERGY)
+    average_nutrient(Nutrient::ENERGY, Date.parse("1970-01-01"), Date.today)
   end
 
   def average_protein
-    average_nutrient(Nutrient::PROTEIN)
+    average_nutrient(Nutrient::PROTEIN, Date.parse("1970-01-01"), Date.today)
   end
-  
-  def average_carbohydrate
-    average_nutrient(Nutrient::CARBOHYDRATE)
-  end
-  
-  def average_fat
-    average_nutrient(Nutrient::FAT)
-  end
-  
 
-  def average_nutrient(nutrient_number, period=@@for_past)
-    portions = consumed_portions.find(:all, :conditions => period, :include => [:weight, :food])
-    if portions.size > 0
-      total_nutrient = BigDecimal.new("0")
-      portions.each {|portion| total_nutrient += portion.nutrient(nutrient_number)}
-      number_of_days_recorded = consumed_portions.count("distinct(date(consumed_at))", :conditions => period)
+  def average_fat
+    average_nutrient(Nutrient::FAT, Date.parse("1970-01-01"), Date.today)
+  end
+
+  def average_carbohydrate
+    average_nutrient(Nutrient::CARBOHYDRATE, Date.parse("1970-01-01"), Date.today)
+  end
+
+
+  def average_nutrient(nutrient_number, start_date, end_date)
+    
+    total_nutrient = nutrient_total_for(nutrient_number, start_date, end_date)
+    number_of_days_recorded = consumed_portions.count("distinct(date(consumed_at))", 
+      :conditions => ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', start_date, end_date])
+    if number_of_days_recorded > 0
       return (total_nutrient / number_of_days_recorded).round
     else
       return BigDecimal.new("0")
@@ -167,11 +177,5 @@ class User < ActiveRecord::Base
   def self.hash_password(password)
     Digest::SHA1.hexdigest(password)
   end
-  
-  @@for_today = ['consumed_portions.consumed_at > ?', Date.today()]
-  @@for_yesterday = ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', Date.today() - 1, Date.today()]
-  @@for_past_7_days = ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', Date.today() - 7, Date.today()]
-  @@for_past_30_days = ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', Date.today() - 30, Date.today()]
-  @@for_past = ['consumed_portions.consumed_at < ?', Date.today()]
-  
+    
 end

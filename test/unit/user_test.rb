@@ -15,8 +15,8 @@ class UserTest < Test::Unit::TestCase
   
   def test_nutrient_averages
     assert_equal 35, users(:bob).consumed_portions.count
-    assert_equal BigDecimal.new("1.93"), users(:bob).protein_for(Date.today)
-    assert_equal BigDecimal.new("1.93"), users(:bob).protein_for(Date.today - 1)
+    assert_equal BigDecimal.new("1.9295"), users(:bob).protein_for(Date.today)
+    assert_equal BigDecimal.new("1.9295"), users(:bob).protein_for(Date.today - 1)
     assert_equal BigDecimal.new("2"), users(:bob).average_protein_last_seven_days
     assert_equal BigDecimal.new("2"), users(:bob).average_protein_last_thirty_days
     assert_equal BigDecimal.new("1628"), users(:bob).average_energy_last_thirty_days
@@ -36,7 +36,7 @@ class UserTest < Test::Unit::TestCase
   end
   
   def test_saturated_fat_today
-    assert_equal 116.605, users(:bob).saturated_fat_for(Date.today)
+    assert_equal BigDecimal.new("116.60536"), users(:bob).saturated_fat_for(Date.today)
   end
   def test_saturated_fat_today_when_some_food_has_no_saturated_fat
     assert_equal ((users(:charlie).saturated_fat_for(Date.today) * 9) / users(:charlie).energy_for(Date.today)) * 100, users(:charlie).percent_calories_from_saturated_fat_for(Date.today)
