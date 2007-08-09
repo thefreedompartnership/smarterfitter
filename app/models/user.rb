@@ -11,114 +11,69 @@ class User < ActiveRecord::Base
   
   composed_of :tz, :class_name => 'TZInfo::Timezone', :mapping => %w(time_zone identifier)
 
-  def portions_for_today?
-    consumed_portions.count(:all, :conditions => @@for_today) != 0
+  def portions_for?(date)
+    consumed_portions.count(:all, 
+      :conditions => 
+          ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', date, date + 1]
+      ) != 0
   end
 
-  def portions_for_today
-    consumed_portions.find(:all, :conditions => @@for_today, :order => "consumed_portions.created_at DESC", :include => [:weight, :food])
-  end
-
-  def percent_calories_from_protein
-    if energy_today != 0
-      return ((protein_today * 4) / energy_today) * 100
-    else
-      return BigDecimal.new("0")
-    end
-  end
-
-  def percent_calories_from_fat
-    if energy_today != 0
-      return ((fat_today * 9) / energy_today) * 100
-    else
-      return BigDecimal.new("0")
-    end
-  end
-
-  def percent_calories_from_saturated_fat
-    if energy_today != 0
-      return ((saturated_fat_today * 9) / energy_today) * 100
-    else
-      return BigDecimal.new("0")
-    end
-  end
-
-  def percent_calories_from_carbohydrate
-    if energy_today != 0
-      return ((carbohydrate_today * 4) / energy_today) * 100
-    else
-      return BigDecimal.new("0")
-    end
-  end
-
-  def energy_today
-    energy = 0
-    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
-      energy += portion.portion.energy
-    end
-    return energy
-  end
-  def fat_today
-    fat = 0
-    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
-      fat += portion.portion.fat
-    end
-    return fat
+  def portions_for(date)
+    consumed_portions.find(:all, 
+      :conditions => ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', date, date + 1], 
+      :order => "consumed_portions.created_at DESC", :include => [:weight, :food])
   end
   
-  def saturated_fat_today
-    fat = 0
-    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
-      fat += portion.saturated_fat
+  def percent_calories_for(nutrient_number, nutrient_calorie_multiplier, date)
+    total = nutrient_total_for(nutrient_number, date)
+    if total != 0
+      return ((total * nutrient_calorie_multiplier) / energy_for(date)) * 100      
+    else
+      return BigDecimal.new("0")      
     end
-    return fat
   end
   
-  def protein_today
-    protein = 0
-    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
-      protein += portion.portion.protein
-    end
-    return protein
+  def percent_calories_from_protein_for(date)
+    percent_calories_for(Nutrient::PROTEIN, 4, date)
   end
-  def carbohydrate_today
-    carbohydrate = 0
-    consumed_portions.find(:all, :conditions => @@for_today, :include => [:weight, :food]).each do |portion|
-      carbohydrate += portion.portion.carbohydrate
-    end
-    return carbohydrate
+  def percent_calories_from_carbohydrate_for(date)
+    percent_calories_for(Nutrient::CARBOHYDRATE, 4, date)
+  end
+  def percent_calories_from_fat_for(date)
+    percent_calories_for(Nutrient::FAT, 9, date)
+  end
+  def percent_calories_from_saturated_fat_for(date)
+    percent_calories_for(Nutrient::SATURATED_FAT, 9, date)
   end
   
-  def energy_yesterday
-    energy = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
-      energy += portion.portion.energy
+  def nutrient_total_for(nutrient_number, date)
+    total = 0
+    consumed_portions.find(:all, 
+      :conditions => ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', date, date + 1], 
+      :include => [:weight, :food]
+      ).each do |portion|
+        total += portion.portion.nutrient(nutrient_number)
     end
-    return energy
+    return total
   end
-  def fat_yesterday
-    fat = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
-      fat += portion.portion.fat
-    end
-    return fat
+  
+  def energy_for(date)
+    nutrient_total_for(Nutrient::ENERGY, date)
   end
-
-  def protein_yesterday
-    protein = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
-      protein += portion.portion.protein
-    end
-    return protein
+  def fat_for(date)
+    nutrient_total_for(Nutrient::FAT, date)
   end
-  def carbohydrate_yesterday
-    carbohydrate = 0
-    consumed_portions.find(:all, :conditions => @@for_yesterday, :include => [:weight, :food]).each do |portion|
-      carbohydrate += portion.portion.carbohydrate
-    end
-    return carbohydrate
+  def saturated_fat_for(date)
+    nutrient_total_for(Nutrient::SATURATED_FAT, date)
+  end
+  def protein_for(date)
+    nutrient_total_for(Nutrient::PROTEIN, date)
+  end
+  def carbohydrate_for(date)
+    nutrient_total_for(Nutrient::CARBOHYDRATE, date)
   end
 
+  
   def average_energy_last_seven_days
     average_nutrient(Nutrient::ENERGY, @@for_past_7_days)
   end
@@ -173,7 +128,7 @@ class User < ActiveRecord::Base
     if portions.size > 0
       total_nutrient = BigDecimal.new("0")
       portions.each {|portion| total_nutrient += portion.nutrient(nutrient_number)}
-      number_of_days_recorded = consumed_portions.count("distinct(date(created_at))", :conditions => period)
+      number_of_days_recorded = consumed_portions.count("distinct(date(consumed_at))", :conditions => period)
       return (total_nutrient / number_of_days_recorded).round
     else
       return BigDecimal.new("0")
@@ -213,10 +168,10 @@ class User < ActiveRecord::Base
     Digest::SHA1.hexdigest(password)
   end
   
-  @@for_today = ['consumed_portions.created_at > ?', Date.today()]
-  @@for_yesterday = ['consumed_portions.created_at >= ? and consumed_portions.created_at < ?', Date.today() - 1, Date.today()]
-  @@for_past_7_days = ['consumed_portions.created_at >= ? and consumed_portions.created_at < ?', Date.today() - 7, Date.today()]
-  @@for_past_30_days = ['consumed_portions.created_at >= ? and consumed_portions.created_at < ?', Date.today() - 30, Date.today()]
-  @@for_past = ['consumed_portions.created_at < ?', Date.today()]
+  @@for_today = ['consumed_portions.consumed_at > ?', Date.today()]
+  @@for_yesterday = ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', Date.today() - 1, Date.today()]
+  @@for_past_7_days = ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', Date.today() - 7, Date.today()]
+  @@for_past_30_days = ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', Date.today() - 30, Date.today()]
+  @@for_past = ['consumed_portions.consumed_at < ?', Date.today()]
   
 end

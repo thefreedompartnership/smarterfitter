@@ -17,7 +17,7 @@
 					"$('food_#{food.id}').parentNode.addClassName('food_being_edited'); " + 
 					"new Effect.SlideDown('food_#{food.id}');" +
 					"setTimeout('$(\\'portion_form_#{food.id}\\').focusFirstElement()', 1200);",
-			:url => { :action => "show_portion", :id => food.id }
+			:url => { :action => "show_portion", :id => food.id, :date => @date }
 	%>
 	<div id="<%= "food_#{food.id}" %>"></div>
 </li>

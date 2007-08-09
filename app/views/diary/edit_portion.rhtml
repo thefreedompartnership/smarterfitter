@@ -10,6 +10,7 @@
 				<%= select :portion, :weight_id, @portion.food.weights_as_measure_id_array %>
 				<%= submit_tag "Update serving" %>
 				<%= hidden_field :portion, :food_id %>
+				<%= hidden_field_tag "date", @date %>
 			</p>
 			<table>
 				<tr>

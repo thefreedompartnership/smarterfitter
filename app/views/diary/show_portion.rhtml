@@ -3,6 +3,7 @@
 		<p>
 			<%= text_field :portion, :quantity, {:size => 6} %>
 			<%= select :portion, :weight_id, @food.weights_as_measure_id_array %>
+			<%= hidden_field_tag "date", :value => @date  %>
 			<%= submit_tag "Update serving size" %>
 		</p>
 		<table>
@@ -20,7 +21,7 @@
 			</tr>
 		</table>
 		<%= hidden_field :portion, :food_id %>
-		<%= hidden_field_tag :name => "choice", :value => "", :id => "choice_#{@food.id}"  %>
+		<%= hidden_field :portion, :consumed_at %>
 		<p>
 			<%= submit_to_remote "foo", "Add to diary", :url =>  {:action => :add_portion, :id => @food}, :update => "today", :complete => "new Effect.SlideUp('food_#{@food.id}'); $('food_#{@food.id}').parentNode.removeClassName('food_being_edited'); $('food_#{@food.id}').removeClassName('current'); " %>
 			<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('food_#{@food.id}'); $('food_#{@food.id}').parentNode.removeClassName('food_being_edited'); $('food_#{@food.id}').removeClassName('current'); return false;"}) %>

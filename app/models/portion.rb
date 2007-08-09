@@ -40,7 +40,7 @@ class Portion
     if(n)
       (@food.nutrient(nutrient_number).nutrient_value * @multiplier).round(3)
     else
-      nil
+      BigDecimal.new("0")
     end
   end
 end

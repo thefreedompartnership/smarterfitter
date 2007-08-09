@@ -13,6 +13,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'runs/feed', :controller => 'runs', :action => 'feed'
   map.connect 'runs/:user_name', :controller => 'runs', :action => 'index'
 
+  map.connect 'diary/:year/:month/:day', :controller => 'diary', :action => 'index'
+
+
   # You can have the root of your site routed by hooking up '' 
   # -- just remember to delete public/index.html.
   map.connect '', :controller => "welcome"

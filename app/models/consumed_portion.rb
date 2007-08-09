@@ -24,7 +24,7 @@ class ConsumedPortion < ActiveRecord::Base
   end
   
   def saturated_fat
-    fat = self.portion.nutrient(606)
+    fat = self.portion.nutrient(Nutrient::SATURATED_FAT)
     if fat.nil?
       return BigDecimal.new("0")
     else

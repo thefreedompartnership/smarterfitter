@@ -206,7 +206,7 @@
 				<h1>SmarterFitter <span class="sub_h1">Food Diary</span></h1>
 			</div>
 			<div id="left_column" class="column">
-				<h3>Today</h3>
+				<h3><%= friendly_date %></h3>
 				<div id="today">
 					<%= render :partial => 'today' %>
 				</div>
@@ -221,10 +221,10 @@
 					</tr>
 					<tr>
 						<td>Yesterday</td>
-						<td class="numeric"><%= number_with_precision(@user.energy_yesterday, 0) %></td>
-						<td class="numeric"><%= number_with_precision(@user.fat_yesterday, 0) %></td>
-						<td class="numeric"><%= number_with_precision(@user.protein_yesterday, 0) %></td>
-						<td class="numeric"><%= number_with_precision(@user.carbohydrate_yesterday, 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.energy_for(@date - 1), 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.fat_for(@date - 1), 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.protein_for(@date - 1), 0) %></td>
+						<td class="numeric"><%= number_with_precision(@user.carbohydrate_for(@date - 1), 0) %></td>
 					</tr>		
 					<tr>
 						<td>Last 7 Days</td>
@@ -252,6 +252,7 @@
 			<div id="right_column" class="column">
 				<% form_remote_tag :update => "search_results", :url => {:action => "search"} do %>
 					<label for="q">Search</label> <%= text_field_tag "q" %>
+					<%= hidden_field_tag "date", @date %>
 					<%= submit_tag "Search" %>
 				<% end %>
 				<div id="search_results">

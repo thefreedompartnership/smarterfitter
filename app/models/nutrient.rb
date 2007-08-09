@@ -5,5 +5,6 @@ class Nutrient < ActiveRecord::Base
   ENERGY = "208"
   CARBOHYDRATE = "205"
   FAT = "204"
+  SATURATED_FAT = "606"
   
 end

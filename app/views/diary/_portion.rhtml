@@ -5,9 +5,9 @@
 	<td class="numeric"><%= h(number_with_precision(portion.protein, 3)) %></td>
 	<td class="numeric"><%= h(number_with_precision(portion.carbohydrate, 3)) %></td>
 	<td class="actions">
-		<%= link_to_remote("Edit", :url => {:action => :edit_portion, :id => portion.id}, 
+		<%= link_to_remote("Edit", :url => {:action => :edit_portion, :id => portion.id, :date => @date}, 
 									:update => "today_portion_#{portion.id}") %>
-		<%= link_to_remote("Delete", :confirm => "Delete #{portion.description} from your food diary?", :url => {:action => :delete_portion, :id => portion.id}, 
+		<%= link_to_remote("Delete", :confirm => "Delete #{portion.description} from your food diary?", :url => {:action => :delete_portion, :id => portion.id, :date => @date}, 
 										:update => "today") %>
 	</td>
 </tr>		
