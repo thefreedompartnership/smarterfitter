@@ -1,7 +1,7 @@
 <% if @food_pages.current.previous %>
 	<%= link_to_remote 'Previous page', 
 		:update => "search_results", 
-		:url => { :action => "search", :page => @food_pages.current.previous, :q => params[:q] } 
+		:url => { :action => "search", :page => @food_pages.current.previous, :q => params[:q], :date => @date } 
 	%>
 <% else %>
 	<span>Previous page</span>
@@ -12,7 +12,7 @@
 	<%= if page.number != @food_pages.current.number
 			link_to_remote page.number, 
 			:update => "search_results", 
-			:url => { :action => "search", :page => @food_pages[page.number], :q => params[:q] } 
+			:url => { :action => "search", :page => @food_pages[page.number], :q => params[:q], :date => @date } 
 		else
 			page.number
 		end
@@ -22,7 +22,7 @@
 <% if @food_pages.current.next %>
 	<%= link_to_remote 'Next page', 
 		:update => "search_results", 
-		:url => { :action => "search", :page => @food_pages.current.next, :q => params[:q] } 
+		:url => { :action => "search", :page => @food_pages.current.next, :q => params[:q], :date => @date } 
 	%> 
 <% else %>
 	<span>Next page</span>
