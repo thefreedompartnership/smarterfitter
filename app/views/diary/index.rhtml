@@ -188,6 +188,13 @@
 		font-size: 0.8em;
 		color:#806959;
 	}
+	
+	#calendar_navigation {
+		text-align: right;
+		float: right;
+	}
+	
+	
 		
 	</style>
 
@@ -206,10 +213,20 @@
 				<h1>SmarterFitter <span class="sub_h1">Food Diary</span></h1>
 			</div>
 			<div id="left_column" class="column">
-				<h3><%= friendly_date %></h3>
+				<% if @date == Date.today %>
+				<h3>Today</h3>
+				<% else %>
+				<h3><%= link_to "Go to Today", {:overwrite_params => { :action => :index, :year => nil, :month => nil, :day => nil }} %></h3>
+				<% end %>
+				<div id="calendar_navigation">
+					<%= link_to(image_tag("left_arrow", :border => "none"), {:year => (@date - 1).year, :month => (@date - 1).month, :day => (@date - 1).day}) %> 
+					<%= link_to(image_tag("right_arrow", :border => "none"), {:year => (@date + 1).year, :month => (@date + 1).month, :day => (@date + 1).day}) %></div>
+				<p><%= friendly_date %></p>
+				
 				<div id="today">
 					<%= render :partial => 'today' %>
 				</div>
+				
 				<h3>Previously</h3>
 				<table id="averages" class="summary_table">
 					<tr>
