@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title><%= session[:chain].name %> | seinfeldianchain.com</title>
+	<%= stylesheet_link_tag "chain/style" %>
+	<%= stylesheet_link_tag "chain/calendar/blue/style" %>
+	<%= javascript_include_tag :defaults %>
+</head>
+
+<body>
+	
+	<h1><%= in_place_editor_field "chain", "name", {}, {:load_text_url => url_for(:action => "get_chain_name"), :save_text => "Save", :cancel_text => "Cancel"} %></h1>
+	<p><a href="http://lifehacker.com/software/motivation/jerry-seinfelds-productivity-secret-281626.php">What the hell is a Seinfeldian Chain?</a>
+	<p id="flash"><%= flash[:notice] %></p>
+	<% if session[:chain].new_record? %>
+		<p>Welcome to your new Seinfeldian Chain. You can keep track of your progress towards any goal. 
+			Give your chain a name above and then save it by clicking on the link below. 
+			Make sure that you bookmark the page after you save your chain. 
+			It is the way you'll get back to your chain.</p>
+		<p id="saved_as"><%= link_to("Save this Chain", {:action => 'save'}, :method => :post) %></p>
+	<% else %>
+		<p id="saved_as"><%= render :partial => "saved_as" %></p>
+		<p><%= link_to "Create a shiny new chain", :action => :new_chain %></p>
+	<% end %>
+	
+	<% (8..9).each do |i| %>
+	
+		<%= 
+			calendar({:year => @year, :month => i}) do |d|
+			  cell_text = "#{d.mday}<br />" 
+			  cell_attrs = {:class => 'day', :id => d.to_s, 
+				:onclick => remote_function(:url => {:action => 'update_chain', :id => d.to_s})
+				}
+			  session[:chain].days.each do |e|
+				# i can hack some stuff in here to make the date thing work properly
+			    if e.when == d
+			      cell_text = d.day.to_s
+			      cell_attrs[:class] = 'specialDay'
+			    end
+			  end
+			  [cell_text, cell_attrs]
+			end
+		%>
+	<% end %>
+
+</body>
+</html>

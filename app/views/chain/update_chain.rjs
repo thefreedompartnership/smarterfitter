@@ -1,0 +1,7 @@
+if @added
+  page.send :record, "Element.removeClassName('#{params[:id]}', 'day')"
+  page.send :record, "Element.addClassName('#{params[:id]}', 'specialDay')"
+else
+  page.send :record, "Element.removeClassName('#{params[:id]}', 'specialDay')"
+  page.send :record, "Element.addClassName('#{params[:id]}', 'day')"
+end
