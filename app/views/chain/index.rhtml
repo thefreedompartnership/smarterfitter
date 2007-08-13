@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	
+	<p align="right"><a href="/blog">We have a Blog</a> | <a href="http://feeds.feedburner.com/SmarterFitterBlog">Subscribe to our Blog Feed</a> | <a href="/">SmarterFitter.com</a></p>
 	<h1><%= in_place_editor_field "chain", "name", {}, {:load_text_url => url_for(:action => "get_chain_name"), :save_text => "Save", :cancel_text => "Cancel"} %></h1>
 	<p><a href="http://lifehacker.com/software/motivation/jerry-seinfelds-productivity-secret-281626.php">What the hell is a Seinfeldian Chain?</a>
 	<p id="flash"><%= flash[:notice] %></p>

@@ -84,35 +84,35 @@ class User < ActiveRecord::Base
 
   
   def average_energy_last_seven_days
-    average_nutrient(Nutrient::ENERGY, Date.today - 8, Date.today - 1)
+    average_nutrient(Nutrient::ENERGY, Date.today - 8, Date.today)
   end
 
   def average_protein_last_seven_days
-    average_nutrient(Nutrient::PROTEIN, Date.today - 8, Date.today - 1)
+    average_nutrient(Nutrient::PROTEIN, Date.today - 8, Date.today)
   end
 
   def average_carbohydrate_last_seven_days
-    average_nutrient(Nutrient::CARBOHYDRATE, Date.today - 8, Date.today - 1)
+    average_nutrient(Nutrient::CARBOHYDRATE, Date.today - 8, Date.today)
   end
 
   def average_fat_last_seven_days
-    average_nutrient(Nutrient::FAT, Date.today - 8, Date.today - 1)
+    average_nutrient(Nutrient::FAT, Date.today - 8, Date.today)
   end
 
   def average_energy_last_thirty_days
-    average_nutrient(Nutrient::ENERGY, Date.today - 31, Date.today - 1)
+    average_nutrient(Nutrient::ENERGY, Date.today - 31, Date.today)
   end
 
   def average_protein_last_thirty_days
-    average_nutrient(Nutrient::PROTEIN, Date.today - 31, Date.today - 1)
+    average_nutrient(Nutrient::PROTEIN, Date.today - 31, Date.today)
   end
 
   def average_fat_last_thirty_days
-    average_nutrient(Nutrient::FAT, Date.today - 31, Date.today - 1)
+    average_nutrient(Nutrient::FAT, Date.today - 31, Date.today)
   end
 
   def average_carbohydrate_last_thirty_days
-    average_nutrient(Nutrient::CARBOHYDRATE, Date.today - 31, Date.today - 1)
+    average_nutrient(Nutrient::CARBOHYDRATE, Date.today - 31, Date.today)
   end
 
 
