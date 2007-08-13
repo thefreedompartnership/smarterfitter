@@ -8,6 +8,7 @@ class ChainController < ApplicationController
     session[:chain] = Chain.find_by_key(params[:key]) if params[:key]
     session[:chain] ||= Chain.new
     session[:chain].name ||= "Click Here to Rename Your Seinfeldian Chain"
+    session[:chain].tz ||= TZInfo::Timezone.get("UTC")
     session[:chain].reload unless session[:chain].new_record?
     @chain = session[:chain]
   end
@@ -59,6 +60,12 @@ class ChainController < ApplicationController
     session[:chain].name = params[:value]
     session[:chain].save unless session[:chain].new_record?
     render :partial => "chain_name"
+  end
+  
+  def set_time_zone
+    session[:chain].tz = TZInfo::Timezone.get(params[:chain][:time_zone])
+    session[:chain].save unless session[:chain].new_record?
+    redirect_to :action => :index
   end
 
 end
