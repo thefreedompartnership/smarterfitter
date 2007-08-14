@@ -13,7 +13,7 @@
 <body>
 	<p style="text-align: right;"><a href="/blog">We have a Blog</a> | <a href="http://feeds.feedburner.com/SmarterFitterBlog">Subscribe to our Blog Feed</a> | <a href="/">SmarterFitter.com</a></p>
 	<div id="time_zone_box" style="text-align: right;">
-		<% form_tag(:action => :set_time_zone) do |f| %>
+		<% form_tag(:action => :set_time_zone) do %>
 			<%= time_zone_select 'chain', 'time_zone', 
 				nil, 
 				{:model => TZInfo::Timezone}%>
