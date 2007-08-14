@@ -2,7 +2,7 @@
 # migrations feature of ActiveRecord to incrementally modify your database, and
 # then regenerate this schema definition.
 
-ActiveRecord::Schema.define(:version => 16) do
+ActiveRecord::Schema.define(:version => 17) do
 
   create_table "chains", :force => true do |t|
     t.column "name",       :string
@@ -10,9 +10,11 @@ ActiveRecord::Schema.define(:version => 16) do
     t.column "created_at", :datetime
     t.column "updated_at", :datetime
     t.column "time_zone",  :string
+    t.column "read_key",   :string
   end
 
   add_index "chains", ["key"], :name => "index_chains_on_key", :unique => true
+  add_index "chains", ["read_key"], :name => "index_chains_on_read_key", :unique => true
 
   create_table "consumed_portions", :force => true do |t|
     t.column "created_at",  :datetime

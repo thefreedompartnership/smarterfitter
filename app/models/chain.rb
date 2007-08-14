@@ -5,5 +5,6 @@ class Chain < ActiveRecord::Base
   
   def before_create
     self.key = Digest::SHA1.hexdigest(self.name + DateTime.now.to_s)
+    self.read_key = Digest::SHA1.hexdigest(self.name + DateTime.now.to_s + rand.to_s)
   end
 end

@@ -1,3 +1,8 @@
 Chain Saved<br/>
 Url for this chain: <%= request.protocol + request.host_with_port + url_for(:action => :index, :key => session[:chain].key) %><br/>
-Bookmark this page to return to <%= link_to session[:chain].name, :action => :index, :key => session[:chain].key %>.
+Bookmark this page to return to <%= link_to session[:chain].name, :action => :index, :key => session[:chain].key %>.<br/>
+Share this as a read-only chain with your friends: 
+	<%= link_to(request.protocol + 
+				request.host_with_port + 
+				url_for(:action => :view, :read_key => session[:chain].read_key),
+				:action => :view, :read_key => session[:chain].read_key) %>

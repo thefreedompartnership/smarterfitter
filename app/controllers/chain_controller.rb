@@ -68,4 +68,10 @@ class ChainController < ApplicationController
     redirect_to :action => :index
   end
 
+  def view
+    @year = 2007
+    @month = 7
+    @chain = Chain.find_by_read_key(params[:read_key])
+  end
+
 end
