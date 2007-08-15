@@ -13,7 +13,7 @@
 <body>
 	<p style="text-align: right;"><a href="/blog">We have a Blog</a> | <a href="http://feeds.feedburner.com/SmarterFitterBlog">Subscribe to our Blog Feed</a> | <a href="/">SmarterFitter.com</a></p>
 	<h1><%= @chain.name %></h1>
-	<p><a href="http://lifehacker.com/software/motivation/jerry-seinfelds-productivity-secret-281626.php">What the hell is a Seinfeldian Chain?</a> | <%= link_to 'Get your own!', :action => :index %></p>
+	<p><a href="http://lifehacker.com/software/motivation/jerry-seinfelds-productivity-secret-281626.php">What the hell is a Seinfeldian Chain?</a> | <%= link_to 'Get your own!', :action => :new_chain %></p>
 
 	<% (8..9).each do |i| %>
 	
@@ -23,7 +23,7 @@
 			  cell_attrs = {:class => 'day', :id => d.to_s }
 			  cell_attrs[:class] += ' today' if d == @chain.tz.utc_to_local(Time.now).to_date
 			
-			  session[:chain].days.each do |e|
+			  @chain.days.each do |e|
 				# i can hack some stuff in here to make the date thing work properly
 			    if e.when == d
 			      cell_text = d.day.to_s
