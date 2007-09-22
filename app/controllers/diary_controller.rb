@@ -3,12 +3,18 @@ class DiaryController < ApplicationController
   before_filter :authorize
   
   def index
+    @user = session[:user]
     if params[:year] && params[:month] && params[:day]
       @date = Date.parse("#{params[:year]}-#{params[:month]}-#{params[:day]}")
     else
       @date = Date.today
     end
-    @user = session[:user]
+
+    if flash[:body_mass_error]
+      @body_mass = BodyMass.new(:mass => flash[:body_mass_entry], :recorded_at => @date)
+    else
+      @body_mass = find_body_mass_or_get_empty_body_mass(@user, @date)
+    end
   end
   
   def search
@@ -68,4 +74,33 @@ class DiaryController < ApplicationController
     @user.consumed_portions.find(params[:id]).destroy
     render(:partial => "today")
   end
+  
+  def update_body_mass
+    user = session[:user]
+    if params[:id]
+      body_mass = user.body_masses.find(params[:id])
+      is_saved = body_mass.update_attributes(params[:body_mass])        
+    else
+      is_saved = user.body_masses << BodyMass.new(params[:body_mass])
+    end
+    unless is_saved
+      flash[:body_mass_error] = "Invalid weight, please enter a number"
+      flash[:body_mass_entry] = params[:body_mass][:mass]
+    end
+    redirect_to :back
+  end
+
+  private
+  def find_body_mass_or_get_empty_body_mass(user, date)
+    if user.body_masses.find_by_recorded_at(date)
+      body_mass = user.body_masses.find_by_recorded_at(date)
+    else
+      body_mass = BodyMass.new(:recorded_at => date)
+    end
+    body_mass
+  end
+  
+  
 end
+
+

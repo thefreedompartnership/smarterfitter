@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   
   has_many :runs
   has_many :consumed_portions
+  has_many :body_masses
   
   attr_accessor :password, :confirm_password
   

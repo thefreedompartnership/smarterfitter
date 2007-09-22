@@ -220,13 +220,26 @@
 				<h3><%= link_to "Go to Today", {:overwrite_params => { :action => :index, :year => nil, :month => nil, :day => nil }} %></h3>
 				<% end %>
 				<div id="calendar_navigation">
-					<%= link_to(image_tag("left_arrow", :border => "none"), {:year => (@date - 1).year, :month => (@date - 1).month, :day => (@date - 1).day}) %> 
-					<%= link_to(image_tag("right_arrow", :border => "none"), {:year => (@date + 1).year, :month => (@date + 1).month, :day => (@date + 1).day}) %></div>
+					<%= link_to(image_tag("left_arrow", :border => "none"), {:action => :index, :year => (@date - 1).year, :month => (@date - 1).month, :day => (@date - 1).day}) %> 
+					<%= link_to(image_tag("right_arrow", :border => "none"), {:action => :index, :year => (@date + 1).year, :month => (@date + 1).month, :day => (@date + 1).day}) %></div>
 				<p><%= friendly_date %></p>
 				
 				<div id="today">
 					<%= render :partial => 'today' %>
 				</div>
+				
+				<% form_for :body_mass, :url => { :action => :update_body_mass, :id => @body_mass } do |form| %>
+					<% if flash[:body_mass_error] %>
+						<p id="error_message"><%= flash[:body_mass_error] %></p>
+					<% end %>
+					<p>
+						<label for="body_mass_weight">Enter your weight</label>
+						<%= form.text_field :mass, :size => 7 %> <%= users_prefered_distance_unit %>
+						<%= form.hidden_field :recorded_at %>
+						<%= submit_tag "Save" %>
+					</p>
+				<% end %>
+				
 				
 				<% if @date == Date.today %>
 					<%= render :partial => 'previously' %>
