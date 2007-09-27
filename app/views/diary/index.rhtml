@@ -220,8 +220,8 @@
 				<h3><%= link_to "Go to Today", {:overwrite_params => { :action => :index, :year => nil, :month => nil, :day => nil }} %></h3>
 				<% end %>
 				<div id="calendar_navigation">
-					<%= link_to(image_tag("left_arrow", :border => "none"), {:action => :index, :year => (@date - 1).year, :month => (@date - 1).month, :day => (@date - 1).day}) %> 
-					<%= link_to(image_tag("right_arrow", :border => "none"), {:action => :index, :year => (@date + 1).year, :month => (@date + 1).month, :day => (@date + 1).day}) %></div>
+					<%= link_to(image_tag("left_arrow.png", :border => "none"), {:action => :index, :year => (@date - 1).year, :month => (@date - 1).month, :day => (@date - 1).day}) %> 
+					<%= link_to(image_tag("right_arrow.png", :border => "none"), {:action => :index, :year => (@date + 1).year, :month => (@date + 1).month, :day => (@date + 1).day}) %></div>
 				<p><%= friendly_date %></p>
 				
 				<div id="today">
