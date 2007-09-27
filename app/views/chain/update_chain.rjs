@@ -1,7 +1,9 @@
 if @added
   page.send :record, "Element.removeClassName('#{params[:id]}', 'day')"
   page.send :record, "Element.addClassName('#{params[:id]}', 'specialDay')"
+  page.send :record, "$('small_#{params[:id]}').src = '/images/chain/small_cross.png'"
 else
   page.send :record, "Element.removeClassName('#{params[:id]}', 'specialDay')"
   page.send :record, "Element.addClassName('#{params[:id]}', 'day')"
+  page.send :record, "$('small_#{params[:id]}').src = '/images/chain/small_box.png'"
 end

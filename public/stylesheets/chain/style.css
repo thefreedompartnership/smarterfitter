@@ -3,6 +3,100 @@ body {
 	text-align: center;
 }
 
+#menu_bar {
+	margin: 0px;
+	float: left;
+	text-align: left;
+}
+
+#time_zone_box {
+	text-align: right;
+}
+
+
+#layout_context {
+	position: relative;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#centering_box {
+	position: absolute;
+	width: 1000px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#header {
+	margin-bottom: 10px;
+}
+
+.side_column {
+	width:22%;
+	text-align: left;
+	float: left;
+}
+.center_column {
+	width:56%;
+	float: left;
+}
+
+#left_column {
+	clear: left;
+}
+
+#footer { 
+	clear: both;
+	background-color: lightgrey;
+	height: 50px;
+}
+
+
 .editor_cancel {
 	font-size: 14px;
+}
+
+#chain_history {
+	margin: auto;
+}
+
+#chain_history tr {
+	border: none;
+}
+
+#chain_history td.month {
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.instructions {
+	padding-top: 33px;
+	padding-bottom: 30px;
+	margin-left: -10px;
+	text-align: left;
+	height: 50px;
+}
+.instruction_text {
+	font-size: 20px;
+}
+
+#instruction_1 {
+}
+#instruction_2 {
+}
+#instruction_3 {
+}
+
+#saved_as {
+	margin-top: 100px;
+}
+
+#date_navigation {
+	padding: 0px;
+	margin: 0px;
+	margin-top: -20px;
 }

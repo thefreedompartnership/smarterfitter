@@ -1,0 +1,5 @@
+page.send :record, "document.title = '#{@chain.name} | smarterfitter.com'"
+page.replace_html("chain_name", :partial => "chain_name", :object => @chain)
+unless @chain.new_record?
+  page.replace_html("saved_as", :partial => "saved_as")
+end
