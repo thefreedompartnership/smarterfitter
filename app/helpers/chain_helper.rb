@@ -41,7 +41,7 @@ module ChainHelper
 			history << "<tr><th colspan='2'>#{day.year}</th></tr>" if new_year
   		if new_month
   			history << "</td></tr>" unless first_day.year == day.year and first_day.month == day.month
-  			history << "<tr><td class='month'>#{Date::MONTHNAMES[day.month]}</td><td>"
+  			history << "<tr><td class='month'>#{Date::MONTHNAMES[day.month]}</td><td style='text-align: left;'>"
   		end
 			if @chain.has_day?(day)
 				history << image_tag("chain/small_cross.png", :id => "small_#{day}")
