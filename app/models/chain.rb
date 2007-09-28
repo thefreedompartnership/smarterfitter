@@ -33,6 +33,9 @@ class Chain < ActiveRecord::Base
   def years_and_months
     fd = first_day
     ld = last_day
+    if fd.nil? or ld.nil?
+      return []
+    end
     result = []
     fd.year.upto(ld.year) do |year|
       if year == fd.year && year == ld.year
