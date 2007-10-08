@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/models/body_mass.rb</string>
+	<string>app/views/chain/index.rhtml</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -56,12 +56,12 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>74</integer>
+				<integer>62</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>37</integer>
+			<integer>27</integer>
 		</dict>
 		<key>app/controllers/diary_controller.rb</key>
 		<dict>
@@ -166,14 +166,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>43</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>15</integer>
 		</dict>
 		<key>app/helpers/diary_helper.rb</key>
 		<dict>
@@ -231,33 +231,19 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/models/body_mass.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>45</integer>
-				<key>line</key>
-				<integer>20</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
 		<key>app/models/chain.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>22</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>35</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>11</integer>
 		</dict>
 		<key>app/models/consumed_portion.rb</key>
 		<dict>
@@ -350,7 +336,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>26</integer>
+				<integer>21</integer>
 				<key>line</key>
 				<integer>0</integer>
 			</dict>
@@ -366,7 +352,7 @@
 				<key>column</key>
 				<integer>60</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>2</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -378,9 +364,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>43</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>15</integer>
+				<integer>49</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>26</integer>
+		</dict>
+		<key>app/views/chain/set_chain_name.rjs</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -406,9 +406,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>31</integer>
+				<integer>45</integer>
 				<key>line</key>
-				<integer>28</integer>
+				<integer>38</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -422,12 +422,12 @@
 				<key>column</key>
 				<integer>43</integer>
 				<key>line</key>
-				<integer>237</integer>
+				<integer>223</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>216</integer>
+			<integer>201</integer>
 		</dict>
 		<key>app/views/layouts/runlog.rhtml</key>
 		<dict>
@@ -689,6 +689,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>db/migrate/019_add_note_to_chain.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>db/schema.rb</key>
 		<dict>
 			<key>caret</key>
@@ -736,7 +750,7 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>14</integer>
+				<integer>13</integer>
 				<key>line</key>
 				<integer>6</integer>
 			</dict>
@@ -778,14 +792,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>49</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>7</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>5</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
 		</dict>
 		<key>test/unit/user_test.rb</key>
 		<dict>
@@ -800,20 +830,6 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>vendor/plugins/calendar_helper/lib/calendar_helper.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>73</integer>
 		</dict>
 		<key>vendor/plugins/calendar_helper/test/test_calendar_helper.rb</key>
 		<dict>
@@ -846,62 +862,21 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>test/unit/user_test.rb</string>
-		<string>app/views/welcome/signup.rhtml</string>
-		<string>app/views/welcome/thankyou.rhtml</string>
 		<string>app/views/chain/index.rhtml</string>
-		<string>app/views/welcome/index.rhtml</string>
-		<string>db/migrate/013_create_chains.rb</string>
-		<string>db/migrate/014_create_days.rb</string>
-		<string>app/controllers/admin_controller.rb</string>
-		<string>app/controllers/application.rb</string>
-		<string>db/migrate/001_create_foods.rb</string>
-		<string>vendor/plugins/calendar_helper/test/test_calendar_helper.rb</string>
-		<string>vendor/plugins/calendar_helper/lib/calendar_helper.rb</string>
-		<string>app/controllers/runlog_controller.rb</string>
-		<string>db/migrate/015_add_time_zone_to_chain.rb</string>
-		<string>app/controllers/chain_controller.rb</string>
-		<string>db/migrate/017_add_read_key_to_chains.rb</string>
-		<string>app/views/chain/view.rhtml</string>
-		<string>test/unit/body_mass_test.rb</string>
-		<string>app/models/body_mass.rb</string>
-		<string>test/fixtures/body_masses.yml</string>
-		<string>db/migrate/016_update_keys_for_chains_to_utc.rb</string>
-		<string>vendor/tzinfo-0.3.3/lib/tzinfo/timezone.rb</string>
-		<string>public/favicon.ico</string>
-		<string>app/models/nutrient.rb</string>
-		<string>app/models/user.rb</string>
-		<string>app/controllers/runs_controller.rb</string>
-		<string>app/models/chain.rb</string>
-		<string>app/models/run.rb</string>
-		<string>app/models/consumed_portion.rb</string>
-		<string>db/create_databases.sql</string>
-		<string>db/schema.rb</string>
-		<string>db/create_databases.sh</string>
-		<string>app/views/chain/update_chain.rjs</string>
-		<string>public/stylesheets/chain/style.css</string>
-		<string>app/views/layouts/standard.rhtml</string>
-		<string>app/views/layouts/runlog.rhtml</string>
-		<string>app/views/diary/index.rhtml</string>
-		<string>app/helpers/admin_helper.rb</string>
-		<string>app/helpers/application_helper.rb</string>
-		<string>app/helpers/calculators_helper.rb</string>
 		<string>app/helpers/chain_helper.rb</string>
-		<string>app/helpers/diary_helper.rb</string>
-		<string>app/helpers/foods_helper.rb</string>
-		<string>app/helpers/parse_rss.rb</string>
-		<string>app/helpers/runlog_helper.rb</string>
-		<string>app/controllers/foods_controller.rb</string>
-		<string>app/controllers/diary_controller.rb</string>
-		<string>app/models/weight.rb</string>
-		<string>db/migrate/018_create_body_masses.rb</string>
-		<string>public/stylesheets/chain/calendar/blue/style.css</string>
-		<string>app/views/chain/_saved_as.rhtml</string>
+		<string>db/migrate/019_add_note_to_chain.rb</string>
+		<string>app/views/chain/view.rhtml</string>
+		<string>app/views/chain/set_chain_name.rjs</string>
 		<string>app/views/chain/_chain_name.rhtml</string>
+		<string>app/views/chain/_saved_as.rhtml</string>
+		<string>app/models/chain.rb</string>
+		<string>test/unit/body_mass_test.rb</string>
+		<string>app/views/diary/index.rhtml</string>
+		<string>app/controllers/chain_controller.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{541, 1}, {899, 774}}</string>
+	<string>{{381, 4}, {899, 774}}</string>
 </dict>
 </plist>
