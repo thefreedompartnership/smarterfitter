@@ -25,6 +25,10 @@ class ChainController < ApplicationController
   end
   
   def update_chain
+    # there's a problem here that happens when the chain isn't in the
+    # session any longer... should find some way to fix this
+    # it looks like it is the googlebot that causes this problem
+    # grrr... still, really should do something about it
     date = Date.parse(params[:id])
     @chain = session[:chain]
     @added = @chain.update_day(date)
