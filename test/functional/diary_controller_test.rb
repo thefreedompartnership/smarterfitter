@@ -30,7 +30,7 @@ class DiaryControllerTest < Test::Unit::TestCase
     #might want to check that tim has eaten some things over 5 of the past 7 days
     #and 25 of the past 30 days and that those averages are coming out right
     #now, is that really something we want to test at this level or is that unit
-    #testing for the User and Portion classes?
+    #testing for the User and PortionThing classes?
   end
   
   def test_default_date_is_set_to_today

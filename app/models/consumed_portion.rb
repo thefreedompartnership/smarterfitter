@@ -38,9 +38,9 @@ class ConsumedPortion < ActiveRecord::Base
 
   def portion
     if attributes["quantity"].nil?
-      portion = Portion.new(self.food, self.weight)
+      portion = PortionThing.new(self.food, self.weight)
     else
-      portion = Portion.new(self.food, self.weight, self.quantity)
+      portion = PortionThing.new(self.food, self.weight, self.quantity)
     end
     return portion
   end

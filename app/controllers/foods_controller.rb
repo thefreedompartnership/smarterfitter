@@ -19,10 +19,10 @@ class FoodsController < ApplicationController
       @weight = Weight.find(params[:weight]['id'])      
     end
     if params[:amount].nil?
-      @portion = Portion.new(@food, @weight, @weight.amount)
+      @portion = PortionThing.new(@food, @weight, @weight.amount)
     else
       @amount = BigDecimal.new(params[:amount])
-      @portion = Portion.new(@food, @weight, @amount)
+      @portion = PortionThing.new(@food, @weight, @amount)
     end
   end
 
@@ -35,9 +35,9 @@ class FoodsController < ApplicationController
     end
     if params[:amount] != nil
       @amount = params[:amount].to_f
-      @portion = Portion.new(@food, @weight, @amount)
+      @portion = PortionThing.new(@food, @weight, @amount)
     else
-      @portion = Portion.new(@food, @weight, 1)
+      @portion = PortionThing.new(@food, @weight, 1)
     end
     render(:layout => false)
   end
@@ -87,9 +87,9 @@ class FoodsController < ApplicationController
     end
     if params[:amount] != nil
       @amount = params[:amount].to_f
-      @portion = Portion.new(@food, @weight, @amount)
+      @portion = PortionThing.new(@food, @weight, @amount)
     else
-      @portion = Portion.new(@food, @weight, 1)
+      @portion = PortionThing.new(@food, @weight, 1)
     end
     render(:layout => false)
   end

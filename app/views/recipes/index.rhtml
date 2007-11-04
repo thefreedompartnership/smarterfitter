@@ -1,0 +1,47 @@
+<!-- so we've got to create this recipes functionality 
+	
+	1. design for empty
+	2. design for error
+	3. design for normal
+	
+	on a page with no recipes we need to display something that helps people create
+	a recipe
+	
+	so the index page lists all the recipes a user has created with create / read / update / 
+	delete (not actual delete, just marks it as "deleted")
+	
+	-->
+
+<h2>Your Recipes</h2>
+	
+<% if @recipes.size == 0 %>
+<p>You've not added any recipes yet. Recipes are a great way to add combinations of foods 
+	to your food diary. Once you've created a recipe you can add it to your diary whenever
+	you eat it.
+	
+<p>Create a new recipe and include a number of servings that the recipe feeds.
+   When you add the recipe to your diary you can choose how many servings
+ 	you ate at that time.</p>
+
+<% end %>
+
+<p><%= link_to "Create a new recipe", :action => :new %></p>
+
+<h3>Your recipes</h3>
+
+<table>
+	<tr><th>Description</th><th>Servings</th><th colspan="3">Actions</th></tr>
+	<% @recipes.each do |recipe| %>
+		<tr>
+			<td><%= h(recipe.description) %></td>
+			<td class="numeric_column"><%= h(recipe.servings) %></td>
+			<td><%= link_to( "Show", :action => :show, :id => recipe )%></td>
+			<td><%= link_to( "Edit", :action => :edit, :id => recipe )%></td>
+			<td>
+				<%= link_to( "Delete", { :action => :delete, :id => recipe }, 
+						:method => :post, 
+						:confirm => "Are you sure you want to delete the recipe #{h(recipe.description)}?" )%>
+			</td>
+		</tr>
+	<% end %>
+</table>

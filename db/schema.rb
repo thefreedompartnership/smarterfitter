@@ -2,7 +2,7 @@
 # migrations feature of ActiveRecord to incrementally modify your database, and
 # then regenerate this schema definition.
 
-ActiveRecord::Schema.define(:version => 18) do
+ActiveRecord::Schema.define(:version => 25) do
 
   create_table "body_masses", :force => true do |t|
     t.column "mass",        :decimal,  :precision => 6, :scale => 2
@@ -111,6 +111,27 @@ ActiveRecord::Schema.define(:version => 18) do
   end
 
   add_index "nutrients", ["nutrient_number"], :name => "index_nutrients_on_nutrient_number"
+
+  create_table "portions", :force => true do |t|
+    t.column "quantity",    :decimal,  :precision => 8, :scale => 3
+    t.column "created_at",  :datetime
+    t.column "modified_at", :datetime
+    t.column "user_id",     :integer
+    t.column "recipe_id",   :integer
+    t.column "weight_id",   :integer
+    t.column "type",        :string
+    t.column "consumed_at", :datetime
+  end
+
+  create_table "recipes", :force => true do |t|
+    t.column "servings",     :integer
+    t.column "description",  :string
+    t.column "instructions", :text
+    t.column "created_at",   :datetime
+    t.column "modified_at",  :datetime
+    t.column "user_id",      :integer
+    t.column "is_deleted",   :boolean,  :default => false
+  end
 
   create_table "runs", :force => true do |t|
     t.column "user_id",             :integer

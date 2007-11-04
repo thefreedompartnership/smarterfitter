@@ -3,7 +3,9 @@ class User < ActiveRecord::Base
   
   has_many :runs
   has_many :consumed_portions
+  has_many :user_portions
   has_many :body_masses
+  has_many :recipes, :conditions => "is_deleted != 1"
   
   attr_accessor :password, :confirm_password
   

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  quantity: 
+  created_at: 
+  modified_at: 
+  user_id: 
+  recipe_id: 
+  weight_id: 1
+two:
+  id: 2
+  quantity: 
+  created_at: 
+  modified_at: 
+  user_id: 
+  recipe_id: 
+  weight_id: 1

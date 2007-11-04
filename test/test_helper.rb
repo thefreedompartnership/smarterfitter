@@ -26,3 +26,21 @@ class Test::Unit::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+
+#this just adds the except method to all hashes run by the test runner
+#so i can set up a bunch of valid attributes and then call 
+# them.except(:the_attribute_under_test)
+class Hash
+  def except(*keys)
+    self.reject do |k,v|
+      keys.include? k.to_sym
+    end
+  end
+  def only(*keys)
+    self.dup.reject do |k,v|
+      !keys.include? k.to_sym
+    end
+  end
+end
+

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  servings: 9.99
+  description: MyString
+  instructions: MyText
+  created_at: 2007-10-27 15:38:08
+  modified_at: 2007-10-27 15:38:08
+  user_id: 1
+two:
+  id: 2
+  servings: 9.99
+  description: MyString
+  instructions: MyText
+  created_at: 2007-10-27 15:38:08
+  modified_at: 2007-10-27 15:38:08
+  user_id: 1
