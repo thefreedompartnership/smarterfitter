@@ -22,3 +22,4 @@ class Portion < ActiveRecord::Base
     nutrient(Nutrient::PROTEIN)
   end
 end
+

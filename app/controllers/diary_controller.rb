@@ -27,40 +27,76 @@ class DiaryController < ApplicationController
   def add_portion
     @user = session[:user]
     @date = Date.parse(params[:date])
-    portion = ConsumedPortion.new(params[:portion])
-    @user.consumed_portions << portion
+    portion = WeightPortion.new(params[:portion])
+    @user.user_portions << portion
     render(:partial => "today")
   end
   
+  def add_recipe_portion
+    @user = session[:user]
+    @date = Date.parse(params[:date])
+    recipe_portion = RecipePortion.new(params[:recipe_portion])
+    @user.user_portions << recipe_portion
+    render(:partial => "today")
+  end  
   
   def show_portion
     @user = session[:user]
     @date = Date.parse(params[:date])
     @food = Food.find(params[:id].to_i)
     if params[:portion]
-      @portion = ConsumedPortion.new(params[:portion])
+      @portion = WeightPortion.new(params[:portion])
     else
-      @portion = ConsumedPortion.new({:food_id => @food.id, :weight_id => @food.weights[0].id, :quantity => @food.weights[0].amount, :consumed_at => @date})
+      @portion = WeightPortion.new({:weight_id => @food.weights[0].id, :quantity => @food.weights[0].amount, :consumed_at => @date})
+    end
+  end
+
+  def show_recipe
+    @user = session[:user]
+    @date = Date.parse(params[:date])
+    @recipe = @user.recipes.find(params[:id])
+    if params[:recipe_portion]
+      @recipe_portion = RecipePortion.new(params[:recipe_portion])
+    else
+      @recipe_portion = RecipePortion.new(:recipe => @recipe, :quantity => 1, :consumed_at => @date)
     end
   end
   
   def edit_portion
     @user = session[:user]
     @date = Date.parse(params[:date])
-    @portion = @user.consumed_portions.find(params[:id])
+    @portion = @user.user_portions.find(params[:id])
     if params[:portion]
       @portion.weight = Weight.find(params[:portion][:weight_id])
       @portion.quantity = params[:portion][:quantity]
     end
   end
   
+  def edit_recipe_portion
+    @user = session[:user]
+    @date = Date.parse(params[:date])
+    @portion = @user.user_portions.find(params[:id])
+    if params[:portion]
+      @portion.quantity = params[:portion][:quantity]
+    end
+  end
+
   def update_portion
     @user = session[:user]
     @date = Date.parse(params[:date])
-    portion = @user.consumed_portions.find(params[:id])
+    portion = @user.user_portions.find(params[:id])
     portion.update_attributes(params[:portion])
     render(:partial => "today")
   end
+
+  def update_recipe_portion
+    @user = session[:user]
+    @date = Date.parse(params[:date])
+    portion = @user.user_portions.find(params[:id])
+    portion.update_attributes(params[:portion])
+    render(:partial => "today")
+  end
+
   
   def cancel_update_portion
     @user = session[:user]
@@ -71,7 +107,7 @@ class DiaryController < ApplicationController
   def delete_portion
     @user = session[:user]
     @date = Date.parse(params[:date])
-    @user.consumed_portions.find(params[:id]).destroy
+    @user.user_portions.find(params[:id]).destroy
     render(:partial => "today")
   end
   
@@ -89,7 +125,7 @@ class DiaryController < ApplicationController
     end
     redirect_to :back
   end
-
+  
   private
   def find_body_mass_or_get_empty_body_mass(user, date)
     if user.body_masses.find_by_recorded_at(date)

@@ -20,11 +20,9 @@
 				<td class="numeric"><%= h(@portion.carbohydrate) %></td>
 			</tr>
 		</table>
-		<%= hidden_field :portion, :food_id %>
 		<%= hidden_field :portion, :consumed_at %>
 		<p>
 			<%= submit_to_remote "foo", "Add to diary", :url =>  {:action => :add_portion, :id => @food}, :update => "today", :complete => "new Effect.SlideUp('food_#{@food.id}'); $('food_#{@food.id}').parentNode.removeClassName('food_being_edited'); $('food_#{@food.id}').removeClassName('current'); " %>
 			<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('food_#{@food.id}'); $('food_#{@food.id}').parentNode.removeClassName('food_being_edited'); $('food_#{@food.id}').removeClassName('current'); return false;"}) %>
-			
 		</p>
 	<% end %>

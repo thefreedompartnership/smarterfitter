@@ -2,7 +2,6 @@ require "digest/sha1"
 class User < ActiveRecord::Base
   
   has_many :runs
-  has_many :consumed_portions
   has_many :user_portions
   has_many :body_masses
   has_many :recipes, :conditions => "is_deleted != 1"
@@ -15,16 +14,16 @@ class User < ActiveRecord::Base
   composed_of :tz, :class_name => 'TZInfo::Timezone', :mapping => %w(time_zone identifier)
 
   def portions_for?(date)
-    consumed_portions.count(:all, 
+    count = user_portions.count(:all, 
       :conditions => 
-          ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', date, date + 1]
+          ['portions.consumed_at >= ? and portions.consumed_at < ?', date, date + 1]
       ) != 0
   end
 
   def portions_for(date)
-    consumed_portions.find(:all, 
-      :conditions => ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', date, date + 1], 
-      :order => "consumed_portions.created_at DESC", :include => [:weight, :food])
+    user_portions.find(:all, 
+      :conditions => ['portions.consumed_at >= ? and portions.consumed_at < ?', date, date + 1], 
+      :order => "portions.created_at DESC")
   end
   
   def percent_calories_for(nutrient_number, nutrient_calorie_multiplier, date)
@@ -51,15 +50,39 @@ class User < ActiveRecord::Base
   
   def nutrient_total_for(nutrient_number, start_date, end_date=start_date+1)
     query = <<-QUERY
-      SELECT SUM(fn.nutrient_value * ((p.quantity / w.amount)  
-      	* (w.weight_in_grams / 100))) AS total 
-      FROM consumed_portions p, weights w, food_nutrients fn 
-      WHERE w.id = p.weight_id 
-        AND fn.food_id = p.food_id 
-        AND fn.nutrient_number = \"#{nutrient_number}\" 
-        AND user_id = #{self.id}
-        AND p.consumed_at >= \"#{start_date}\" 
-        AND p.consumed_at < \"#{end_date}\";
+      SELECT SUM(total) AS total FROM (
+  
+            SELECT SUM(fn.nutrient_value * ((p.quantity / w.amount)  
+                * (w.weight_in_grams / 100))) AS total 
+            FROM portions p, weights w, food_nutrients fn 
+            WHERE w.id = p.weight_id 
+              AND fn.food_id = w.food_id 
+              AND fn.nutrient_number = #{nutrient_number}
+              AND user_id = #{self.id}
+              AND p.type = 'WeightPortion'
+              AND p.consumed_at >= '#{start_date}'
+              AND p.consumed_at <  '#{end_date}'
+  
+          UNION
+  
+            SELECT SUM((fn.nutrient_value * ((p.quantity / w.amount)
+                * (w.weight_in_grams / 100)) 
+                / r.servings) * recipes_consumed.servings_consumed) AS total 
+            FROM portions AS p, weights AS w, food_nutrients AS fn, recipes AS r,
+            (SELECT p.id AS recipe_portion_id, p.quantity AS servings_consumed, p.recipe_id recipe_consumed
+                FROM portions p
+                WHERE p.type = 'RecipePortion'
+                AND p.user_id = #{self.id}
+                AND p.consumed_at >= '#{start_date}'
+                AND p.consumed_at <  '#{end_date}') AS recipes_consumed
+  
+            WHERE p.type = 'IngredientPortion'
+            AND w.id = p.weight_id
+            AND fn.food_id = w.food_id 
+            AND fn.nutrient_number = #{nutrient_number} 
+            AND p.recipe_id = r.id
+            AND r.id = recipes_consumed.recipe_consumed
+      ) AS totals
     QUERY
     total = User.connection.select_value(query)
     if total.nil?
@@ -139,8 +162,8 @@ class User < ActiveRecord::Base
   def average_nutrient(nutrient_number, start_date, end_date)
     
     total_nutrient = nutrient_total_for(nutrient_number, start_date, end_date)
-    number_of_days_recorded = consumed_portions.count("distinct(date(consumed_at))", 
-      :conditions => ['consumed_portions.consumed_at >= ? and consumed_portions.consumed_at < ?', start_date, end_date])
+    number_of_days_recorded = user_portions.count("distinct(date(consumed_at))", 
+      :conditions => ['portions.consumed_at >= ? and portions.consumed_at < ?', start_date, end_date])
     if number_of_days_recorded > 0
       return (total_nutrient / number_of_days_recorded).round
     else

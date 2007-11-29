@@ -1,0 +1,31 @@
+<% remote_form_for :recipe_portion, 
+	:url => {:action => :show_recipe, :id => @recipe}, 
+	:update => "recipe_#{@recipe.id}" do |f| %>
+	<%= hidden_field_tag :date, @date %>
+	<p>Servings:</p>
+	<p>
+		<%= f.text_field :quantity, {:size => 6} %>
+		<%= f.hidden_field :recipe_id %>
+		<%= f.hidden_field :consumed_at %>
+		<%= submit_tag "Update serving size" %>
+	</p>
+	<table>
+		<tr>
+			<th>Calories</th>
+			<th>Fat(g)</th>
+			<th>Protein(g)</th>
+			<th>Carbs(g)</th>
+		</tr>
+		<tr>
+			<td class="numeric"><%= h(@recipe_portion.energy) %></td>
+			<td class="numeric"><%= h(@recipe_portion.fat) %></td>
+			<td class="numeric"><%= h(@recipe_portion.protein) %></td>
+			<td class="numeric"><%= h(@recipe_portion.carbohydrate) %></td>
+		</tr>
+	</table>
+	<p>
+		<%= submit_to_remote "submit_recipe_button", "Add to diary", :url =>  {:action => :add_recipe_portion, :id => @recipe}, :update => "today",  :complete => "new Effect.SlideUp('recipe_#{@recipe.id}'); $('recipe_#{@recipe.id}').parentNode.removeClassName('recipe_being_edited'); $('recipe_#{@recipe.id}').removeClassName('current');" %>
+		<%= submit_tag("Cancel", {:onclick => "new Effect.SlideUp('recipe_#{@recipe.id}'); $('recipe_#{@recipe.id}').parentNode.removeClassName('recipe_being_edited'); $('recipe_#{@recipe.id}').removeClassName('current'); return false;"}) %>
+	</p>
+	
+<% end %>

@@ -2,6 +2,10 @@ class WeightPortion < UserPortion
   belongs_to :weight  
   validates_presence_of :weight
   
+  def description
+    "#{WeightPortion.format_number(self.quantity)} #{weight.measure_description} #{weight.food.long_description}"
+  end
+  
   # this gets a little tricky because while the db has "weights" that include amounts we want to
   # use the quantity as the natural amount so 100 grams of butter the 100 is the quantity and we
   # have to account for weight.amount being 100 too.
@@ -16,6 +20,21 @@ class WeightPortion < UserPortion
   # it is sufficient to define nutrient here and then the superclass can call to this to implement
   # all the conveniences
   def nutrient(nutrient_number) 
-    ((self.quantity / @weight.amount) * @weight.weight_in_grams) * (@weight.food.nutrient(nutrient_number).nutrient_value / BigDecimal.new("100"))
+    fn = weight.food.nutrient(nutrient_number)
+    if fn.nil?
+      0
+    else
+      ((self.quantity / weight.amount) * weight.weight_in_grams) * (fn.nutrient_value / BigDecimal.new("100"))
+    end
   end
+  
+  private
+  def self.format_number(f)
+    if f % 1 != 0
+      return f.to_s
+    else
+      return sprintf("%d", f)
+    end
+  end
+  
 end

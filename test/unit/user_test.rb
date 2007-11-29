@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
 class UserTest < Test::Unit::TestCase
-  fixtures :users, :consumed_portions, :weights, :foods, :food_nutrients, :nutrients
+  fixtures :users, :portions, :weights, :foods, :food_nutrients, :nutrients
 
   def test_portions_for_today
     assert_equal 3, users(:tim).portions_for(Date.today).length
@@ -14,7 +14,7 @@ class UserTest < Test::Unit::TestCase
   end
   
   def test_nutrient_averages
-    assert_equal 35, users(:bob).consumed_portions.count
+    assert_equal 35, users(:bob).user_portions.count
     assert_equal BigDecimal.new("1.9295"), users(:bob).protein_for(Date.today)
     assert_equal BigDecimal.new("1.9295"), users(:bob).protein_for(Date.today - 1)
     assert_equal BigDecimal.new("2"), users(:bob).average_protein_last_seven_days
@@ -29,6 +29,7 @@ class UserTest < Test::Unit::TestCase
     assert_equal ((users(:bob).saturated_fat_for(Date.today) * 9) / users(:bob).energy_for(Date.today)) * 100, users(:bob).percent_calories_from_saturated_fat_for(Date.today)
     assert_equal ((users(:bob).carbohydrate_for(Date.today) * 4) / users(:bob).energy_for(Date.today)) * 100, users(:bob).percent_calories_from_carbohydrate_for(Date.today)
   end
+
   def test_nutrient_percentages_of_calories_when_no_food_does_not_divide_by_zero
     assert_equal 0, users(:monica).percent_calories_from_protein_for(Date.today)
     assert_equal 0, users(:monica).percent_calories_from_fat_for(Date.today)

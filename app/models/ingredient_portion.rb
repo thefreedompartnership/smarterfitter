@@ -8,7 +8,7 @@ class IngredientPortion < Portion
   
   
   def description
-    "#{IngredientPortion.format_number(self.quantity)} #{@weight.measure_description} #{@weight.food.long_description}"
+    "#{IngredientPortion.format_number(self.quantity)} #{weight.measure_description} #{weight.food.long_description}"
   end
   
   
@@ -25,8 +25,15 @@ class IngredientPortion < Portion
   
   # it is sufficient to define nutrient here and then the superclass can call to this to implement
   # all the conveniences
-  def nutrient(nutrient_number) 
-    ((self.quantity / @weight.amount) * @weight.weight_in_grams) * (@weight.food.nutrient(nutrient_number).nutrient_value / BigDecimal.new("100"))
+  def nutrient(nutrient_number)
+    fn = weight.food.nutrient(nutrient_number)
+    if fn.nil?
+      0
+    else
+      ((self.quantity / weight.amount) * weight.weight_in_grams) * (fn.nutrient_value / BigDecimal.new("100"))
+    end
+    
+#    ((self.quantity / weight.amount) * weight.weight_in_grams) * (weight.food.nutrient(nutrient_number).nutrient_value / BigDecimal.new("100"))
   end
   
   private

@@ -1,13 +1,18 @@
 <tr id="<%= "today_portion_#{portion.id}" %>" class="<%= cycle('list_line_odd', 'list_line_even') %>">
 	<td><%= h(portion.description) %></td>
 	<td class="numeric"><%= h(number_with_precision(portion.energy, 0)) %></td>
-	<td class="numeric"><%= h(number_with_precision(portion.fat, 3)) %></td>
-	<td class="numeric"><%= h(number_with_precision(portion.protein, 3)) %></td>
-	<td class="numeric"><%= h(number_with_precision(portion.carbohydrate, 3)) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.fat, 0)) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.protein, 0)) %></td>
+	<td class="numeric"><%= h(number_with_precision(portion.carbohydrate, 0)) %></td>
 	<td class="actions">
-		<%= link_to_remote("Edit", :url => {:action => :edit_portion, :id => portion.id, :date => @date}, 
-									:update => "today_portion_#{portion.id}") %>
-		<%= link_to_remote("Delete", :confirm => "Delete #{portion.description} from your food diary?", :url => {:action => :delete_portion, :id => portion.id, :date => @date}, 
+		<% if portion.class == WeightPortion %>
+			<%= link_to_remote("Edit", :url => {:action => :edit_portion, :id => portion, :date => @date}, 
+										:update => "today_portion_#{portion.id}") %>
+		<% elsif portion.class == RecipePortion %>
+			<%= link_to_remote("Edit", :url => {:action => :edit_recipe_portion, :id => portion, :date => @date}, 
+										:update => "today_portion_#{portion.id}") %>
+		<% end %>
+		<%= link_to_remote("Delete", :confirm => "Delete #{portion.description} from your food diary?", :url => {:action => :delete_portion, :id => portion, :date => @date}, 
 										:update => "today") %>
 	</td>
 </tr>		

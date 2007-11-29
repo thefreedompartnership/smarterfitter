@@ -1,0 +1,35 @@
+<td colspan="6">
+	<div class="food_being_edited">
+	
+	<% form_remote_tag :url => {:action => :edit_recipe_portion, :id => @portion}, 
+						:update => "today_portion_#{@portion.id}" do %>
+		<%= h(@portion.description) %>
+		<p>Servings:</p>
+		<p>
+			<%= text_field :portion, :quantity, {:size => 6} %>
+			<%= submit_tag "Update servings" %>
+			<%= hidden_field_tag "date", @date %>
+		</p>
+		<table>
+			<tr>
+				<th>Calories</th>
+				<th>Fat(g)</th>
+				<th>Protein(g)</th>
+				<th>Carbs(g)</th>
+			</tr>
+			<tr>
+				<td class="numeric"><%= h(number_with_precision(@portion.energy, 0)) %></td>
+				<td class="numeric"><%= h(number_with_precision(@portion.fat, 0)) %></td>
+				<td class="numeric"><%= h(number_with_precision(@portion.protein, 0)) %></td>
+				<td class="numeric"><%= h(number_with_precision(@portion.carbohydrate, 0)) %></td>
+			</tr>
+		</table>
+		<p>
+			<%= submit_to_remote "save_changes", "Save Changes", 
+				:url =>  {:action => :update_recipe_portion, :id => @portion}, :update => "today" %>
+			<%= submit_to_remote "cancel_changes", "Cancel", 
+				:url =>  {:action => :cancel_update_portion, :id => @portion}, :update => "today" %>
+		</p>
+	<% end %>
+	</div>
+</td>

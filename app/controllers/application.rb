@@ -2,6 +2,14 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
+  
+  # this deals with STI in development not loading models properly until
+  # it 'sees' them and then 
+  require_dependency 'user_portion'
+  require_dependency 'weight_portion'
+  require_dependency 'recipe_portion'
+  require_dependency 'ingredient_portion'
+  
   # Pick a unique cookie name to distinguish our session data from others'
   session :session_key => '_smarterfitter_session_id'
   

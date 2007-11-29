@@ -5,7 +5,7 @@ require 'diary_controller'
 class DiaryController; def rescue_action(e) raise e end; end
 
 class DiaryControllerTest < Test::Unit::TestCase
-  fixtures :users, :weights, :foods, :consumed_portions, :food_nutrients, :nutrients
+  fixtures :users, :weights, :foods, :portions, :food_nutrients, :nutrients
   def setup
     @controller = DiaryController.new
     @request    = ActionController::TestRequest.new
@@ -54,47 +54,47 @@ class DiaryControllerTest < Test::Unit::TestCase
 
   def test_add_portion
     log_in(users(:tim))
-    number_of_consumed_portions = session[:user].consumed_portions.count
-    post :add_portion, :portion => {:food => consumed_portions("one_hundred_grams_of_butter").food, 
-                                    :weight => consumed_portions("one_hundred_grams_of_butter").weight, 
+    portions("one_hundred_grams_of_butter")
+    number_of_user_portions = session[:user].user_portions.count
+    post :add_portion, :portion => {:weight => portions("one_hundred_grams_of_butter").weight, 
                                     :quantity => BigDecimal.new("1")}, :date => Date.today.to_s
-    assert_equal number_of_consumed_portions + 1, session[:user].consumed_portions.count
+    assert_equal number_of_user_portions + 1, session[:user].user_portions.count
   end
 
   
   def test_show_portion
     log_in(users(:tim))
-    get :show_portion, :id => consumed_portions("one_hundred_grams_of_butter").food.id, :date => Date.today.to_s
+    get :show_portion, :id => portions("one_hundred_grams_of_butter").weight.food.id, :date => Date.today.to_s
     assert_not_nil assigns("portion")
-    assert consumed_portions("one_hundred_grams_of_butter").food.id, assigns("portion").food.id
-    assert consumed_portions("one_hundred_grams_of_butter").description, assigns("portion").description
+    assert portions("one_hundred_grams_of_butter").weight.food.id, assigns("portion").weight.food.id
+    assert portions("one_hundred_grams_of_butter").description, assigns("portion").description
   end
   
   
   def test_edit_portion
     log_in(users(:tim))
-    get :edit_portion, :id => consumed_portions("one_hundred_grams_of_butter").food.id, :date => Date.today.to_s
+    get :edit_portion, :id => portions("one_hundred_grams_of_butter").weight.food.id, :date => Date.today.to_s
     assert_not_nil assigns("portion")
-    assert consumed_portions("one_hundred_grams_of_butter").food.id, assigns("portion").food.id
-    assert consumed_portions("one_hundred_grams_of_butter").description, assigns("portion").description
+    assert portions("one_hundred_grams_of_butter").weight.food.id, assigns("portion").weight.food.id
+    assert portions("one_hundred_grams_of_butter").description, assigns("portion").description
     assert_response :success
     assert_template "edit_portion"
   end
   
   def test_update_portion
     log_in(users(:tim))
-    portion = users(:tim).consumed_portions[0]
-    post :update_portion, :id => portion.id, :portion => {:food => portion.food, :weight => portion.weight, :quantity => "5" }, :date => Date.today.to_s
-    assert_equal 5, users(:tim).consumed_portions[0].quantity
+    portion = users(:tim).user_portions[0]
+    post :update_portion, :id => portion.id, :portion => {:weight => portion.weight, :quantity => "5" }, :date => Date.today.to_s
+    assert_equal 5, users(:tim).user_portions[0].quantity
     assert_response :success
     assert_template "_today"
   end
   
   def test_delete_portion
     log_in(users(:tim))
-    number_of_consumed_portions = session[:user].consumed_portions.count
-    post :delete_portion, :id => session[:user].consumed_portions[0].id, :date => Date.today.to_s
-    assert_equal number_of_consumed_portions - 1, session[:user].consumed_portions.count
+    number_of_user_portions = session[:user].user_portions.count
+    post :delete_portion, :id => session[:user].user_portions[0].id, :date => Date.today.to_s
+    assert_equal number_of_user_portions - 1, session[:user].user_portions.count
     assert_response :success
     assert_template "_today"
   end

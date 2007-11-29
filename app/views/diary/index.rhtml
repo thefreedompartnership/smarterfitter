@@ -246,6 +246,14 @@
 				<% end %>
 			</div>
 			<div id="right_column" class="column">
+				<h3>Recipes</h3>
+				<% @user.recipes.each do |recipe| %>
+					<p>
+						<%= link_to_remote h(recipe.description), :update => "recipe_#{recipe.id}", :url => {:action => :show_recipe, :id => recipe, :date => @date} %>
+						<div id="recipe_<%= recipe.id %>"></div>
+					</p>
+				<% end %>
+				<h3>Search</h3>
 				<% form_remote_tag :update => "search_results", :url => {:action => "search"} do %>
 					<label for="q">Search</label> <%= text_field_tag "q" %>
 					<%= hidden_field_tag "date", @date %>
