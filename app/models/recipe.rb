@@ -13,6 +13,21 @@ class Recipe < ActiveRecord::Base
   validates_length_of :description, :maximum => 255
   validates_length_of :instructions, :maximum => 1000 * 6 # about a thousand words, not sure if there's any point to even limiting it
   
+  def fat
+    nutrient(Nutrient::FAT)
+  end
+  
+  def protein
+    nutrient(Nutrient::PROTEIN)
+  end
+  
+  def energy
+    nutrient(Nutrient::ENERGY)
+  end
+  
+  def carbohydrate
+    nutrient(Nutrient::CARBOHYDRATE)
+  end
   
   def nutrient(nutrient_number)
     total = 0

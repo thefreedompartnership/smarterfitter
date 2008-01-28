@@ -144,13 +144,6 @@ ActiveRecord::Schema.define(:version => 25) do
     t.column "route_points",        :text
   end
 
-  create_table "test_view", :id => false, :force => true do |t|
-    t.column "user_id",         :integer
-    t.column "nutrient_number", :string
-    t.column "consumed_at",     :date
-    t.column "nutrient_value",  :decimal, :precision => 55, :scale => 15
-  end
-
   create_table "users", :force => true do |t|
     t.column "user_name",          :string
     t.column "email_address",      :string

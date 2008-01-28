@@ -1,0 +1,27 @@
+<p>Description: <%= @recipe.description %></p>
+<p>Serves: <%= @recipe.servings %></p>
+
+<table>
+	<tr>
+		<th>Calories</th>
+		<th>Fat(g)</th>
+		<th>Protein(g)</th>
+		<th>Carbs(g)</th>
+	</tr>
+	<tr>
+		<td class="numeric"><%= h(@recipe.energy) %></td>
+		<td class="numeric"><%= h(@recipe.fat) %></td>
+		<td class="numeric"><%= h(@recipe.protein) %></td>
+		<td class="numeric"><%= h(@recipe.carbohydrate) %></td>
+	</tr>
+</table>
+
+<p>Instructions: <%= @recipe.instructions %></p>
+<p>
+	Ingredients:
+	<ul>
+		<% for ingredient in @recipe.ingredient_portions %>
+			<li><%= ingredient.description %></li>
+		<% end %>
+	</ul>
+</p>

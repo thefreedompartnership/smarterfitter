@@ -1,0 +1,26 @@
+<% form_for :recipe, :url => {:action => :update, :id => @recipe}, :method => :post do |f| %>
+	<p><label for="recipe_description">Description</label> <%= f.text_field :description %></p>
+	<p><label for="recipe_servings">Servings</label> <%= f.text_field :servings %></p>
+	<p><label for="recipe_instructions">Instructions</label></p><p><%= f.text_area :instructions %></p>
+	<p><%= submit_tag "Save" %></p>	
+	<p>
+		Ingredients:
+		<ul id="ingredients_list">
+			<% @recipe.ingredient_portions.each_with_index do |ingredient, i| %>
+				<li>
+					<%= ingredient.description %>
+					<%= link_to_remote "Delete", :url => {:action => :delete_saved_portion, :id => ingredient}, 
+							:confirm => "Are you sure you want to delete this ingredient?" %>
+				</li>
+			<% end %>
+		</ul>
+	</p>
+<% end %>
+
+<% form_remote_tag :update => "search_results", :url => {:action => "search"} do %>
+	<label for="q">Search for ingredients</label> <%= text_field_tag "q" %>
+	<%= hidden_field_tag "date", @date %>
+	<%= submit_tag "Search" %>
+<% end %>
+<div id="search_results">
+</div>

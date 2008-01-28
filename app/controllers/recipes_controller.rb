@@ -7,6 +7,25 @@ class RecipesController < ApplicationController
     @recipes = @user.recipes
   end
   
+  def show
+    @user = session[:user]
+    @recipe = @user.recipes.find(params[:id])
+  end
+  
+  def edit
+    @user = session[:user]
+    @recipe = @user.recipes.find(params[:id])
+  end
+
+  def update
+    @user = session[:user]
+    @recipe = @user.recipes.find(params[:id])
+    @recipe.update_attributes(params[:recipe])
+    @recipe.save!
+    flash[:notice] = "Your changes have been saved!"
+    redirect_to :action => :index    
+  end
+  
   def new
     @user = session[:user]
     @recipe = Recipe.new
@@ -61,6 +80,17 @@ class RecipesController < ApplicationController
   def delete_portion
     render :update do |page|
       page.remove("portion_#{params[:id]}")
+    end
+  end
+  
+  def delete_saved_portion
+    @user = session[:user]
+    @ingredient_portion = IngredientPortion.find(params[:id])
+    if @ingredient_portion.recipe.user == @user
+      @ingredient_portion.destroy
+      render :udpate do |page|
+        page.remove("portion_#{params[:id]}")
+      end
     end
   end
   
