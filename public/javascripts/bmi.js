@@ -149,4 +149,4 @@ function setup() {
 	calculatorForm.onsubmit = process;
 }
 
-window.onload = setup
+window.onload = setup;
