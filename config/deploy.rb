@@ -2,6 +2,9 @@
 # ssh panic
 # cd /www/app/smarterfitter/current
 # rake db:migrate RAILS_EVN=production
+# cd public
+# ln -s /www/apps/forum_smarterfitter/forums
+# ln -s /www/apps/blog_smarterfitter/blog
 # apachectl restart
 
 # This defines a deployment "recipe" that you can feed to capistrano
