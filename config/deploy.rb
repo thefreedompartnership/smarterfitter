@@ -44,6 +44,7 @@ set :deploy_to, "/www/apps/#{application}" # defaults to "/u/apps/#{application}
 set :svn, "/opt/local/bin/svn"       # defaults to searching the PATH
 set :scm_command, "/opt/local/bin/svn"
 set :local_scm_command, :default
+set :runner, 'tim'
 # set :darcs, "/path/to/darcs"   # defaults to searching the PATH
 # set :cvs, "/path/to/cvs"       # defaults to searching the PATH
 # set :gateway, "gate.host.com"  # default to no gateway
@@ -55,6 +56,7 @@ set :local_scm_command, :default
 # ssh_options[:port] = 25
 
 default_run_options[:pty] = true
+default_run_options[:shell] = false
 
 # =============================================================================
 # TASKS
@@ -64,10 +66,11 @@ default_run_options[:pty] = true
 # narrow the set of servers to a subset of a role by specifying options, which
 # must match the options given for the servers to select (like :primary => true)
 
-
-desc "Restart the web server"
-task :restart, :roles => :app do
-  sudo "apachectl graceful"
+namespace :deploy do
+  desc "Restart the web server"
+  task :restart, :roles => :app do
+    sudo "apachectl graceful"
+  end
 end
 
 desc "Link the forums and blog"
@@ -77,7 +80,7 @@ task :link_forums_and_blog, :roles => :app do
 end
 
 after :deploy, :link_forums_and_blog
-after :deploy, :restart
+#after :deploy, :restart
 
 desc <<DESC
 An imaginary backup task. (Execute the 'show_tasks' task to display all
