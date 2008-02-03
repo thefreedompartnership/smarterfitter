@@ -1,0 +1,77 @@
+<script type="text/javascript" src="/javascripts/tee.js"></script>
+<script type="text/javascript" src="/javascripts/date.js"></script>
+
+<style type="text/css">
+	.error {
+		background-color: #FF6600;
+	}
+</style>
+<h2>Daily Calorie Needs Calculator</h2>
+<div id="calculator">
+	<form id="calculator_form" name="calculator_form">
+		<ul>
+			<input type="hidden" name="start_date" value="<%= Date.today.to_formatted_s(:mmddyyyy) %>" id="start_date"/>				
+			<li id="error_message" style="display: none;">
+				Please correct the form errors marked below
+			</li>
+			<li id="instructions">
+				<p>Please enter your details below.</p>
+			</li>
+			<li>
+				<label for="height">Height</label>
+				<input type="text" name="height" value="" id="height"/>
+				<div class="example_text">
+					e.g. 1.83m, 183cm, 5ft, 5ft 10in, 5' 10" or 5' 10
+				</div>
+			</li>
+			<li>
+				<label for="weight">Weight</label>
+				<input type="text" name="weight" value="" id="weight"/>				
+				<div class="example_text">
+					e.g. 70kg, 71.5kg, 120lbs, 120.5lbs
+				</div>
+			</li>
+			<li>
+				<label for="age">Age</label>
+				<input type="text" name="age" value="" id="age"/>
+			</li>
+			<li>
+				<input type="radio" name="is_male" value="true" id="is_male"/>				
+				<label for="is_male">Male</label>
+				<input type="radio" name="is_male" value="false" id="is_female" checked="checked"/>				
+				<label for="is_female">Female</label>
+			</li>
+			<li>
+				<label for="activity_level">Activity level</label>
+				<select name="activity_level" id="activity_level">
+					<option value="sedentary">Sedentary (inactive)</option>
+					<option value="light" selected="selected">Lightly Active (most professionals, office workers)</option>
+					<option value="moderate">Moderately active (workers in light industry, most farm workers)</option>
+					<option value="very">Very active (full-time athletes and dancers, unskilled laborers)</option>
+					<option value="exceptional">Exceptionally active (lumberjacks, blacksmiths, female construction workers)</option>
+				</select>
+			</li>
+
+
+			<li>
+				<label for="goal_date">Goal date</label>
+				<input type="text" name="goal_date" value="<%= 12.weeks.from_now.to_formatted_s(:mmddyyyy) %>" id="goal_date"/>				
+				<div class="example_text">
+					e.g. mm/dd/yyyy
+				</div>
+			</li>
+			<li>
+				<label for="goal_weight">Goal weight</label>
+				<input type="text" name="goal_weight" value="" id="goal_weight"/>				
+				<div class="example_text">
+					e.g. 70kg, 71.5kg, 120lbs, 120.5lbs
+				</div>
+			</li>
+			<li>
+				<input type="submit" value="Calculate"/>
+			</li>
+		</ul>
+	</form>
+	<div id="result">
+	</div>
+</div>

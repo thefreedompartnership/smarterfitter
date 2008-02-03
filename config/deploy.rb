@@ -64,16 +64,20 @@ default_run_options[:pty] = true
 # narrow the set of servers to a subset of a role by specifying options, which
 # must match the options given for the servers to select (like :primary => true)
 
-desc "Symlinks the blog into place"
-task :after_deploy, :roles => :app do
-  run "(cd #{release_path}/public && ln -s /www/apps/blog_smarterfitter/blog)"
-end
-
 
 desc "Restart the web server"
 task :restart, :roles => :app do
   sudo "apachectl graceful"
 end
+
+desc "Link the forums and blog"
+task :link_forums_and_blog, :roles => :app do
+  run "(cd #{release_path}/public && ln -s /www/apps/blog_smarterfitter/blog)"
+  run "(cd #{release_path}/public && ln -s /www/apps/forum_smarterfitter/forums)"
+end
+
+after :deploy, :link_forums_and_blog
+after :deploy, :restart
 
 desc <<DESC
 An imaginary backup task. (Execute the 'show_tasks' task to display all
