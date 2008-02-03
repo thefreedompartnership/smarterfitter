@@ -1,3 +1,9 @@
+# cap deploy
+# ssh panic
+# cd /www/app/smarterfitter/current
+# rake db:migrate RAILS_EVN=production
+# apachectl restart
+
 # This defines a deployment "recipe" that you can feed to capistrano
 # (http://manuals.rubyonrails.com/read/book/17). It allows you to automate
 # (among other things) the deployment of your application.
@@ -33,6 +39,8 @@ set :deploy_to, "/www/apps/#{application}" # defaults to "/u/apps/#{application}
 # set :user, "flippy"            # defaults to the currently logged in user
 # set :scm, :darcs               # defaults to :subversion
 set :svn, "/opt/local/bin/svn"       # defaults to searching the PATH
+set :scm_command, "/opt/local/bin/svn"
+set :local_scm_command, :default
 # set :darcs, "/path/to/darcs"   # defaults to searching the PATH
 # set :cvs, "/path/to/cvs"       # defaults to searching the PATH
 # set :gateway, "gate.host.com"  # default to no gateway
@@ -42,6 +50,8 @@ set :svn, "/opt/local/bin/svn"       # defaults to searching the PATH
 # =============================================================================
 # ssh_options[:keys] = %w(/path/to/my/key /path/to/another/key)
 # ssh_options[:port] = 25
+
+default_run_options[:pty] = true
 
 # =============================================================================
 # TASKS
