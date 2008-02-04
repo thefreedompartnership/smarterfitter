@@ -7,6 +7,7 @@
 	}
 </style>
 <h2>Daily Calorie Needs Calculator</h2>
+<p>The number of calories you should eat per day depends on your physical body, your level activity, and your weight goals (if you have any). Fill out this form for your calorie needs.</p>
 <div id="calculator">
 	<form id="calculator_form" name="calculator_form">
 		<ul>
@@ -46,12 +47,19 @@
 				<select name="activity_level" id="activity_level">
 					<option value="sedentary">Sedentary (inactive)</option>
 					<option value="light" selected="selected">Lightly Active (most professionals, office workers)</option>
-					<option value="moderate">Moderately active (workers in light industry, most farm workers)</option>
-					<option value="very">Very active (full-time athletes and dancers, unskilled laborers)</option>
-					<option value="exceptional">Exceptionally active (lumberjacks, blacksmiths, female construction workers)</option>
+					<option value="moderate">Moderately active (workers in light industry, farmers)</option>
+					<option value="very">Very active (full-time athletes and dancers, laborers)</option>
+					<option value="exceptional">Exceptionally active (lumberjacks, blacksmiths)</option>
 				</select>
 			</li>
 
+			<li>
+				<label for="goal_weight">Goal weight</label>
+				<input type="text" name="goal_weight" value="" id="goal_weight"/>				
+				<div class="example_text">
+					e.g. 70kg, 71.5kg, 120lbs, 120.5lbs
+				</div>
+			</li>
 
 			<li>
 				<label for="goal_date">Goal date</label>
@@ -60,13 +68,7 @@
 					e.g. mm/dd/yyyy
 				</div>
 			</li>
-			<li>
-				<label for="goal_weight">Goal weight</label>
-				<input type="text" name="goal_weight" value="" id="goal_weight"/>				
-				<div class="example_text">
-					e.g. 70kg, 71.5kg, 120lbs, 120.5lbs
-				</div>
-			</li>
+
 			<li>
 				<input type="submit" value="Calculate"/>
 			</li>

@@ -257,10 +257,11 @@ function process() {
 		var dcn = new DailyCalorieNeed(startDate, goalDate, weight.normalized, goalWeight.normalized, height.normalized_as_centimetres(), age, isMale, activityLevel);
  
 		var resultDiv = document.getElementById('result');
-		resultDiv.innerHTML = "<ul><li>Total calorie expenditure: " + dcn.getTotalEnergyExpediture() + "</li>" +
-		                      "<li>Calorie per day allowance: " + dcn.value.round() + "</li>" +
-													"<li>Daily calorie deficit: " + dcn.getDailyCalorieDeficit() + "</li>" +
-													"<li>That's " + dcn.getMassPerWeek(weight.isKg) + " per week.</li></ul>";
+		resultDiv.innerHTML = "<strong>	<ul><li><p>You burn about " + dcn.getTotalEnergyExpediture() + " calories per day.</p></li>" +
+		                      "<li><p>To meet your goal weight you should eat " + dcn.value.round() + " calories per day.</p></li>" +
+													"<li><p>That's " + dcn.getDailyCalorieDeficit() + " fewer calories than you burn " +
+													"or a weight loss of " + dcn.getMassPerWeek(weight.isKg) + " per week until your goal date.</p></li>" + 
+													"<li><p>Always check with your doctor that your goals are within safe limits.</p></li></ul></strong>";
 	}
 	return false;
 }
