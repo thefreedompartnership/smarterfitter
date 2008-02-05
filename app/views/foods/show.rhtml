@@ -1,9 +1,16 @@
 <script type="text/javascript" charset="utf-8">
 	function setup() {
-		document.getElementById('complete_nutrient_data').style.display = 'none';
+		var snd = document.getElementById('simple_nutrient_data');
+		var cnd = document.getElementById('complete_nutrient_data');
+		cnd.style.display = 'none';
 		document.getElementById('show_complete_nutrient_data').onclick = function() {
-			document.getElementById('simple_nutrient_data').style.display = 'none';
-			document.getElementById('complete_nutrient_data').style.display = 'block';
+			snd.style.display = 'none';
+			cnd.style.display = 'block';
+			return false;				
+		}
+		document.getElementById('show_simple_nutrient_data').onclick = function() {
+			snd.style.display = 'block';
+			cnd.style.display = 'none';
 			return false;				
 		}
 	}
@@ -24,7 +31,12 @@
 	<%= submit_tag 'Change' %>
 <% end %>
 <p>Amount per <%= @portion.quantity %> <%= @portion.weight.measure_description %></p>
-<table id="simple_nutrient_data" class="nutrient_table">
+
+<%= show_chart %>
+
+<div id="simple_nutrient_data">
+<table id="simple_nutrient_data_table" class="nutrient_table">
+	<p><a id="show_complete_nutrient_data" href="#complete_nutrient_data">Show complete nutrient data</a></p>
 	<tr style="display:none">
 		<th>Nutrient</th>
 		<th>Amount</th>
@@ -67,7 +79,11 @@
 	</tr> 
 	
 	</table>
-	<table id="complete_nutrient_data" class="nutrient_table">
+</div>
+
+<div id="complete_nutrient_data">
+	<p><a id="show_simple_nutrient_data" href="#simple_nutrient_data">Show simple nutrient data</a></p>
+	<table id="complete_nutrient_data_table" class="nutrient_table">
 	<tr>
 		<td>Calories</td>
 		<td class="nutrient_value">
@@ -441,5 +457,5 @@
 		</td>
 	</tr>
 </table>
-<p><a id="show_complete_nutrient_data" href="#complete_nutrient_data">Show complete nutrient data</a></p>
+</div>
 

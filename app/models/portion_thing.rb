@@ -43,4 +43,14 @@ class PortionThing
       BigDecimal.new("0")
     end
   end
+  
+  def to_chart_data
+    chart_data = {}
+    chart_data["Fat"] = fat
+    chart_data["Protein"] = protein
+    chart_data["Carbs"] = carbohydrate
+    chart_data["Other"] = quantity - (carbohydrate + protein + fat)
+    chart_data
+  end
+  
 end
