@@ -201,11 +201,15 @@ DailyCalorieNeed.prototype.getLbsPerWeek = function() {
 }
 
 DailyCalorieNeed.prototype.getMassPerWeek = function(isKg) {
-	return isKg ? (this.getKgPerWeek() + " kg") : (this.getLbsPerWeek() + " lbs");
+	return isKg ? (this.getKgPerWeek().absoluteValue() + " kg") : (this.getLbsPerWeek().absoluteValue() + " lbs");
 }
 
 Number.prototype.round = function() {
 	return Math.round(this * 100) / 100;
+}
+
+Number.prototype.absoluteValue = function() {
+	return Math.abs(this);
 }
 
 function process() {
@@ -257,11 +261,19 @@ function process() {
 		var dcn = new DailyCalorieNeed(startDate, goalDate, weight.normalized, goalWeight.normalized, height.normalized_as_centimetres(), age, isMale, activityLevel);
  
 		var resultDiv = document.getElementById('result');
-		resultDiv.innerHTML = "<strong>	<ul><li><p>You burn about " + dcn.getTotalEnergyExpediture() + " calories per day.</p></li>" +
-		                      "<li><p>To meet your goal weight you should eat " + dcn.value.round() + " calories per day.</p></li>" +
-													"<li><p>That's " + dcn.getDailyCalorieDeficit() + " fewer calories than you burn " +
-													"or a weight loss of " + dcn.getMassPerWeek(weight.isKg) + " per week until your goal date.</p></li>" + 
-													"<li><p>Always check with your doctor that your goals are within safe limits.</p></li></ul></strong>";
+		
+		var resultString =	"<strong>	<ul><li><p>You burn about " + dcn.getTotalEnergyExpediture() + " calories per day.</p></li>" +
+		                		"<li><p>To meet your goal weight you should eat " + dcn.value.round() + " calories per day.</p></li>";
+		if(dcn.getDailyCalorieDeficit() > 0) {
+			resultString += "<li><p>That's " + dcn.getDailyCalorieDeficit() + " fewer calories than you burn " +
+											"or a weight loss of " + dcn.getMassPerWeek(weight.isKg) + " per week until your goal date.</p></li>";			
+		} else {
+				resultString += "<li><p>That's " + -dcn.getDailyCalorieDeficit() + " more calories than you burn " +
+												"or a weight gain of " + dcn.getMassPerWeek(weight.isKg) + " per week until your goal date.</p></li>";
+		}
+		resultString += "<li><p>Always check with your doctor that your goals are within safe limits.</p></li></ul></strong>";
+		
+		resultDiv.innerHTML = resultString;
 	}
 	return false;
 }
