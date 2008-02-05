@@ -35,6 +35,10 @@ class PortionThing
     (@food.protein.nutrient_value * @multiplier).round(3)
   end
 
+  def water
+    (@food.water.nutrient_value * @multiplier).round(3)
+  end
+
   def nutrient(nutrient_number)
     n = @food.nutrient(nutrient_number)
     if(n)
@@ -49,7 +53,8 @@ class PortionThing
     chart_data["Fat"] = fat
     chart_data["Protein"] = protein
     chart_data["Carbs"] = carbohydrate
-    chart_data["Other"] = quantity - (carbohydrate + protein + fat)
+    chart_data["Water"] = water
+    chart_data["Other"] = quantity - (carbohydrate + protein + fat + water)
     chart_data
   end
   

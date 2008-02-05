@@ -21,6 +21,10 @@ class Food < ActiveRecord::Base
   def fat
     nutrient('204')
   end
+
+  def water
+    nutrient('255')
+  end
   
   def nutrient(nutrient_number)
     food_nutrients.find(:all, :conditions => ['nutrient_number = :nutrient_number', {:nutrient_number => nutrient_number}])[0]
