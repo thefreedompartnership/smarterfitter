@@ -14,12 +14,36 @@ class Food < ActiveRecord::Base
     nutrient('203')
   end
   
+  def percent_energy_from_protein
+    if protein
+      ((protein.nutrient_value * 4) / energy.nutrient_value) * 100
+    else
+      0
+    end
+  end
+  
   def carbohydrate
     nutrient('205')
+  end
+
+  def percent_energy_from_carbohydrate
+    if carbohydrate
+      ((carbohydrate.nutrient_value * 4) / energy.nutrient_value) * 100
+    else
+      0
+    end
   end
   
   def fat
     nutrient('204')
+  end
+
+  def percent_energy_from_fat
+    if fat
+      ((fat.nutrient_value * 9) / energy.nutrient_value) * 100
+    else
+      0
+    end
   end
 
   def water

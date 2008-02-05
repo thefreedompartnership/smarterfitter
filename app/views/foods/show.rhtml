@@ -31,9 +31,10 @@
 	<%= submit_tag 'Change' %>
 <% end %>
 <p>Amount per <%= @portion.quantity %> <%= @portion.weight.measure_description %></p>
-
-<%= show_chart %>
-
+<p>
+	<%= show_chart %>
+	<%= show_percent_energy_chart %>
+</p>
 <div id="simple_nutrient_data">
 <table id="simple_nutrient_data_table" class="nutrient_table">
 	<p><a id="show_complete_nutrient_data" href="#complete_nutrient_data">Show complete nutrient data</a></p>
