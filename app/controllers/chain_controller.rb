@@ -1,4 +1,16 @@
 class ChainController < ApplicationController
+
+# There's a big giant problem here:
+# First time the user arrives
+# Next time the user shows up
+# The chain is saved
+# The name is changed
+# Another window is started with a new chain
+# Another window is opened to an existing chain
+# Update chain is clicked
+# Update chain is clicked when a chain is not yet saved
+# So, just saving the chain key and applying that to the update will do a lot of good for chains that have already been saved
+# can then look up the chain and write to it.
   
   def index
     @date = Date.today
