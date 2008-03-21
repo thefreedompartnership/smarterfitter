@@ -1,0 +1,27 @@
+<h1>Listing link_suggestions</h1>
+
+<table>
+  <tr>
+  <% for column in LinkSuggestion.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for link_suggestion in @link_suggestions %>
+  <tr>
+  <% for column in LinkSuggestion.content_columns %>
+    <td><%=h link_suggestion.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => link_suggestion %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => link_suggestion %></td>
+    <td><%= link_to 'Destroy', { :action => 'destroy', :id => link_suggestion }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @link_suggestion_pages.current.previous } if @link_suggestion_pages.current.previous %>
+<%= link_to 'Next page', { :page => @link_suggestion_pages.current.next } if @link_suggestion_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New link_suggestion', :action => 'new' %>

@@ -1,0 +1,34 @@
+
+<p>Use this form to submit a page or site for editorial consideration.</p>
+
+<p>Some tips to consider first:</p>
+<ul>
+	<li>Leave your email address incase we need to confirm any details with you. We wont spam you or publish your email address.</li>
+	<li>Leave your own website URL so we can credit you.</li>
+	<li>Please make sure your suggestion is about health and fitness and please describe well the site that you're linking to so we understand why it is interesting and why we should follow your link.</li>
+</ul>
+
+<%= error_messages_for 'link_suggestion' %>
+
+<!--[form:link_suggestion]-->
+<p><label for="link_suggestion_name">Your name (optional)
+</label><br/>
+<%= text_field 'link_suggestion', 'name'  %></p>
+
+<p><label for="link_suggestion_email_address">Your email address (optional)</label><br/>
+<%= text_field 'link_suggestion', 'email_address'  %></p>
+
+<p><label for="link_suggestion_website">Your website (optional -- for credit/linkback)</label><br/>
+<%= text_field 'link_suggestion', 'website'  %></p>
+
+<p><label for="link_suggestion_title">Title for the item you're suggesting</label><br/>
+<%= text_field 'link_suggestion', 'title'  %></p>
+
+<p><label for="link_suggestion_link">URL of suggested website</label><br/>
+<%= text_field 'link_suggestion', 'link' %></p>
+
+<p><label for="link_suggestion_description">Please describe the suggested site</label><br/>
+<%= text_area 'link_suggestion', 'description'  %></p>
+<!--[eoform:link_suggestion]-->
+
+<p>Thank you.</p>
