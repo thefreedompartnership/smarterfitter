@@ -1,0 +1,24 @@
+Changed the version number to 2.0.2
+
+rake rails:update
+
+plugged the config.action_controller.session configuaration into the environment.rb
+
+script/plugin install in_place_editing
+patched the plugin http://dev.rubyonrails.org/ticket/10055
+
+script/plugin install svn://errtheblog.com/svn/plugins/classic_pagination
+
+a few small code edits:
+
+Index: /Users/tim/Development/smarterfitter-1.2.6/app/views/foods/_form.rhtml
+===================================================================
+--- /Users/tim/Development/smarterfitter-1.2.6/app/views/foods/_form.rhtml	(revision 82)
++++ /Users/tim/Development/smarterfitter-1.2.6/app/views/foods/_form.rhtml	(working copy)
+@@ -1,4 +1,4 @@
+-	<% form_tag( {:action => 'search'}, { :method => :get }, nil ) do %>
++	<% form_tag( {:action => :search}, {:method => :get} ) do %>
+ 	  <%= text_field_tag 'q', params[:q] %>
+ 	  <%= submit_tag 'Search' %>
+ 	<% end %>
+
