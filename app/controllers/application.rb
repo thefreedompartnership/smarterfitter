@@ -10,8 +10,11 @@ class ApplicationController < ActionController::Base
   require_dependency 'recipe_portion'
   require_dependency 'ingredient_portion'
   
-  # Pick a unique cookie name to distinguish our session data from others'
-  session :session_key => '_smarterfitter_session_id'
+  helper :all # include all helpers, all the time
+
+  # See ActionController::RequestForgeryProtection for details
+  # Uncomment the :secret if you're not using the cookie session store
+  protect_from_forgery :secret => 'fa413b2119ff831fa5816f418e1893a4846fcd673157da50f647df2202e0aeb30cae7ffd24e83a3b2b7cd1d9cd43020b4565e8fbda66a0fb88bbe964ef777e5a'
   
   def pages_for(size, options = {})
     default_options = {:per_page => 10}

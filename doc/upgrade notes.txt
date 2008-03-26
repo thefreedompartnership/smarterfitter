@@ -22,3 +22,32 @@ Index: /Users/tim/Development/smarterfitter-1.2.6/app/views/foods/_form.rhtml
  	  <%= submit_tag 'Search' %>
  	<% end %>
 
+Went through and updated the config/ directory files by taking content from a newly generated blank application.
+
+Altered config to use UTC
+Altered routes to use map.root
+
+# yeah, this sucks and needs to be reworked asap to get over to the cookie store
+config.action_controller.session_store = :p_store
+
+updated application.rb with the defaults that were listed in a new default version of teh file
+add a secret because we're not using cookies
+
+Outstanding questions:
+
+. what's happening with sessions now, are they stored in the database, in the filesystem or in the cookie?
+	- cookies now seem to be stored on the client... that's a good thing in some ways
+
+. does the chain still work if we ditch out the cookies?
+	- don't know
+
+. should i get rid of the user and chains in the session?
+	- yes, soon
+	
+. other upgrades to think about
+	. renaming view files
+	. split out environment.rb
+	. paginating
+	. any other plugins
+	. freezing rails
+
