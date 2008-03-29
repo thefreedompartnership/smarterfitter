@@ -1,3 +1,5 @@
+require 'mongrel_cluster/recipes'
+
 set :application, "smarterfitter"
 set :repository,  "svn+ssh://panic/Users/tim/svn/#{application}/trunk"
 
@@ -10,6 +12,9 @@ set :repository,  "svn+ssh://panic/Users/tim/svn/#{application}/trunk"
 # your SCM below:
 # set :scm, :subversion
 
+set :mongrel_conf, "#{current_path}/config/mongrel_cluster.yml"
+
 role :app, "hosted.smarterfitter.com"
 role :web, "hosted.smarterfitter.com"
 role :db,  "hosted.smarterfitter.com", :primary => true
+
