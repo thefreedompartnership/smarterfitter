@@ -1,5 +1,6 @@
 require 'mongrel_cluster/recipes'
 
+ssh_options[:forward_agent] = true
 ssh_options[:port] = 1022
 
 set :application, "smarterfitter"
