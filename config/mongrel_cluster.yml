@@ -1,6 +1,6 @@
 --- 
 cwd: /u/apps/smarterfitter/current
-log_file: log/mongrel.log
+log_file: /u/apps/smarterfitter/shared/log/mongrel.log
 port: "8000"
 environment: production
 #address: 127.0.0.1
