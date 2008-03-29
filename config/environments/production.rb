@@ -20,4 +20,4 @@ config.action_view.cache_template_loading            = true
 
 # smarterfitter.com
 GOOGLE_MAPS_API_KEY = 'ABQIAAAACASyyKvhynRUwYA0SHcRyBQVkK1qbApyiGOpxUTfrgqmNeHJtxTs_uQ6ejpCAxLboQhYzdi-13HsBw'
-FERRET_INDEX_DIR_PREFIX = '/www/apps/smarterfitter/shared'
+FERRET_INDEX_DIR_PREFIX = '/u/apps/smarterfitter/shared'
