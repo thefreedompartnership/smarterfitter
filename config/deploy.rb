@@ -1,5 +1,7 @@
 require 'mongrel_cluster/recipes'
 
+ssh_options[:port] = 1022
+
 set :application, "smarterfitter"
 set :repository,  "svn+ssh://panic.gatezero.org/Users/tim/svn/#{application}/trunk"
 
