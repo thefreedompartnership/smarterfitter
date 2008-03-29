@@ -31,6 +31,6 @@ test:
 production:
   adapter: mysql
   database: smarterfitter_production
-  username: tim
+  username: root
   password: 
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
