@@ -26,9 +26,9 @@ class LinkSuggestionsController < ApplicationController
   end
   
   def feed
-    @headers["Content-Type"] = "application/xml"
+    response.headers["Content-Type"] = "application/xml"
     @feed_title = "SmarterFitter link suggestions"
-    @url = url_for(:controller => "link_suggestions", :action => "feed")
+    @url = url_for(:controller => :link_suggestions, :action => :feed)
     @suggested_links = LinkSuggestion.find :all, :order => 'created_at DESC'
     render :layout => false
   end  

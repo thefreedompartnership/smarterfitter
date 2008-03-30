@@ -1,4 +1,6 @@
-if @added
+if @no_session
+  page.replace_html("error_message", :text => "I'm sorry, we seem to have lost your session... please refresh the page.")
+elsif @added
   page.send :record, "Element.removeClassName('#{params[:id]}', 'day')"
   page.send :record, "Element.addClassName('#{params[:id]}', 'specialDay')"
   page.send :record, "$('small_#{params[:id]}').src = '/images/chain/small_cross.png'"

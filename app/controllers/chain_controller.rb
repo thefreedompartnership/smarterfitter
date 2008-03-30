@@ -41,9 +41,16 @@ class ChainController < ApplicationController
     # session any longer... should find some way to fix this
     # it looks like it is the googlebot that causes this problem
     # grrr... still, really should do something about it
+    
+    redirect_to :action => :index if request.get?
+    
     date = Date.parse(params[:id])
     @chain = session[:chain]
-    @added = @chain.update_day(date)
+    if @chain
+      @added = @chain.update_day(date)
+    else
+      @no_session = true
+    end
   end
 
   def save
