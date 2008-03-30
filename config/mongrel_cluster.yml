@@ -6,3 +6,5 @@ environment: production
 address: 127.0.0.1
 pid_file: /u/apps/smarterfitter/shared/pids/mongrel.pid
 servers: 3
+user: tim
+group: tim
