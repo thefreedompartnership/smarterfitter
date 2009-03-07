@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   layout "standard"
   
   def index
-    redirect_to '/blog'
+    redirect_to '/blog/'
   end
   
   def signup
