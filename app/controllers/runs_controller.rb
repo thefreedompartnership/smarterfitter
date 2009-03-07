@@ -15,7 +15,7 @@ class RunsController < ApplicationController
   
   
   def feed
-    response.headers["Content-Type"] => "application/xml"
+    # response.headers["Content-Type"] => "application/xml"
     @feed_title = "Run Log: Everyone's Runs"
     @url = url_for(:controller => "runs", :action => "feed")
     if @user = User.find_by_user_name(params[:user_name])

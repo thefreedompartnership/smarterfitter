@@ -1,6 +1,10 @@
 class WelcomeController < ApplicationController
   layout "standard"
   
+  def index
+    redirect_to '/blog'
+  end
+  
   def signup
     if request.get?
       session[:source] = params[:source]
