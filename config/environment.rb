@@ -37,7 +37,7 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_smarterfitter_session',
+    :session_key => '_new_smarterfitter_session',
     :secret      => 'fa413b2119ff831fa5816f418e1893a4846fcd673157da50f647df2202e0aeb30cae7ffd24e83a3b2b7cd1d9cd43020b4565e8fbda66a0fb88bbe964ef777e5a'
   }
 
