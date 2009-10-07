@@ -2,6 +2,7 @@ set :user, 'rails'
 
 set :deploy_via, :remote_cache
 ssh_options[:forward_agent] = true
+default_run_options[:pty] = true
 
 set :application, "smarterfitter"
 set :repository,  "git@github.com:thefreedompartnership/#{application}.git"
